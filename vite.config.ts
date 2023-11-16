@@ -5,7 +5,7 @@ import svgr from "vite-plugin-svgr";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/",
+  base: "/lablou/",
   resolve: {
     alias: {
       "~bootstrap": path.resolve(__dirname, "node_modules/bootstrap"),
