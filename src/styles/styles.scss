@@ -1,0 +1,30 @@
+@import url("~bootstrap/scss/bootstrap.scss") layer(bootstrap);
+
+@layer bootstrap, base, application;
+
+@layer base {
+  :root {
+    --fris-groen: rgb(161, 233, 78);
+    --donker-groen: rgb(0, 70, 70);
+    --midden-groen: rgb(0, 143, 111);
+    --licht-paars: rgb(153, 151, 241);
+  }
+
+  #root {
+    display: contents;
+  }
+
+  main {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    text-align: center;
+
+    @media (min-width: 992px) {
+      padding: 2rem 4rem;
+    }
+    @media (min-width: 768px) {
+      padding: 2rem 2rem;
+    }
+  }
+}
