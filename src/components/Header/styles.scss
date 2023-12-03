@@ -1,0 +1,45 @@
+.navbar {
+  background-color: var(--zwart);
+  border-radius: 10px;
+  height: 94px;
+  padding-inline: 2rem;
+  @media (max-width: 991px) {
+    height: 60px;
+  }
+}
+.nav-link {
+  color: white;
+  font-size: 1.2rem;
+  padding-inline: 2rem;
+
+  &.active,
+  &.show {
+    text-decoration-line: underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 0.2rem;
+    text-underline-offset: 0.5rem;
+  }
+}
+.navbar-toggler {
+  border: 0;
+  &-icon {
+    width: 23px;
+    height: 23px;
+  }
+  &-open :first-child {
+    background-image: url("/assets/svg/nav-icon-open.svg");
+  }
+  &-close :first-child {
+    background-image: url("/assets/svg/nav-icon-close.svg");
+  }
+}
+
+.offcanvas {
+  @media (max-width: 991px) {
+    background: var(--zwart);
+    margin-inline: 0.5rem;
+    margin-block-start: 5rem;
+    border-radius: 10px;
+  }
+  max-width: 95vw;
+}

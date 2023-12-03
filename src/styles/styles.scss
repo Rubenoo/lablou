@@ -4,14 +4,66 @@
 
 @layer base {
   :root {
-    --fris-groen: rgb(161, 233, 78);
-    --donker-groen: rgb(0, 70, 70);
-    --midden-groen: rgb(0, 143, 111);
-    --licht-paars: rgb(153, 151, 241);
+    --roze: rgb(255, 130, 245);
+    --roze-light: rgba(255, 130, 245, 0.8);
+    --bruin: rgb(194, 138, 89);
+    --groen: rgb(40, 240, 125);
+    --grijs: rgb(229, 229, 229);
+    --zwart: rgb(23, 23, 23);
+  }
+  body {
+    padding: 0.5rem;
+  }
+
+  a {
+    font-family: "Slussen-Medium", sans-serif;
+  }
+  //Fonts
+
+  @font-face {
+    font-family: "Slussen-Medium";
+    src: url("/assets/fonts/Slussen-Medium.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Slussen-MediumItalic";
+    src: url("/assets/fonts/Slussen-MediumItalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Slussen-Regular";
+    src: url("/assets/fonts/Slussen-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Slussen-RegularItalic";
+    src: url("/assets/fonts/Slussen-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Slussen-Semibold";
+    src: url("/assets/fonts/Slussen-Semibold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Slussen-SemiboldItalic";
+    src: url("/assets/fonts/Slussen-Semibold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
   }
 
   #root {
     display: contents;
+  }
+  h1 {
+    font-family: Slussen-Semibold, sans-serif;
   }
 
   main {
