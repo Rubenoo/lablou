@@ -1,16 +1,27 @@
 .navbar {
   background-color: var(--zwart);
   border-radius: 10px;
-  height: 94px;
+  min-height: 80px;
   padding-inline: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
   @media (max-width: 991px) {
-    height: 60px;
+    min-height: 60px;
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: 1rem;
   }
 }
 .nav-link {
   color: white;
   font-size: 1.2rem;
   padding-inline: 2rem;
+
+  &-footer {
+    font-size: 1rem;
+  }
 
   &.active,
   &.show {
@@ -42,4 +53,7 @@
     border-radius: 10px;
   }
   max-width: 95vw;
+}
+a {
+  text-decoration: none;
 }

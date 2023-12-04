@@ -8,6 +8,8 @@ const Header: React.FunctionComponent = () => {
   const [show, setShow] = useState(false);
 
   const handleShow = () => setShow(!show);
+  const closeShow = () => setShow(false);
+
   return (
     <header>
       <Navbar
@@ -31,27 +33,40 @@ const Header: React.FunctionComponent = () => {
             placement="end"
             data-bs-theme="dark"
             backdrop={false}
+            onHide={closeShow}
           >
             <Offcanvas.Header>
               <Offcanvas.Title id={`offcanvasNavbarLabel-expand-lg`} />
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-center flex-grow-1 pe-3">
-                <NavLink className="nav-link" to="huren" onClick={handleShow}>
-                  Huren
+                <NavLink
+                  className="nav-link"
+                  to="zaalverhuur"
+                  onClick={closeShow}
+                >
+                  Zaalverhuur
                 </NavLink>
-                <NavLink className="nav-link" to="werken" onClick={handleShow}>
-                  Werken
+                <NavLink
+                  className="nav-link"
+                  to="werkplekken"
+                  onClick={closeShow}
+                >
+                  Werkplekken
                 </NavLink>
-                <NavLink className="nav-link" to="overons" onClick={handleShow}>
-                  Over ons
+                <NavLink
+                  className="nav-link"
+                  to="overhetlab"
+                  onClick={closeShow}
+                >
+                  Over het Lab
                 </NavLink>
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
-          <Button className={"d-none d-lg-flex"} variant={"roze"}>
-            Contact opnemen
-          </Button>
+          <a className={"d-none d-lg-flex"} href="mailto:info@lablou.nl">
+            <Button variant={"roze"}>Contact opnemen</Button>
+          </a>
         </Container>
       </Navbar>
     </header>

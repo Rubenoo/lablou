@@ -3,10 +3,10 @@ import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
 import { createBrowserRouter } from "react-router-dom";
 import { RouterProvider } from "react-router";
-import Huren from "./pages/Huren/Huren.tsx";
-import Werken from "./pages/Werken/Werken.tsx";
-import OverOns from "./pages/OverOns/OverOns.tsx";
-import NietGevonden from "./components/NietGevonden/NietGevonden.tsx";
+import Zaalverhuur from "./pages/Zaalverhuur/Zaalverhuur.tsx";
+import Werkplekken from "./pages/Werkplekken/Werkplekken.tsx";
+import OverHetLab from "./pages/OverHetLab/OverHetLab.tsx";
+import Home from "./pages/Home/Home.tsx";
 
 const router = createBrowserRouter([
   {
@@ -14,20 +14,20 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: "huren",
-        element: <Huren />,
+        path: "zaalverhuur",
+        element: <Zaalverhuur />,
       },
       {
-        path: "werken",
-        element: <Werken />,
+        path: "werkplekken",
+        element: <Werkplekken />,
       },
       {
-        path: "overons",
-        element: <OverOns />,
+        path: "overhetlab",
+        element: <OverHetLab />,
       },
       {
         path: "*",
-        element: <NietGevonden />,
+        element: <Home />,
       },
     ],
   },
