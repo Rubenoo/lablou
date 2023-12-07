@@ -20,7 +20,7 @@ const Header: React.FunctionComponent = () => {
         expand={"lg"}
       >
         <Container fluid>
-          <NavLink to={"/"}>
+          <NavLink to={"/lablou/"}>
             <Navbar.Brand>LABLOU LOGO</Navbar.Brand>
           </NavLink>
           <Navbar.Toggle

@@ -1,0 +1,49 @@
+section {
+  h1 {
+    margin-block-end: 2.5rem;
+
+    @media (max-width: 991px) {
+      margin-block-end: 1.25rem;
+    }
+  }
+
+  button {
+    margin-block-start: 3rem;
+    font-size: 1.25rem;
+    @media (max-width: 991px) {
+      margin-block-start: 1.5rem;
+      font-size: 1rem;
+    }
+  }
+
+  &.block {
+    border-radius: 10px;
+    padding-inline: 60px;
+    padding-block: 50px;
+
+    @media (max-width: 991px) {
+      padding-inline: 11px;
+      padding-block: 26px;
+    }
+
+    &-bruin {
+      background-color: var(--bruin);
+    }
+
+    &-roze {
+      background-color: var(--roze);
+    }
+
+    &-groen {
+      background-color: var(--groen);
+    }
+  }
+}
+
+.medium {
+  margin-block-end: 6rem;
+
+  @media (max-width: 991px) {
+    margin-block-end: 1.2rem;
+  }
+}

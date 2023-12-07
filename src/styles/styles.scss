@@ -62,21 +62,44 @@
   #root {
     display: contents;
   }
-  h1 {
-    font-family: Slussen-Semibold, sans-serif;
-  }
 
   main {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 2rem 1rem;
-    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-block-start: 1rem;
+    grid-gap: 20px;
 
-    @media (min-width: 992px) {
-      padding: 2rem 4rem;
+    @media (max-width: 991px) {
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
     }
-    @media (min-width: 768px) {
-      padding: 2rem 2rem;
+  }
+
+  h1 {
+    font-family: Slussen-Semibold, sans-serif;
+    font-size: 3rem;
+    color: var(--zwart);
+
+    @media (max-width: 991px) {
+      font-size: 1.75rem;
+    }
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: var(--zwart);
+    white-space: pre-wrap;
+
+    @media (max-width: 991px) {
+      font-size: 0.9rem;
+    }
+
+    &.medium {
+      font-family: Slussen-Medium, sans-serif;
+    }
+
+    &.regular {
+      font-family: Slussen-Regular, sans-serif;
     }
   }
 }

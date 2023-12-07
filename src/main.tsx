@@ -7,6 +7,7 @@ import Zaalverhuur from "./pages/Zaalverhuur/Zaalverhuur.tsx";
 import Werkplekken from "./pages/Werkplekken/Werkplekken.tsx";
 import OverHetLab from "./pages/OverHetLab/OverHetLab.tsx";
 import Home from "./pages/Home/Home.tsx";
+import NietGevonden from "./components/NietGevonden/NietGevonden.tsx";
 
 const router = createBrowserRouter([
   {
@@ -26,8 +27,12 @@ const router = createBrowserRouter([
         element: <OverHetLab />,
       },
       {
-        path: "*",
+        path: "",
         element: <Home />,
+      },
+      {
+        path: "*",
+        element: <NietGevonden />,
       },
     ],
   },
