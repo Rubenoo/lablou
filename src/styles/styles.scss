@@ -63,7 +63,7 @@
     display: contents;
   }
 
-  main {
+  .block-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-block-start: 1rem;
@@ -75,13 +75,46 @@
     }
   }
 
+  .ons-aanbod-container {
+    margin-inline: 3.5rem;
+    margin-block: 3.5rem;
+
+    @media (max-width: 991px) {
+      margin-inline: 0;
+      margin-block: 1.8rem;
+    }
+  }
+  .ons-aanbod-items-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+
+    @media (max-width: 991px) {
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+    }
+  }
+
   h1 {
-    font-family: Slussen-Semibold, sans-serif;
+    font-family: Slussen-Medium, sans-serif;
     font-size: 3rem;
     color: var(--zwart);
 
     @media (max-width: 991px) {
       font-size: 1.75rem;
+    }
+  }
+
+  h2 {
+    font-family: Slussen-Medium, sans-serif;
+    font-size: 2rem;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-items: flex-start;
+    @media (max-width: 991px) {
+      font-size: 1.25rem;
     }
   }
 
