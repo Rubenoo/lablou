@@ -3,7 +3,12 @@
   padding: 10px 20px;
   font-family: Slussen-Semibold, sans-serif;
   border: 0;
+  font-size: 1.25rem;
 
+
+  @media (max-width: 991px) {
+    font-size: 1rem;
+  }
   &-zwart {
     color: white;
     background-color: var(--zwart);

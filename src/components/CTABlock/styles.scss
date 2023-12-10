@@ -1,0 +1,30 @@
+.cta-container {
+  border-radius: 10px;
+  background-color: var(--grijs);
+  text-align: center;
+  padding-block: 3rem;
+  padding-inline: 25%;
+
+  @media (max-width: 991px) {
+    padding-block: 2rem;
+    padding-inline: 1.5rem;
+  }
+
+  p {
+    margin-block-end: 2.5rem;
+
+    @media (max-width: 991px) {
+      margin-block-end: 2rem;
+    }
+  }
+
+  h2 {
+    display: block;
+    color: var(--zwart);
+    margin-block-end: 2rem;
+
+    @media (max-width: 991px) {
+      margin-block-end: 1.5rem;
+    }
+  }
+}
