@@ -9,6 +9,19 @@
     min-height: 450px;
   }
 
+  &__extra_info_container {
+    display: inline-grid;
+    grid-auto-flow: column;
+    margin-block-start: 1rem;
+    margin-inline-end: auto;
+    margin-inline-start: 0.5rem;
+    gap: 1rem;
+  }
+  &__extra-info {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   &-info {
     background-color: var(--zwart);
     width: 100%;

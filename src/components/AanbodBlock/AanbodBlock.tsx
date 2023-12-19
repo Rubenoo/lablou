@@ -1,32 +1,48 @@
 import "./styles.scss";
+import StyledButton from "../Button/Button.tsx";
+import { ZaalType } from "../../pages/Zaalverhuur/types.ts";
+import { NavLink } from "react-router-dom";
 
-type AanbodBlockProps = {
+type AanbodBlockProps = ZaalType & {
   className?: string;
-  extraInfo?: string[];
-  category: string;
-  title: string;
-  image: string;
+  category?: string;
+  to: string;
 };
 const AanbodBlock: React.FunctionComponent<AanbodBlockProps> = ({
   className,
   extraInfo,
   category,
-  title,
-  image,
+  titel,
+  afbeelding,
+  index,
+  to,
 }) => {
+  const extraInfoButtons = (
+    <div className={"aanbod-container__extra_info_container"}>
+      {extraInfo?.map((info: string, keyButton) => (
+        <StyledButton key={keyButton} variant={"groen"}>
+          {info}
+        </StyledButton>
+      ))}
+    </div>
+  );
   return (
-    <section
-      className={`aanbod-container aanbod-container-image-${image} ${className}`}
+    <NavLink
+      to={to}
+      key={index}
+      className={`aanbod-container aanbod-container-image-${afbeelding} ${className} ${
+        extraInfoButtons && "aanbod-container__extra-info"
+      }`}
     >
-      {extraInfo}
+      {extraInfoButtons}
       <div className={"aanbod-container-info"}>
-        <p>{category}</p>
+        {category && <p>{category}</p>}
         <h2>
-          {title}
+          {titel}
           <img src={"/lablou/assets/svg/pijl-white.svg"} />
         </h2>
       </div>
-    </section>
+    </NavLink>
   );
 };
 export default AanbodBlock;

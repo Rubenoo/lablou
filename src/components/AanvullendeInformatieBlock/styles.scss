@@ -1,0 +1,35 @@
+.aanvullende-informatie-container {
+  border-radius: 10px;
+  background-color: var(--grijs);
+  padding: 4rem;
+  margin-block-start: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  @media (max-width: 991px) {
+    padding-block: 2rem;
+    padding-inline: 1.5rem;
+    grid-template-columns: 1fr;
+  }
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  button {
+    width: 220px;
+  }
+}
+.gegevens {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-block-start: 1rem;
+  grid-gap: 20px;
+
+  @media (max-width: 991px) {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+}

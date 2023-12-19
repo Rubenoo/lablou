@@ -4,7 +4,7 @@ import React from "react";
 
 type StyledButtonProps = {
   children: React.ReactNode;
-  variant: "zwart" | "roze";
+  variant: "zwart" | "roze" | "groen";
   className?: string;
 };
 const StyledButton: React.FunctionComponent<StyledButtonProps> = ({

@@ -1,0 +1,36 @@
+[
+  {
+    "index": 0,
+    "titel": "V03-Vergaderruimte begane grond ",
+    "toelichting": "Stay tuned with what is to come! Updates about new events, locations and highlights selected by our crew and experts! Stay tuned with what is to come!",
+    "afbeelding": "stock",
+    "extraInfo": ["100 m2", "20 pers"],
+    "link": "ireserve.nl/xxxx",
+    "informatie": [
+      {
+        "titel": "Werkdag",
+        "gegevens": "Dagdeel (4u): €250\nDagdeel (4u): €250\nDagdeel (4u): €250\n"
+      },
+      {
+        "titel": "Weekend",
+        "gegevens": "Dagdeel (4u): €250\nDagdeel (4u): €250\nDagdeel (4u): €250\n"
+      },
+      {
+        "titel": "Voorzieningen",
+        "gegevens": "Dagdeel (4u): €250\nDagdeel (4u): €250\nDagdeel (4u): €250\n"
+      },
+      {
+        "titel": "Extra",
+        "gegevens": "Dagdeel (4u): €250\nDagdeel (4u): €250\nDagdeel (4u): €250\n"
+      },
+      {
+        "titel": "Catering",
+        "gegevens": "Dagdeel (4u): €250\nDagdeel (4u): €250\nDagdeel (4u): €250\n"
+      },
+      {
+        "titel": "Ruimte",
+        "gegevens": "Dagdeel (4u): €250\nDagdeel (4u): €250\nDagdeel (4u): €250\n"
+      }
+    ]
+  }
+]

@@ -16,7 +16,7 @@ const Werkplekken: React.FunctionComponent = () => {
         <Block
           variant={"bruin"}
           terugKnop
-          title={"De mogelijkheden van Lab Lou"}
+          titel={"De mogelijkheden van Lab Lou"}
           toelichting={
             "De Lab Lou is een thuishaven voor iedere ondernemer: creatievelingen, workaholics, trainers en levensgenieters. Wij bieden jouw unieke zakelijke woonkamer waar je helemaal all-out mag gaan in design en inrichting.\n\nEen broedplaats waar ontmoetingen, toffe samenwerkingen en zakelijke groei op nummer 1 staat."
           }

@@ -17,7 +17,7 @@ const Home: React.FunctionComponent = () => {
         <Block
           variant={"roze"}
           inleiding="Wat doen we bij Lab Lou"
-          title={"De mogelijkheden van Lab Lou"}
+          titel={"De mogelijkheden van Lab Lou"}
           toelichting={
             "De Lab Lou is een thuishaven voor iedere ondernemer: creatievelingen, workaholics, trainers en levensgenieters. Wij bieden jouw unieke zakelijke woonkamer waar je helemaal all-out mag gaan in design en inrichting.\n\nEen broedplaats waar ontmoetingen, toffe samenwerkingen en zakelijke groei op nummer 1 staat."
           }
@@ -32,14 +32,19 @@ const Home: React.FunctionComponent = () => {
         <h1>Ons aanbod</h1>
         <div className={"ons-aanbod-items-container"}>
           <AanbodBlock
+            index={0}
             category={"Zaalverhuur"}
-            image={"stock"}
-            title={"Ontdek onze vergaderzalen"}
+            afbeelding={"stock"}
+            titel={"Ontdek onze vergaderzalen"}
+            to={"zaalverhuur"}
+            key={"0"}
           />
           <AanbodBlock
+            index={1}
             category={"Werk- en atelierruimte"}
-            image={"stock"}
-            title={"Ontdek onze Werk- en atelierruimte"}
+            afbeelding={"stock"}
+            titel={"Ontdek onze Werk- en atelierruimte"}
+            to={"werkplekken"}
           />
         </div>
       </div>

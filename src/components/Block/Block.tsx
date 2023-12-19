@@ -6,9 +6,9 @@ type BlockProps = {
   variant: "bruin" | "roze" | "groen";
   className?: string;
   button?: React.ReactNode;
-  title: string;
+  titel: string;
   inleiding?: string;
-  toelichting: string;
+  toelichting?: string;
   terugKnop?: boolean;
 };
 const Block: React.FunctionComponent<BlockProps> = ({
@@ -17,14 +17,14 @@ const Block: React.FunctionComponent<BlockProps> = ({
   button,
   inleiding,
   terugKnop,
-  title,
+  titel,
   toelichting,
 }) => {
   return (
     <section className={`block block-${variant} ${className}`}>
       {terugKnop && <TerugKnop />}
       <p className={"medium"}>{inleiding}</p>
-      <h1>{title}</h1>
+      <h1>{titel}</h1>
       <p className={"regular"}>{toelichting}</p>
       {button}
     </section>
