@@ -3,6 +3,7 @@ import StyledButton from "../../components/Button/Button.tsx";
 import ImageBlock from "../../components/ImageBlock/ImageBlock.tsx";
 import AanbodBlock from "../../components/AanbodBlock/AanbodBlock.tsx";
 import CTABlock from "../../components/CTABlock/CTABlock.tsx";
+import InstagramMarquee from "../../components/InstagramMarquee/InstagramMarquee.tsx";
 
 const Home: React.FunctionComponent = () => {
   const button = (
@@ -42,6 +43,7 @@ const Home: React.FunctionComponent = () => {
           />
         </div>
       </div>
+      <InstagramMarquee />
       <CTABlock />
     </main>
   );

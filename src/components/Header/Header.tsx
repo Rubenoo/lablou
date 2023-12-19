@@ -2,7 +2,7 @@ import { Container, Nav, Navbar, Offcanvas } from "react-bootstrap";
 import "./styles.scss";
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import Button from "../Button/Button.tsx";
+import StyledButton from "../Button/Button.tsx";
 
 const Header: React.FunctionComponent = () => {
   const [show, setShow] = useState(false);
@@ -65,7 +65,7 @@ const Header: React.FunctionComponent = () => {
             </Offcanvas.Body>
           </Navbar.Offcanvas>
           <a className={"d-none d-lg-flex"} href="mailto:info@lablou.nl">
-            <Button variant={"roze"}>Contact opnemen</Button>
+            <StyledButton variant={"roze"}>Contact opnemen</StyledButton>
           </a>
         </Container>
       </Navbar>

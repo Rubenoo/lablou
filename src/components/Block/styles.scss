@@ -43,3 +43,20 @@
     margin-block-end: 1.2rem;
   }
 }
+
+.link {
+  color: var(--zwart);
+  font-family: "Slussen-Medium", sans-serif;
+  font-size: 1.2rem;
+  white-space: pre-wrap;
+  display: flex;
+  align-items: center;
+
+  img {
+    margin-inline-end: 1rem;
+  }
+
+  @media (max-width: 991px) {
+    font-size: 0.9rem;
+  }
+}
