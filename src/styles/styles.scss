@@ -127,6 +127,7 @@
     color: var(--zwart);
     white-space: pre-wrap;
     font-family: Slussen-Regular, sans-serif;
+    text-wrap: pretty;
 
     @media (max-width: 991px) {
       font-size: 0.9rem;

@@ -1,6 +1,6 @@
 import "./styles.scss";
 import React from "react";
-import { Link } from "react-router-dom";
+import { TerugKnop } from "../TerugKnop/TerugKnop.tsx";
 
 type BlockProps = {
   variant: "bruin" | "roze" | "groen";
@@ -31,12 +31,3 @@ const Block: React.FunctionComponent<BlockProps> = ({
   );
 };
 export default Block;
-
-const TerugKnop: React.FunctionComponent = () => {
-  return (
-    <Link className={"link medium"} to={"/lablou/"}>
-      <img alt={"pijl"} src={"/lablou/assets/svg/pijl.svg"} />
-      Naar homepage
-    </Link>
-  );
-};
