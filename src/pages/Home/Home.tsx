@@ -4,12 +4,15 @@ import ImageBlock from "../../components/ImageBlock/ImageBlock.tsx";
 import AanbodBlock from "../../components/AanbodBlock/AanbodBlock.tsx";
 import CTABlock from "../../components/CTABlock/CTABlock.tsx";
 import InstagramMarquee from "../../components/InstagramMarquee/InstagramMarquee.tsx";
+import { NavLink } from "react-router-dom";
 
 const Home: React.FunctionComponent = () => {
   const button = (
-    <StyledButton className={""} variant={"zwart"}>
-      Bekijk het aanbod
-    </StyledButton>
+    <NavLink to="zaalverhuur">
+      <StyledButton className={""} variant={"zwart"}>
+        Bekijk het aanbod
+      </StyledButton>
+    </NavLink>
   );
   return (
     <main>

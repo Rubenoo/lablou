@@ -1,5 +1,6 @@
 import "./styles.scss";
-import StyledButton from "../Button/Button.tsx";
+import React from "react";
+import ContactOpnemenKnop from "../ContactOpnemenKnop/ContactOpnemenKnop.tsx";
 
 type CTABlockProps = {
   className?: string;
@@ -18,7 +19,7 @@ const CTABlock: React.FunctionComponent<CTABlockProps> = ({ className }) => {
         zakelijke woonkamer waar je helemaal all-out mag gaan in design en
         inrichting.
       </p>
-      <StyledButton variant={"zwart"}>Bekijk het aanbod</StyledButton>
+      <ContactOpnemenKnop />
     </section>
   );
 };

@@ -2,7 +2,7 @@ import { Container, Nav, Navbar, Offcanvas } from "react-bootstrap";
 import "./styles.scss";
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import StyledButton from "../Button/Button.tsx";
+import ContactOpnemenKnop from "../ContactOpnemenKnop/ContactOpnemenKnop.tsx";
 
 const Header: React.FunctionComponent = () => {
   const [show, setShow] = useState(false);
@@ -64,9 +64,7 @@ const Header: React.FunctionComponent = () => {
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
-          <a className={"d-none d-lg-flex"} href="mailto:info@lablou.nl">
-            <StyledButton variant={"roze"}>Contact opnemen</StyledButton>
-          </a>
+          <ContactOpnemenKnop className={"d-none d-lg-flex"} variant={"roze"} />
         </Container>
       </Navbar>
     </header>

@@ -1,6 +1,7 @@
 import "./styles.scss";
-import StyledButton from "../Button/Button.tsx";
 import { ZaalType } from "../../pages/Zaalverhuur/types.ts";
+import ContactOpnemenKnop from "../ContactOpnemenKnop/ContactOpnemenKnop.tsx";
+import React from "react";
 
 type AanvullendeInformatieBlockProps = ZaalType & {
   className?: string;
@@ -24,9 +25,7 @@ const AanvullendeInformatieBlock: React.FunctionComponent<
       <div className={"info"}>
         <h1>Aanvullende informatie</h1>
         <p>{toelichting}</p>
-        <StyledButton className={"d-none d-lg-block"} variant={"zwart"}>
-          Contact opnemen
-        </StyledButton>
+        <ContactOpnemenKnop className={"d-none d-lg-block"} />
         <p>
           meer weten <b>download</b> dan onze brochure
         </p>
@@ -34,9 +33,7 @@ const AanvullendeInformatieBlock: React.FunctionComponent<
       <div>
         <h3>Tarieven (excl.btw)</h3>
         <div className={"gegevens"}>{informatieElements}</div>
-        <StyledButton className={"d-lg-none d-block"} variant={"zwart"}>
-          Contact opnemen
-        </StyledButton>
+        <ContactOpnemenKnop className={"d-lg-none d-block"} />
       </div>
     </section>
   );

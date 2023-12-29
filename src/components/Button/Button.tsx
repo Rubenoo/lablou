@@ -2,7 +2,7 @@ import "./styles.scss";
 import { Button } from "react-bootstrap";
 import React from "react";
 
-type StyledButtonProps = {
+export type StyledButtonProps = {
   children: React.ReactNode;
   variant: "zwart" | "roze" | "groen";
   className?: string;

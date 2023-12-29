@@ -1,6 +1,7 @@
 import "./styles.scss";
-import StyledButton from "../Button/Button.tsx";
 import Laboranten from "./Laboranten.json";
+import ContactOpnemenKnop from "../ContactOpnemenKnop/ContactOpnemenKnop.tsx";
+import React from "react";
 
 type Laborant = {
   titel: string;
@@ -26,15 +27,11 @@ const OnzeLaborantenBlock: React.FunctionComponent = () => {
           and highlights selected by our crew and experts! Stay tuned with what
           is to come!
         </p>
-        <StyledButton className={"d-none d-lg-block"} variant={"zwart"}>
-          Contact opnemen
-        </StyledButton>
+        <ContactOpnemenKnop className={"d-none d-lg-block"} />
       </div>
       <div>
         <div className={"gegevens"}>{laborantenElements}</div>
-        <StyledButton className={"d-lg-none d-block"} variant={"zwart"}>
-          Contact opnemen
-        </StyledButton>
+        <ContactOpnemenKnop className={"d-lg-none d-block"} />
       </div>
     </section>
   );
