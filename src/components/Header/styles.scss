@@ -5,13 +5,14 @@
   padding-inline: 2rem;
   justify-content: space-between;
   align-items: center;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+
   @media (max-width: 991px) {
     min-height: 60px;
-    flex-direction: column;
     justify-content: center;
     padding-inline: 1rem;
+    grid-template-columns: 1fr 1fr;
   }
 }
 .nav-link {
@@ -33,6 +34,8 @@
 }
 .navbar-toggler {
   border: 0;
+  justify-self: end;
+  margin-right: 0 !important;
   &-icon {
     width: 23px;
     height: 23px;
@@ -48,7 +51,7 @@
 .offcanvas {
   @media (max-width: 991px) {
     background: var(--zwart);
-    margin-inline: 0.75rem;
+    margin-inline: 1.7rem;
     margin-block-start: 5.5rem;
     border-radius: 10px;
   }
