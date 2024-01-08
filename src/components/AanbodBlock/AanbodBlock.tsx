@@ -37,10 +37,7 @@ const AanbodBlock: React.FunctionComponent<AanbodBlockProps> = ({
       {extraInfoButtons}
       <div className={"aanbod-container-info"}>
         {category && <p>{category}</p>}
-        <h2>
-          {titel}
-          <img src={"/lablou/assets/svg/pijl-white.svg"} />
-        </h2>
+        <h2>{titel} →</h2>
       </div>
     </NavLink>
   );
