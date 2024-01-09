@@ -3,6 +3,7 @@ import "./styles.scss";
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import ContactOpnemenKnop from "../ContactOpnemenKnop/ContactOpnemenKnop.tsx";
+import Logo from "../Logo/Logo.tsx";
 
 const Header: React.FunctionComponent = () => {
   const [show, setShow] = useState(false);
@@ -20,7 +21,9 @@ const Header: React.FunctionComponent = () => {
         expand={"lg"}
       >
         <NavLink to={"/lablou/"}>
-          <Navbar.Brand>LABLOU LOGO</Navbar.Brand>
+          <Navbar.Brand>
+            <Logo variant={"header"} />
+          </Navbar.Brand>
         </NavLink>
         <Navbar.Toggle
           className={`navbar-toggler-${show ? "close" : "open"}`}

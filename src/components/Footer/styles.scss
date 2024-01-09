@@ -3,4 +3,15 @@ address {
 }
 footer {
   margin-block-start: 1rem;
+
+  @media (max-width: 991px) {
+    grid-template-columns: 1fr !important;
+  }
+  .nav-link-footer {
+    text-align: end;
+    @media (max-width: 991px) {
+      text-align: center;
+      margin-inline: auto;
+    }
+  }
 }

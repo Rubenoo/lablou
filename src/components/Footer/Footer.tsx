@@ -1,10 +1,12 @@
 import "../Header/styles.scss";
 import "./styles.scss";
+import React from "react";
+import Logo from "../Logo/Logo.tsx";
 
 const Footer: React.FunctionComponent = () => {
   return (
     <footer className={"navbar"}>
-      <span className={"nav-link"}>LOGO LABLOU</span>
+      <Logo className={"nav-link nav-link-footer"} variant={"footer"} />
       <address className={"d-flex flex-lg-row flex-column"}>
         <a
           className={"nav-link nav-link-footer"}
