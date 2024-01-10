@@ -10,16 +10,13 @@ const CTABlock: React.FunctionComponent<CTABlockProps> = ({ className }) => {
   return (
     <section className={`cta-container ${className}`}>
       <h2>
-        Direct een flexplek boeken bij de tofste en gezelligste werkplek van
-        Zeist?
+        Op zoek naar een toffe en goed bereikbare flexplek in regio Zeist?
       </h2>
       <p>
-        De Lab Lou is een thuishaven voor iedere ondernemer: creatievelingen,
-        workaholics, trainers en levensgenieters. Wij bieden jouw unieke
-        zakelijke woonkamer waar je helemaal all-out mag gaan in design en
-        inrichting.
+        Dan moet je bij Lab Lou zijn! Lekkere koffie, heerlijke lunch, een fijne
+        werkplek èn leuke mensen ontmoeten! Reserveer nu!
       </p>
-      <ContactOpnemenKnop />
+      <ContactOpnemenKnop>Reserveren</ContactOpnemenKnop>
     </section>
   );
 };

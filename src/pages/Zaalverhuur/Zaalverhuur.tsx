@@ -14,10 +14,10 @@ const Zaalverhuur: React.FunctionComponent = () => {
       <div className={"block-container"}>
         <Block
           variant={"groen"}
-          titel={"De mogelijkheden van Lab Lou"}
+          titel={"Dagverhuur"}
           terugKnop
           toelichting={
-            "De Lab Lou is een thuishaven voor iedere ondernemer: creatievelingen, workaholics, trainers en levensgenieters. Wij bieden jouw unieke zakelijke woonkamer waar je helemaal all-out mag gaan in design en inrichting.\n\nEen broedplaats waar ontmoetingen, toffe samenwerkingen en zakelijke groei op nummer 1 staat."
+            "Op zoek naar een creatieve en toegankelijke locatie om af te spreken? Wil je een tof event organiseren op een top locatie? Het kan allemaal! Onze ruimtes zijn van alle gemakken voorzien, we hebben heerlijke catering en wij zijn goed bereikbaar met OV, fiets en auto. Neem vooral contact met ons op, wij denken graag mee!"
           }
           button={<Pijl href={"#ons-aanbod"} />}
         />

@@ -20,9 +20,11 @@ const Home: React.FunctionComponent = () => {
         <Block
           variant={"roze"}
           inleiding="Wat doen we bij Lab Lou"
-          titel={"De mogelijkheden van Lab Lou"}
+          titel={
+            "Lab Lou, de creatieve en sociale hotspot van regio Zeist/De Bilt"
+          }
           toelichting={
-            "De Lab Lou is een thuishaven voor iedere ondernemer: creatievelingen, workaholics, trainers en levensgenieters. Wij bieden jouw unieke zakelijke woonkamer waar je helemaal all-out mag gaan in design en inrichting.\n\nEen broedplaats waar ontmoetingen, toffe samenwerkingen en zakelijke groei op nummer 1 staat."
+            "Bij ons kun je een werkplek huren, flexwerken en elkaar ontmoeten! We zetten mensen in hun kracht door het creëren van werkervaringsplekken en samen met inwoners en lokale organisaties ontwikkelen wij allerlei nieuwe initiatieven voor onze regio.\n\nEn dit alles in een fijne, creatieve en professionele sfeer mèt goede koffie en het lekkerste eten. Wat wil je nog meer?"
           }
           button={button}
         />

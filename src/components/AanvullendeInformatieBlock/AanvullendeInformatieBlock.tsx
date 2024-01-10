@@ -9,7 +9,7 @@ type AanvullendeInformatieBlockProps = ZaalType & {
 
 const AanvullendeInformatieBlock: React.FunctionComponent<
   AanvullendeInformatieBlockProps
-> = ({ className, toelichting, index, informatie }) => {
+> = ({ className, index, informatie }) => {
   const informatieElements = informatie?.map((info, index) => (
     <div key={index}>
       <h4>{info.titel}</h4>
@@ -24,14 +24,23 @@ const AanvullendeInformatieBlock: React.FunctionComponent<
     >
       <div className={"info"}>
         <h1>Aanvullende informatie</h1>
-        <p>{toelichting}</p>
+        <p>
+          Lab Lou beschikt over 2 vergaderkamers, een workshopruimte en een
+          symposiumzaal. Alle ruimtes kunnen per dagdeel of hele dag gehuurd
+          worden.
+          <br />
+          Bus 74 stopt voor de deur, wij hebben eigen parkeergelegenheid op ons
+          terrein en wij zijn goed bereikbaar vanuit Utrecht, Utrecht Science
+          Park, Bunnik, De Bilt en Bilthoven met de fiets.
+          <br />
+          Lab Lou is rolstoelvriendelijk.
+        </p>
         <ContactOpnemenKnop className={"d-none d-lg-block"} />
         <p>
           meer weten <b>download</b> dan onze brochure
         </p>
       </div>
       <div>
-        <h3>Tarieven (excl.btw)</h3>
         <div className={"gegevens"}>{informatieElements}</div>
         <ContactOpnemenKnop className={"d-lg-none d-block"} />
       </div>

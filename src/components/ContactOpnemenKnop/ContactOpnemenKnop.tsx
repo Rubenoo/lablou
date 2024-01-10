@@ -4,12 +4,15 @@ import React from "react";
 type ContactOpnemenProps = {
   className?: string;
   variant?: StyledButtonProps["variant"];
+  children?: string;
 };
 export const ContactOpnemenKnop: React.FunctionComponent<
   ContactOpnemenProps
-> = ({ className, variant }) => (
+> = ({ className, variant, children }) => (
   <a href="mailto:info@lablou.nl" className={className}>
-    <StyledButton variant={variant || "zwart"}>Contact opnemen</StyledButton>
+    <StyledButton variant={variant || "zwart"}>
+      {children || "Contact"}
+    </StyledButton>
   </a>
 );
 

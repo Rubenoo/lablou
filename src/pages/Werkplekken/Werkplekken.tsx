@@ -11,9 +11,9 @@ const Werkplekken: React.FunctionComponent = () => {
         <Block
           variant={"bruin"}
           terugKnop
-          titel={"De mogelijkheden van Lab Lou"}
+          titel={"Werk- en atelierplek"}
           toelichting={
-            "De Lab Lou is een thuishaven voor iedere ondernemer: creatievelingen, workaholics, trainers en levensgenieters. Wij bieden jouw unieke zakelijke woonkamer waar je helemaal all-out mag gaan in design en inrichting.\n\nEen broedplaats waar ontmoetingen, toffe samenwerkingen en zakelijke groei op nummer 1 staat."
+            "Lab Lou beschikt over 12 verhuurbare units tussen de 19 en 100 m2. Daarnaast hebben wij 8 vaste bureauplekken en 6 atelierplekken. Op dit moment hebben wij nog een aantal bureau- en atelierplekken over. Heb je interesse? Leuk! Neem contact met ons op voor de mogelijkheden."
           }
           button={<ContactOpnemenKnop />}
         />

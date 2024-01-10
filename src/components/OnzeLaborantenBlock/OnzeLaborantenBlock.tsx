@@ -23,9 +23,13 @@ const OnzeLaborantenBlock: React.FunctionComponent = () => {
       <div className={"info"}>
         <h1>Onze Laboranten</h1>
         <p>
-          Stay tuned with what is to come! Updates about new events, locations
-          and highlights selected by our crew and experts! Stay tuned with what
-          is to come!
+          In LAB LOU huren creatieve en sociale ondernemers een fijne werkplek
+          en er is atelierruimte voor kunstenaars en makers. Onze huurders maken
+          deel uit van de actieve Lab Lou community en doen mee met het
+          organiseren van activiteiten. Daarnaast stellen zij hun kennis en
+          netwerk beschikbaar aan hen die dat nodig hebben en creëren wij
+          werkervaringsplekken voor mensen met een achterstand tot de
+          arbeidsmarkt.
         </p>
         <ContactOpnemenKnop className={"d-none d-lg-block"} />
       </div>

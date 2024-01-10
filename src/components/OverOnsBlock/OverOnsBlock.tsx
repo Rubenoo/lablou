@@ -4,12 +4,13 @@ import "./styles.scss";
 const OverOnsBlock: React.FunctionComponent = () => {
   return (
     <section className={"overons-container"}>
-      <h1>De mogelijkheden van Lab Lou</h1>
+      <h1>Lab Lou</h1>
       <p className={"overons-container-intro"}>
-        De Lab Lou is een thuishaven voor iedere ondernemer: creatievelingen,
-        workaholics, trainers en levensgenieters. Wij bieden jouw unieke
-        zakelijke woonkamer waar je helemaal all-out mag gaan in design en
-        inrichting.
+        In september 2023 kreeg team Stadslab Zeist een telefoontje: ‘Hé, wisten
+        jullie dat er al heel lang een oud tuincentrum leeg staat in Zeist West?
+        Zou dat niet een toffe plek zijn om een creatieve broedplaats op te
+        starten?!......’ En nu is dat oude tuincentrum omgetoverd tot onze
+        droomplek!
       </p>
       <ImageBlock
         src={"/lablou/assets/images/voorbeeldfoto.png"}
@@ -17,58 +18,41 @@ const OverOnsBlock: React.FunctionComponent = () => {
       />
       <h2>Wij zijn een beweging</h2>
       <p>
-        Wij zijn een beweging Ectatecabo. Hitatur epelent aut que prat ex eum
-        qui tem veliae. Ut apedisqui conetus dolupis reperesti aut eum
-        faccuptatur adi recuptur? Comni ium dollabo. Ipis eumquam fugitate non
-        res aliquas ventinv ellantu ritist quos ipsundae. Aquodis rae quae.
-        Everciuntur aborporro bero consedi atiissunt ut vollore, est, ad mo bea
-        volores trumque prae sumquia nossit ut voluptur, simus nobit utes
-        parumquam accat lam a quam et re custius rempedi gnihilitam non plandan
-        iendeseque nobis voluptatque pliquia saerum untur? Qui dolorum
-        soluptature verecero et ma sedignihit excepro repudam, ut autati con
-        pero tenist verit harum reicaep ediatur? Qui doluptatur sunt inis et
-        alibus aut aut as ent volecta ssint, iunt, ium inimoluptam re magnimenda
-        nonseriatur sim re nonsequo tet, ipsam, intotatem dolo te volenem facias
-        Wij zijn een beweging Ectatecabo. Hitatur epelent aut que prat ex eum
-        qui tem veliae. Ut apedisqui conetus dolupis reperesti aut eum
-        faccuptatur adi recuptur? Comni ium dollabo. Ipis eumquam fugitate non
-        res aliquas ventinv ellantu ritist quos ipsundae. Aquodis rae quae.
-        Everciuntur aborporro bero consedi atiissunt ut vollore, est, ad mo bea
-        volores trumque prae sumquia nossit ut voluptur, simus nobit utes
-        parumquam accat lam a quam et re custius rempedi gnihilitam non plandan
-        iendeseque nobis voluptatque pliquia saerum untur? Qui dolorum
-        soluptature verecero et ma sedignihit excepro repudam, ut autati con
-        pero tenist verit harum reicaep ediatur? Qui doluptatur sunt inis et
-        alibus aut aut as ent volecta ssint, iunt, ium inimoluptam re magnimenda
-        nonseriatur sim re nonsequo tet, ipsam, intotatem dolo te volenem.
+        Op 1 november 2023 kregen we de sleutel van de eerste creatieve èn
+        sociale broedplaats uit onze regio op Weteringlaan 1 in De Bilt (en toch
+        ook echt bebouwde kom Zeist): Lab Lou. Opgestart door Stads<b>LAB</b>{" "}
+        Zeist en Stichting <b>LOU</b> - Leegstand Oplossers Utrecht. Een gouden
+        combinatie :)
       </p>
-      <h2>Wij zijn een beweging</h2>
       <p>
-        Wij zijn een beweging Ectatecabo. Hitatur epelent aut que prat ex eum
-        qui tem veliae. Ut apedisqui conetus dolupis reperesti aut eum
-        faccuptatur adi recuptur? Comni ium dollabo. Ipis eumquam fugitate non
-        res aliquas ventinv ellantu ritist quos ipsundae. Aquodis rae quae.
-        Everciuntur aborporro bero consedi atiissunt ut vollore, est, ad mo bea
-        volores trumque prae sumquia nossit ut voluptur, simus nobit utes
-        parumquam accat lam a quam et re custius rempedi gnihilitam non plandan
-        iendeseque nobis voluptatque pliquia saerum untur? Qui dolorum
-        soluptature verecero et ma sedignihit excepro repudam, ut autati con
-        pero tenist verit harum reicaep ediatur? Qui doluptatur sunt inis et
-        alibus aut aut as ent volecta ssint, iunt, ium inimoluptam re magnimenda
-        nonseriatur sim re nonsequo tet, ipsam, intotatem dolo te volenem facias
-        Wij zijn een beweging Ectatecabo. Hitatur epelent aut que prat ex eum
-        qui tem veliae. Ut apedisqui conetus dolupis reperesti aut eum
-        faccuptatur adi recuptur? Comni ium dollabo. Ipis eumquam fugitate non
-        res aliquas ventinv ellantu ritist quos ipsundae. Aquodis rae quae.
-        Everciuntur aborporro bero consedi atiissunt ut vollore, est, ad mo bea
-        volores trumque prae sumquia nossit ut voluptur, simus nobit utes
-        parumquam accat lam a quam et re custius rempedi gnihilitam non plandan
-        iendeseque nobis voluptatque pliquia saerum untur? Qui dolorum
-        soluptature verecero et ma sedignihit excepro repudam, ut autati con
-        pero tenist verit harum reicaep ediatur? Qui doluptatur sunt inis et
-        alibus aut aut as ent volecta ssint, iunt, ium inimoluptam re magnimenda
-        nonseriatur sim re nonsequo tet, ipsam, intotatem dolo te volenem.
+        De financiering van de verbouwing van het oude tuincentrum is gelukt en
+        wordt gesteund door gemeente Zeist, gemeente De Bilt, de RSD en
+        Stadsregio Utrecht. Daarnaast hebben wij met een crowdfundingcampagne
+        geld, spullen en een groot nieuw netwerk opgehaald in onze regio.
       </p>
+      <p>
+        Creatieve en sociale ondernemers kunnen in Lab Lou een werkplek huren,
+        flexwerken en samenwerken. We zullen mensen die dat nodig hebben helpen
+        om weer in hun kracht te komen door bijvoorbeeld het creëren van
+        werkervaringsplekken.
+      </p>
+      <p>
+        Vooral gaan we elkaar In Lab Lou ontmoeten! En daarvoor organiseren wij
+        allerlei activiteiten voor de buurt en inwoners van regio Zeist/De Bilt
+        om dat te laten gebeuren. Denk aan workshops, exposities, filmavonden,
+        koffieochtenden, voorstellingen voor jong en oud, en noem maar op! En
+        wat superleuk is, wat dat programma precies is, dat mag jij bepalen.
+        Want wij willen heel graag met inwoners en lokale organisaties samen
+        leuke dingen bedenken en ze ook echt gaan doen!
+      </p>
+      <p>
+        En dit alles in een fijne, creatieve en professionele sfeer mèt goede
+        koffie en het lekkerste eten. Wat wil je nog meer?
+      </p>
+      <p>
+        Kom zelf ervaren hoe het bij ons is. Wij zien je graag snel in Lab Lou!
+      </p>
+      <p>Merel, Marloes, Emma, Marjolein, Willy en Simon</p>
     </section>
   );
 };
