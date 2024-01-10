@@ -35,7 +35,11 @@ const Home: React.FunctionComponent = () => {
       </div>
       <div className={"ons-aanbod-container"}>
         <h1>Ons aanbod</h1>
-        <div className={"ons-aanbod-items-container"}>
+        <div
+          className={
+            "ons-aanbod-items-container ons-aanbod-items-container-home"
+          }
+        >
           <AanbodBlock
             index={0}
             category={"Zaalverhuur"}
