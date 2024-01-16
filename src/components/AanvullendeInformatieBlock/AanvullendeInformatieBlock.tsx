@@ -35,14 +35,15 @@ const AanvullendeInformatieBlock: React.FunctionComponent<
           <br />
           Lab Lou is rolstoelvriendelijk.
         </p>
-        <ContactOpnemenKnop className={"d-none d-lg-block"} />
-        <p>
-          meer weten <b>download</b> dan onze brochure
-        </p>
+        <ContactOpnemenKnop className={"d-none d-lg-block"}>
+          Ruimte reserveren
+        </ContactOpnemenKnop>
       </div>
       <div>
         <div className={"gegevens"}>{informatieElements}</div>
-        <ContactOpnemenKnop className={"d-lg-none d-block"} />
+        <ContactOpnemenKnop className={"d-lg-none d-block"}>
+          Ruimte reserveren
+        </ContactOpnemenKnop>
       </div>
     </section>
   );

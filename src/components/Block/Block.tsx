@@ -23,10 +23,10 @@ const Block: React.FunctionComponent<BlockProps> = ({
   return (
     <section className={`block block-${variant} ${className}`}>
       {terugKnop && <TerugKnop />}
-      <p className={"medium"}>{inleiding}</p>
+      {inleiding && <p className={"medium"}>{inleiding}</p>}
       <h1>{titel}</h1>
       <p className={"regular"}>{toelichting}</p>
-      {button}
+      <div className={"mt-auto"}>{button}</div>
     </section>
   );
 };

@@ -35,7 +35,9 @@ const OnzeLaborantenBlock: React.FunctionComponent = () => {
       </div>
       <div>
         <div className={"gegevens"}>{laborantenElements}</div>
-        <ContactOpnemenKnop className={"d-lg-none d-block"} />
+        <ContactOpnemenKnop className={"d-lg-none d-block"}>
+          Contact opnemen
+        </ContactOpnemenKnop>
       </div>
     </section>
   );

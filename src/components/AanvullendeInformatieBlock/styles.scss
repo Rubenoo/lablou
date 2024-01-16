@@ -13,14 +13,23 @@
   }
 
   .info {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-
-    button {
-      width: 220px;
+    h1,
+    p {
+      margin-block-end: 2.25rem;
+      @media (max-width: 991px) {
+        margin-block-end: 1rem;
+      }
     }
   }
+
+  button {
+    width: 240px;
+    @media (max-width: 991px) {
+      margin-block-start: 1rem;
+      width: 200px;
+    }
+  }
+
   .gegevens {
     display: grid;
     grid-template-columns: 1fr 1fr;

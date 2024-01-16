@@ -13,12 +13,20 @@
   }
 
   .info {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+    h1,
+    p {
+      margin-block-end: 2.25rem;
+      @media (max-width: 991px) {
+        margin-block-end: 1rem;
+      }
+    }
+  }
 
-    button {
-      width: 220px;
+  button {
+    width: 240px;
+    @media (max-width: 991px) {
+      margin-block-start: 1rem;
+      width: 200px;
     }
   }
 
