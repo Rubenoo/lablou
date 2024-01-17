@@ -20,6 +20,15 @@
   font-size: 1.2rem;
   padding-inline: 2rem;
 
+  --f: 1.05; /* the scale factor */
+
+  clip-path: inset(0);
+  transition: 0.4s;
+  &:hover {
+    clip-path: inset(calc((1 - 1 / var(--f)) * 50%));
+    scale: var(--f);
+  }
+
   &-footer {
     font-size: 1rem;
   }

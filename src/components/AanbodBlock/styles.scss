@@ -5,6 +5,13 @@
   display: flex;
   align-items: flex-end;
   min-height: 520px;
+  --f: 1.025; /* the scale factor */
+
+  transition: 0.4s;
+  &:hover {
+    scale: var(--f);
+  }
+
   @media (max-width: 991px) {
     min-height: 450px;
   }
