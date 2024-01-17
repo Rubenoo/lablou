@@ -9,7 +9,7 @@ type BlockProps = {
   titel: string;
   inleiding?: string;
   toelichting?: string;
-  terugKnop?: boolean;
+  terugKnop?: "home" | "zaalverhuur";
 };
 const Block: React.FunctionComponent<BlockProps> = ({
   variant,
@@ -22,7 +22,8 @@ const Block: React.FunctionComponent<BlockProps> = ({
 }) => {
   return (
     <section className={`block block-${variant} ${className}`}>
-      {terugKnop && <TerugKnop />}
+      {terugKnop === "home" && <TerugKnop variant={"home"} />}
+      {terugKnop === "zaalverhuur" && <TerugKnop variant={"zaalverhuur"} />}
       {inleiding && <p className={"medium"}>{inleiding}</p>}
       <h1>{titel}</h1>
       <p className={"regular"}>{toelichting}</p>

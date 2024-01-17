@@ -7,7 +7,7 @@ const OverHetLab: React.FunctionComponent = () => {
   return (
     <main>
       <div className={"over-ons"}>
-        <TerugKnop className={"terug-knop"} />
+        <TerugKnop className={"terug-knop"} variant={"home"} />
         <OverOnsBlock />
       </div>
       <OnzeLaborantenBlock />

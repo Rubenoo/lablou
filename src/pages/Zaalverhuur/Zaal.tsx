@@ -20,7 +20,7 @@ const Zaal: React.FunctionComponent = () => {
           <Block
             variant={"groen"}
             titel={zaal.titel}
-            terugKnop
+            terugKnop={"zaalverhuur"}
             toelichting={zaal.toelichting}
             button={<Pijl href={"#aanvullende-informatie"} />}
           />

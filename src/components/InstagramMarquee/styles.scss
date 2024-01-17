@@ -1,5 +1,5 @@
 .marquee {
-  background-color: var(--zwart);
+  background-color: var(--groen);
   border-radius: 10px;
   height: 80px;
   padding-inline: 2rem;
@@ -14,7 +14,7 @@
   }
 
   h2 {
-    color: white;
+    color: var(--zwart);
     text-align: center;
     text-decoration: underline;
     white-space: nowrap;

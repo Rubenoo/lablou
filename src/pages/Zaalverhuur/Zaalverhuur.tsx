@@ -15,7 +15,7 @@ const Zaalverhuur: React.FunctionComponent = () => {
         <Block
           variant={"groen"}
           titel={"Dagverhuur"}
-          terugKnop
+          terugKnop={"home"}
           toelichting={
             "Op zoek naar een creatieve en toegankelijke locatie om af te spreken? Wil je een tof event organiseren op een top locatie? Het kan allemaal! Onze ruimtes zijn van alle gemakken voorzien, we hebben heerlijke catering en wij zijn goed bereikbaar met OV, fiets en auto. Neem vooral contact met ons op, wij denken graag mee!"
           }

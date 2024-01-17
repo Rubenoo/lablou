@@ -10,7 +10,7 @@ const Werkplekken: React.FunctionComponent = () => {
       <div className={"block-container"}>
         <Block
           variant={"bruin"}
-          terugKnop
+          terugKnop={"home"}
           titel={"Werk- en atelierplek"}
           toelichting={
             "Lab Lou beschikt over 12 verhuurbare units tussen de 19 en 100 m2. Daarnaast hebben wij 8 vaste bureauplekken en 6 atelierplekken. Op dit moment hebben wij nog een aantal bureau- en atelierplekken over. Heb je interesse? Leuk! Neem contact met ons op voor de mogelijkheden."
