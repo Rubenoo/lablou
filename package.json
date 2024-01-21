@@ -15,7 +15,7 @@
     "check": "npm run prettier && npm run eslint",
     "check:fix": "npm run prettier:fix && npm run eslint:fix",
     "predeploy": "npm run build",
-    "deploy": "echo rubenoo.github.io > ./dist/CNAME && gh-pages -d dist -b gh-pages"
+    "deploy": "echo lablou.nl > ./dist/CNAME && gh-pages -d dist -b gh-pages"
   },
   "dependencies": {
     "bootstrap": "^5.3.2",
