@@ -18,7 +18,7 @@ const Werkplekken: React.FunctionComponent = () => {
           button={<ContactOpnemenKnop />}
         />
         <ImageBlock
-          src={"/lablou/assets/images/voorbeeldfoto.png"}
+          src={"/assets/images/voorbeeldfoto.png"}
           alt={"voorbeeld foto"}
         />
       </div>

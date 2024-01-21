@@ -13,7 +13,7 @@ const OverOnsBlock: React.FunctionComponent = () => {
         droomplek!
       </p>
       <ImageBlock
-        src={"/lablou/assets/images/voorbeeldfoto.png"}
+        src={"/assets/images/voorbeeldfoto.png"}
         alt={"voorbeeld foto"}
       />
       <h2>Wij zijn een beweging</h2>

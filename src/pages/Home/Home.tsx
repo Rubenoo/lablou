@@ -29,7 +29,7 @@ const Home: React.FunctionComponent = () => {
           button={button}
         />
         <ImageBlock
-          src={"/lablou/assets/images/voorbeeldfoto.png"}
+          src={"/assets/images/voorbeeldfoto.png"}
           alt={"voorbeeld foto"}
         />
       </div>

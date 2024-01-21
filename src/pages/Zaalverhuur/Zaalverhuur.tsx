@@ -22,7 +22,7 @@ const Zaalverhuur: React.FunctionComponent = () => {
           button={<Pijl href={"#ons-aanbod"} />}
         />
         <ImageBlock
-          src={"/lablou/assets/images/voorbeeldfoto.png"}
+          src={"/assets/images/voorbeeldfoto.png"}
           alt={"voorbeeld foto"}
         />
       </div>

@@ -12,7 +12,7 @@ import Zaal from "./pages/Zaalverhuur/Zaal.tsx";
 
 const router = createBrowserRouter([
   {
-    path: "/lablou/",
+    path: "/",
     element: <App />,
     children: [
       {

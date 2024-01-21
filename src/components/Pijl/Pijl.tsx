@@ -14,11 +14,7 @@ const Pijl: React.FunctionComponent<AnchorProps> = (props) => {
     };
   return (
     <a onClick={handleClick(props.href!)}>
-      <img
-        alt="pijl icoon"
-        className="pijl"
-        src="/lablou/assets/svg/pijl-round.svg"
-      />
+      <img alt="pijl icoon" className="pijl" src="/assets/svg/pijl-round.svg" />
     </a>
   );
 };

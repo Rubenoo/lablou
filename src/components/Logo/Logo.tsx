@@ -8,8 +8,8 @@ type LogoProps = {
 const Logo: React.FunctionComponent<LogoProps> = ({ variant, className }) => {
   const src =
     variant === "header"
-      ? "/lablou/assets/svg/lablou-wit-groot.svg"
-      : "/lablou/assets/svg/lablou-wit-klein.svg";
+      ? "/assets/svg/lablou-wit-groot.svg"
+      : "/assets/svg/lablou-wit-klein.svg";
   return <img src={src} className={`logo ${className}`} alt={"LABLOU LOGO"} />;
 };
 export default Logo;

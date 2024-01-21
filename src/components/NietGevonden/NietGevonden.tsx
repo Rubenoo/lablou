@@ -5,7 +5,7 @@ const NietGevonden = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    navigate("/lablou/");
+    navigate("/");
   }, [navigate]);
 
   return null;
