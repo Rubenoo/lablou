@@ -60,11 +60,11 @@
 .offcanvas {
   @media (max-width: 991px) {
     background: var(--zwart);
-    margin-inline: 1.7rem;
+    margin-inline: 0.75rem;
     margin-block-start: 5.5rem;
     border-radius: 10px;
   }
-  max-width: 92.5vw;
+  max-width: calc(100vw - 1.5rem);
 }
 a {
   text-decoration: none;
