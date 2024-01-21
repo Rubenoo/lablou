@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 import { RouterProvider } from "react-router";
 import Zaalverhuur from "./pages/Zaalverhuur/Zaalverhuur.tsx";
 import Werkplekken from "./pages/Werkplekken/Werkplekken.tsx";
@@ -10,7 +10,7 @@ import Home from "./pages/Home/Home.tsx";
 import NietGevonden from "./components/NietGevonden/NietGevonden.tsx";
 import Zaal from "./pages/Zaalverhuur/Zaal.tsx";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <App />,
