@@ -33,6 +33,7 @@ const Home: React.FunctionComponent = () => {
           alt={"voorbeeld foto"}
         />
       </div>
+      <InstagramMarquee />
       <div className={"ons-aanbod-container"}>
         <h1>Ons aanbod</h1>
         <div
