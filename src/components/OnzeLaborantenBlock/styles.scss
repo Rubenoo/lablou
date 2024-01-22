@@ -40,4 +40,12 @@
       grid-gap: 1rem;
     }
   }
+  .animatie {
+    --f: 1.025; /* the scale factor */
+
+    transition: 0.4s;
+    &:hover {
+      scale: var(--f);
+    }
+  }
 }

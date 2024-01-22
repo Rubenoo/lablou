@@ -24,7 +24,7 @@ const Footer: React.FunctionComponent = () => {
         </a>
         <a
           className={"nav-link nav-link-footer"}
-          href={"www.google.nl"}
+          href={"https://www.linkedin.com/company/stadslab-zeist/"}
           target={"_blank"}
         >
           LinkedIn

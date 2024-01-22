@@ -12,7 +12,7 @@ type Laborant = {
 const OnzeLaborantenBlock: React.FunctionComponent = () => {
   const laborantenElements = Laboranten?.map(
     ({ titel, website, link }: Laborant, index) => (
-      <div key={index}>
+      <div className={"animatie"} key={index}>
         <h4>{titel}</h4>
         <a href={link}>{website}</a>
       </div>

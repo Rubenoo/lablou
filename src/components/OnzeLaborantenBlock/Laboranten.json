@@ -1,62 +1,72 @@
 [
   {
-    "titel": "Naam",
-    "website": "Website",
-    "link": "www.google.com"
+    "titel": "Stadslab Zeist",
+    "website": "stadslabzeist.nl",
+    "link": "https://www.stadslabzeist.nl"
   },
   {
-    "titel": "Naam",
-    "website": "Website",
-    "link": "www.google.com"
+    "titel": "Laura’s Sabor",
+    "website": "laurasabor.nl",
+    "link": "https://www.laurasabor.nl/"
   },
   {
-    "titel": "Naam",
-    "website": "Website",
-    "link": "www.google.com"
+    "titel": "Een Zaak van Gedrag",
+    "website": "eenzaakvangedrag.nl",
+    "link": "https://eenzaakvangedrag.nl/"
   },
   {
-    "titel": "Naam",
-    "website": "Website",
-    "link": "www.google.com"
+    "titel": "Kunstwerk op Maat",
+    "website": "kunstwerkopmaat.com",
+    "link": "https://www.kunstwerkopmaat.com/"
   },
   {
-    "titel": "Naam",
-    "website": "Website",
-    "link": "www.google.com"
+    "titel": "Koffiebak",
+    "website": "koffiebak.nl",
+    "link": "https://koffiebak.nl/"
   },
   {
-    "titel": "Naam",
-    "website": "Website",
-    "link": "www.google.com"
+    "titel": "Muziekstudio Tommy the Sound",
+    "website": "tommythesound.com",
+    "link": "https://www.tommythesound.com/"
   },
   {
-    "titel": "Naam",
-    "website": "Website",
-    "link": "www.google.com"
+    "titel": "De Tassenfabriek",
+    "website": "detassenfabriek.com",
+    "link": "https://detassenfabriek.com/"
   },
   {
-    "titel": "Naam",
-    "website": "Website",
-    "link": "www.google.com"
+    "titel": "Acteur en Theatermaker Astrid Onderwater",
+    "website": "astridonderwater.nl",
+    "link": "astridonderwater.nl"
   },
   {
-    "titel": "Naam",
-    "website": "Website",
-    "link": "www.google.com"
+    "titel": "Projectleider en adviseur Sport & Beweging Joke Davio",
+    "website": "jokedavio.nl",
+    "link": "https://jokedavio.nl/"
   },
   {
-    "titel": "Naam",
-    "website": "Website",
-    "link": "www.google.com"
+    "titel": "Samen Duurzaam Zeist",
+    "website": "omzeist.nl",
+    "link": "https://omzeist.nl/samen+duurzaam+zeist+home/default.aspx\n"
   },
   {
-    "titel": "Naam",
-    "website": "Website",
-    "link": "www.google.com"
+    "titel": "Vastgoed fotograaf Thom Punte",
+    "website": "thom-punte",
+    "link": "https://objectenco.nl/woningfotograaf/thom-punte/"
   },
   {
-    "titel": "Naam",
-    "website": "Website",
-    "link": "www.google.com"
+    "titel": "Vonhof Video",
+    "website": "vonhofvideo.nl",
+    "link": "https://vonhofvideo.nl/"
+  },
+  {
+    "titel": "Illustrator David Passenier",
+    "website": "davidpassenier.com",
+    "link": "https://www.davidpassenier.com/nl"
+  },
+  {
+    "titel": "Audiodocumentaires en podcastmaker Babette Rijkhoff",
+    "website": "babetterijkhoff.nl",
+    "link": "http://babetterijkhoff.nl"
   }
 ]
