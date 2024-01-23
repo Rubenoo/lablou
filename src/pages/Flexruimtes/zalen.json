@@ -1,0 +1,131 @@
+[
+  {
+    "index": 0,
+    "titel": "Flexplek",
+    "toelichting": "Zin om niet thuis te werken, maar op een plek die van alle gemakken voorzien is en waar veel reuring is? Reserveer dan een flexwerkplek in de grote zaal van Lab Lou. Je krijgt een fijn bureau, WiFi en elektriciteit en je kunt genieten van heerlijk koffie, thee en lunch!",
+    "afbeelding": "stock",
+    "aanvullendeInformatie": "Er zijn 10 flexwerkplekken beschikbaar. Wist je dat Lab Lou ook over 2 vergaderkamers, een workshopruimte en een symposiumzaal beschikt? \nDe ruimtes kunnen per dagdeel of hele dag gehuurd worden. Check de agenda voor beschikbaarheid. \n\nTip: reserveer van tevoren als je van een plek verzekerd wilt zijn!",
+    "extraInfo": [],
+    "link": "ireserve.nl/xxxx",
+    "informatie": [
+      {
+        "titel": "Tarieven (excl.btw)",
+        "gegevens": "€7,50 voor halve dag\n€12,50 voor hele dag"
+      },
+      {
+        "titel": "Voorzieningen",
+        "gegevens": "• wifi\n• elektriciteit\n• koffie/thee/lunch"
+      }
+    ]
+  },
+  {
+    "index": 1,
+    "titel": "Green room",
+    "toelichting": "Dit is dé kamer om te brainstormen met je team (tot 6 personen), een coachingsgesprek te voeren of jouw cliënten te ontvangen. In de Green Room beschik je over WiFi, een whiteboard, een presentatiescherm en onbeperkt koffie, thee en water.",
+    "afbeelding": "stock",
+    "aanvullendeInformatie": "Wist je dat bus 74 voor de deur stopt en dat wij eigen parkeergelegenheid op ons terrein hebben. Dit betekent dat wij goed bereikbaar zijn vanuit Utrecht, Utrecht Science Park, Bunnik, station Driebergen-Zeist, De Bilt en Bilthoven met het OV, de auto en de fiets.",
+    "extraInfo": ["13 m2", "6 pers."],
+    "link": "ireserve.nl/xxxx",
+    "informatie": [
+      {
+        "titel": "Tarieven (excl.btw)",
+        "gegevens": "€25 per 2 uur"
+      },
+      {
+        "titel": "Ruimte",
+        "gegevens": "• 13 m2\n• 6 personen\n• opstelling: 2 banken met 2 fauteuils"
+      },
+      {
+        "titel": "Voorzieningen",
+        "gegevens": "• presentatiescherm\n• whiteboard\n• wifi\n• inclusief koffie/thee/water"
+      },
+      {
+        "titel": "Extra",
+        "gegevens": "• lekkers voor bij de koffie, lunch"
+      }
+    ]
+  },
+  {
+    "index": 2,
+    "titel": "Blue room",
+    "toelichting": "Dit is dé kamer om te werken, overleggen en vergaderen. Het is een lichte kamer met een fijne tafel om aan te zitten, een presentatiescherm en een whiteboard. In de Blue Room beschik je over WiFi, een whiteboard, een presentatiescherm en onbeperkt koffie, thee en water.",
+    "afbeelding": "stock",
+    "aanvullendeInformatie": "Wist je dat duurzaamheid en toegankelijkheid hoog bij ons in het vaandel staan? Lab Lou is rolstoeltoegankelijk en beschikt over een mindervaliden toilet. \nDaarnaast serveren wij in de grote zaal koffie van onze eigen Brahim van de Koffiebak en in de vergaderruimtes gebruiken wij de koffiecups van de Koffiejongens want die zijn biologisch afbreekbaar.",
+
+    "extraInfo": ["13 m2", "6 pers."],
+    "link": "ireserve.nl/xxxx",
+    "informatie": [
+      {
+        "titel": "Tarieven (excl.btw)",
+        "gegevens": "€25 per 2 uur"
+      },
+      {
+        "titel": "Ruimte",
+        "gegevens": "• 13 m2\n• 6 personen\n• opstelling: vergadertafel met stoelen"
+      },
+      {
+        "titel": "Voorzieningen",
+        "gegevens": "• presentatiescherm\n• whiteboard\n• wifi\n• inclusief koffie/thee/water"
+      },
+      {
+        "titel": "Extra",
+        "gegevens": "• lekkers voor bij de koffie, lunch"
+      }
+    ]
+  },
+  {
+    "index": 3,
+    "titel": "Workshopruimte",
+    "toelichting": "Deze multifunctionele ruimte is geschikt voor allerlei soorten workshops tot 12 personen. Doordat er een keuken aanwezig is, ook zeer geschikt voor kinderfeestjes en kookpartijtjes voor kleinere gezelschappen!",
+    "afbeelding": "stock",
+    "aanvullendeInformatie": "Naast WiFi, een presentatiescherm en een whiteboard, krijg je ook in de workshopruimte van Lab Lou onbeperkt koffie en thee. Al onze ruimtes hebben een eigen nespresso-apparaat en waterkoker. Net als in een hotel :) En wist je dat je lekkers voor bij de koffie of een lekkere lunch gewoon kunt bijboeken vers gemaakt door onze eigen Laura’s Sabor?",
+    "extraInfo": ["33 m2", "12 pers."],
+    "link": "ireserve.nl/xxxx",
+    "informatie": [
+      {
+        "titel": "Tarieven (excl.btw)",
+        "gegevens": "€75 per dagdeel (3,5 uur)"
+      },
+      {
+        "titel": "Ruimte",
+        "gegevens": "• 33 m2\n• 12 personen\n• opstelling: tafels met stoelen"
+      },
+      {
+        "titel": "Voorzieningen",
+        "gegevens": "• presentatiescherm\n• whiteboard\n• werkende keuken(inductie, oven, ijskast, vriezer)\n• wifi\n• inclusief koffie/thee/water"
+      },
+      {
+        "titel": "Extra",
+        "gegevens": "• lekkers voor bij de koffie, lunch"
+      }
+    ]
+  },
+  {
+    "index": 4,
+    "titel": "Symposiumruimte",
+    "toelichting": "En last but not least beschikt Lab Lou over een grote, inspirerende zaal voor presentaties, (netwerk)bijeenkomsten, filmavonden, theatervoorstellingen, exposities en nog veel meer! \n\nDe symposiumzaal is ‘s avonds en in het weekend te huur vanaf €125. Catering en ondersteuning bij jouw zijn bij te boeken. Neem contact met ons op voor de mogelijkheden, dan maken wij een voorstel op maat.",
+    "afbeelding": "stock",
+    "aanvullendeInformatie": "De grote zaal van Lab Lou is van alle gemakken voorzien: een beamer, scherm, geluid- en lichttechniek, een podium, WiFi en een bar. Daarnaast kunnen wij de catering van jouw event laten verzorgen door Laura’s Sabor. Heerlijk!",
+    "contact": true,
+    "extraInfo": ["180 m2", "tot 100 pers."],
+    "link": "ireserve.nl/xxxx",
+    "informatie": [
+      {
+        "titel": "Tarieven (excl.btw)",
+        "gegevens": "Tarieven vanaf € 125 per dagdeel. Neem contact op voor de mogelijkheden."
+      },
+      {
+        "titel": "Ruimte",
+        "gegevens": "• 180 m2\n• tot 100 personen in theateropstelling (avond en weekend)"
+      },
+      {
+        "titel": "Voorzieningen",
+        "gegevens": "• beamer\n• scherm\n• geluid\n• podium\n• wifi\n• bar"
+      },
+      {
+        "titel": "Extra",
+        "gegevens": "• catering\n• evenementondersteuning"
+      }
+    ]
+  }
+]

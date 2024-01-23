@@ -29,8 +29,8 @@ const Footer: React.FunctionComponent = () => {
         >
           LinkedIn
         </a>
-        <a className={"nav-link nav-link-footer"} href="mailto:info@lablou.nl">
-          info@lablou.nl
+        <a className={"nav-link nav-link-footer"} href="mailto:hallo@lablou.nl">
+          hallo@lablou.nl
         </a>
       </address>
       <address>

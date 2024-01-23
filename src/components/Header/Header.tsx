@@ -44,20 +44,20 @@ const Header: React.FunctionComponent = () => {
             <Nav className="justify-content-center flex-grow-1">
               <NavLink
                 className="nav-link"
-                to="zaalverhuur"
+                to="flexruimtes"
                 onClick={closeShow}
               >
-                Zaalverhuur
+                Flex- & vergaderruimte
               </NavLink>
               <NavLink
                 className="nav-link"
-                to="werkplekken"
+                to="vasteverhuur"
                 onClick={closeShow}
               >
-                Werkplekken
+                Vaste verhuur
               </NavLink>
-              <NavLink className="nav-link" to="overhetlab" onClick={closeShow}>
-                Over het Lab
+              <NavLink className="nav-link" to="over" onClick={closeShow}>
+                Over
               </NavLink>
             </Nav>
           </Offcanvas.Body>

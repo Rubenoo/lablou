@@ -4,7 +4,7 @@ import React from "react";
 import CTABlock from "../../components/CTABlock/CTABlock.tsx";
 import ContactOpnemenKnop from "../../components/ContactOpnemenKnop/ContactOpnemenKnop.tsx";
 
-const Werkplekken: React.FunctionComponent = () => {
+const VasteVerhuur: React.FunctionComponent = () => {
   return (
     <main>
       <div className={"block-container"}>
@@ -26,4 +26,4 @@ const Werkplekken: React.FunctionComponent = () => {
     </main>
   );
 };
-export default Werkplekken;
+export default VasteVerhuur;

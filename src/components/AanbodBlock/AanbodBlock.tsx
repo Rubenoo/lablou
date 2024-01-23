@@ -1,6 +1,6 @@
 import "./styles.scss";
 import StyledButton from "../Button/Button.tsx";
-import { ZaalType } from "../../pages/Zaalverhuur/types.ts";
+import { ZaalType } from "../../pages/Flexruimtes/types.ts";
 import { NavLink } from "react-router-dom";
 
 type AanbodBlockProps = ZaalType & {

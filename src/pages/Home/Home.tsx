@@ -19,12 +19,10 @@ const Home: React.FunctionComponent = () => {
       <div className={"block-container"}>
         <Block
           variant={"roze"}
-          inleiding="Wat doen we bij Lab Lou"
-          titel={
-            "Lab Lou, de creatieve en sociale hotspot van regio Zeist/De Bilt"
-          }
+          inleiding="Dit doen we bij Lab Lou"
+          titel={"Creatieve en sociale hotspot"}
           toelichting={
-            "Bij ons kun je een werkplek huren, flexwerken en elkaar ontmoeten! We zetten mensen in hun kracht door het creëren van werkervaringsplekken en samen met inwoners en lokale organisaties ontwikkelen wij allerlei nieuwe initiatieven voor onze regio.\n\nEn dit alles in een fijne, creatieve en professionele sfeer mèt goede koffie en het lekkerste eten. Wat wil je nog meer?"
+            "Wij zijn de eerste creatieve en sociale broedplaats van de regio in een omgetoverd tuincentrum aan de rand van Zeist West. Creatieve en sociale ondernemers kunnen hier werkruimtes huren, flexwerken en samenwerken. \n\nDaarnaast ontwikkelen wij allerlei (inwoners)inistiatieven en zetten we mensen in hun kracht door het aanbieden van gericht programma en het creëren van werkervaringsplekken. In Lab Lou bieden we ook tal van creatieve en culturele activiteiten aan. \n\nEr is altijd iets te doen!"
           }
           button={button}
         />
@@ -33,7 +31,7 @@ const Home: React.FunctionComponent = () => {
           alt={"voorbeeld foto"}
         />
       </div>
-      <InstagramMarquee />
+      <InstagramMarquee variant={"right"} />
       <div className={"ons-aanbod-container"}>
         <h1>Ons aanbod</h1>
         <div
@@ -43,22 +41,22 @@ const Home: React.FunctionComponent = () => {
         >
           <AanbodBlock
             index={0}
-            category={"Zaalverhuur"}
+            category={"Flex- & vergaderruimte"}
             afbeelding={"stock"}
-            titel={"Ontdek onze vergaderzalen"}
-            to={"zaalverhuur"}
+            titel={"Ontdek ons aanbod"}
+            to={"flexruimtes"}
             key={"0"}
           />
           <AanbodBlock
             index={1}
-            category={"Werk- en atelierruimte"}
+            category={"Vaste verhuur"}
             afbeelding={"stock"}
-            titel={"Ontdek onze Werk- en atelierruimte"}
-            to={"werkplekken"}
+            titel={"Ontdek onze werk- en atelierruimte"}
+            to={"vasteverhuur"}
           />
         </div>
       </div>
-      <InstagramMarquee />
+      <InstagramMarquee variant={"left"} />
       <CTABlock />
     </main>
   );

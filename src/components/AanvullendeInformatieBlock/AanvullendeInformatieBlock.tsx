@@ -1,5 +1,5 @@
 import "./styles.scss";
-import { ZaalType } from "../../pages/Zaalverhuur/types.ts";
+import { ZaalType } from "../../pages/Flexruimtes/types.ts";
 import ContactOpnemenKnop from "../ContactOpnemenKnop/ContactOpnemenKnop.tsx";
 import React from "react";
 
@@ -9,7 +9,7 @@ type AanvullendeInformatieBlockProps = ZaalType & {
 
 const AanvullendeInformatieBlock: React.FunctionComponent<
   AanvullendeInformatieBlockProps
-> = ({ className, index, informatie }) => {
+> = ({ className, index, informatie, aanvullendeInformatie, contact }) => {
   const informatieElements = informatie?.map((info, index) => (
     <div key={index}>
       <h4>{info.titel}</h4>
@@ -24,26 +24,22 @@ const AanvullendeInformatieBlock: React.FunctionComponent<
     >
       <div className={"info"}>
         <h1>Aanvullende informatie</h1>
-        <p>
-          Lab Lou beschikt over 2 vergaderkamers, een workshopruimte en een
-          symposiumzaal. Alle ruimtes kunnen per dagdeel of hele dag gehuurd
-          worden.
-          <br />
-          Bus 74 stopt voor de deur, wij hebben eigen parkeergelegenheid op ons
-          terrein en wij zijn goed bereikbaar vanuit Utrecht, Utrecht Science
-          Park, Bunnik, De Bilt en Bilthoven met de fiets.
-          <br />
-          Lab Lou is rolstoelvriendelijk.
-        </p>
+        <p>{aanvullendeInformatie}</p>
         <ContactOpnemenKnop className={"d-none d-lg-block"}>
           Ruimte reserveren
         </ContactOpnemenKnop>
       </div>
       <div>
         <div className={"gegevens"}>{informatieElements}</div>
-        <ContactOpnemenKnop className={"d-lg-none d-block"}>
-          Ruimte reserveren
-        </ContactOpnemenKnop>
+        {contact ? (
+          <ContactOpnemenKnop className={"d-lg-none d-block"}>
+            Contact
+          </ContactOpnemenKnop>
+        ) : (
+          <ContactOpnemenKnop className={"d-lg-none d-block"}>
+            Reserveer nu
+          </ContactOpnemenKnop>
+        )}
       </div>
     </section>
   );

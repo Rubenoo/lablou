@@ -5,16 +5,24 @@ import React from "react";
 
 type Laborant = {
   titel: string;
-  website: string;
+  websites: Website[];
+};
+
+type Website = {
+  name: string;
   link: string;
 };
 
 const OnzeLaborantenBlock: React.FunctionComponent = () => {
   const laborantenElements = Laboranten?.map(
-    ({ titel, website, link }: Laborant, index) => (
-      <div className={"animatie"} key={index}>
+    ({ titel, websites }: Laborant, index) => (
+      <div className={"animatie border"} key={index}>
         <h4>{titel}</h4>
-        <a href={link}>{website}</a>
+        {websites.map(({ name, link }: Website, index) => (
+          <a key={index} href={link}>
+            {name}
+          </a>
+        ))}
       </div>
     ),
   );

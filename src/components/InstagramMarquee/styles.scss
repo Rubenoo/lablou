@@ -19,16 +19,30 @@
     text-decoration: underline;
     white-space: nowrap;
     margin: auto;
-    animation: move-words 20s linear infinite;
+    animation: move-words-left 30s linear infinite;
     position: relative;
+  }
+  &-right {
+    h2 {
+      animation: move-words-right 30s linear infinite;
+    }
   }
 }
 
-@keyframes move-words {
+@keyframes move-words-left {
   0% {
     left: 5%;
   }
   100% {
     left: -75%;
+  }
+}
+
+@keyframes move-words-right {
+  0% {
+    right: 5%;
+  }
+  100% {
+    right: -75%;
   }
 }

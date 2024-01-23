@@ -3,12 +3,12 @@ import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
 import { createHashRouter } from "react-router-dom";
 import { RouterProvider } from "react-router";
-import Zaalverhuur from "./pages/Zaalverhuur/Zaalverhuur.tsx";
-import Werkplekken from "./pages/Werkplekken/Werkplekken.tsx";
+import Zaalverhuur from "./pages/Flexruimtes/Zaalverhuur.tsx";
+import VasteVerhuur from "./pages/VasteVerhuur/VasteVerhuur.tsx";
 import OverHetLab from "./pages/OverHetLab/OverHetLab.tsx";
 import Home from "./pages/Home/Home.tsx";
 import NietGevonden from "./components/NietGevonden/NietGevonden.tsx";
-import Zaal from "./pages/Zaalverhuur/Zaal.tsx";
+import Zaal from "./pages/Flexruimtes/Zaal.tsx";
 
 const router = createHashRouter([
   {
@@ -16,19 +16,19 @@ const router = createHashRouter([
     element: <App />,
     children: [
       {
-        path: "zaalverhuur",
+        path: "flexruimtes",
         element: <Zaalverhuur />,
       },
       {
-        path: "zaalverhuur/:id",
+        path: "flexruimtes/:id",
         element: <Zaal />,
       },
       {
-        path: "werkplekken",
-        element: <Werkplekken />,
+        path: "vasteverhuur",
+        element: <VasteVerhuur />,
       },
       {
-        path: "overhetlab",
+        path: "over",
         element: <OverHetLab />,
       },
       {

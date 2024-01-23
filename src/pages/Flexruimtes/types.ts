@@ -6,6 +6,8 @@ export type ZaalType = {
   link?: string;
   informatie?: Info[];
   afbeelding: string;
+  aanvullendeInformatie?: string;
+  contact?: boolean;
 };
 
 export type Info = {

@@ -1,10 +1,14 @@
 import "./styles.scss";
 import React from "react";
-
-const InstagramMarquee: React.FunctionComponent = () => {
+type InstagramMarqueeProps = {
+  variant: "left" | "right";
+};
+const InstagramMarquee: React.FunctionComponent<InstagramMarqueeProps> = ({
+  variant,
+}) => {
   return (
     <a
-      className={"marquee"}
+      className={`marquee marquee-${variant}`}
       href={"https://www.instagram.com/bijlablou/"}
       target={"_blank"}
     >

@@ -1,5 +1,6 @@
 import ImageBlock from "../ImageBlock/ImageBlock.tsx";
 import "./styles.scss";
+import React from "react";
 
 const OverOnsBlock: React.FunctionComponent = () => {
   return (
@@ -16,7 +17,7 @@ const OverOnsBlock: React.FunctionComponent = () => {
         src={"/assets/images/voorbeeldfoto.png"}
         alt={"voorbeeld foto"}
       />
-      <h2>Wij zijn een beweging</h2>
+      <h2>Ontmoeten in Lab Lou</h2>
       <p>
         Op 1 november 2023 kregen we de sleutel van de eerste creatieve èn
         sociale broedplaats uit onze regio op Weteringlaan 1 in De Bilt (en toch
@@ -37,7 +38,7 @@ const OverOnsBlock: React.FunctionComponent = () => {
         werkervaringsplekken.
       </p>
       <p>
-        Vooral gaan we elkaar In Lab Lou ontmoeten! En daarvoor organiseren wij
+        We gaan elkaar in Lab Lou ontmoeten! En daarvoor organiseren wij
         allerlei activiteiten voor de buurt en inwoners van regio Zeist/De Bilt
         om dat te laten gebeuren. Denk aan workshops, exposities, filmavonden,
         koffieochtenden, voorstellingen voor jong en oud, en noem maar op! En
@@ -52,7 +53,43 @@ const OverOnsBlock: React.FunctionComponent = () => {
       <p>
         Kom zelf ervaren hoe het bij ons is. Wij zien je graag snel in Lab Lou!
       </p>
-      <p>Merel, Marloes, Emma, Marjolein, Willy en Simon</p>
+      <p>
+        Merel de Jong, Marloes van Haaren, Emma Fijma, Marloes Klok, Marjolein
+        Brandenburg en Willy Douma
+      </p>
+      <h2>Contact en bereikbaarheid</h2>
+      <address>
+        <b className={"m-0 d-block"}>Lab Lou</b>
+        <a
+          href={
+            "https://www.google.com/maps/search/?api=1&query=Weteringlaan+1,+3732HZ+De+Bilt"
+          }
+          target={"_blank"}
+        >
+          Weteringlaan 1 3732 <br />
+          HZ De Bilt
+        </a>
+        <p />
+        <a className={"d-block"} href="mailto:hallo@lablou.nl">
+          hallo@lablou.nl
+        </a>
+        <a className={"d-block"} href="tel:06 28277642">
+          06 28277642
+        </a>
+        <a
+          className={"d-block mb-2"}
+          href={"https://www.instagram.com/bijlablou/"}
+          target={"_blank"}
+        >
+          @bijlablou
+        </a>
+        <p>
+          Parkeerplaatsen op eigen terrein
+          <br />
+          Bus 74 stopt voor de deur - halte Weteringlaan zowel vanuit Utrecht
+          als vanaf Station Driebergen-Zeist
+        </p>
+      </address>
     </section>
   );
 };

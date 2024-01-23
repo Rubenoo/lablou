@@ -38,11 +38,15 @@
 
     @media (max-width: 991px) {
       grid-gap: 1rem;
+      grid-template-columns: 1fr;
+      text-align: center;
     }
   }
   .animatie {
     --f: 1.025; /* the scale factor */
-
+    a {
+      display: block;
+    }
     transition: 0.4s;
     &:hover {
       scale: var(--f);
