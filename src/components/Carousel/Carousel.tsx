@@ -4,7 +4,7 @@ import React from "react";
 const Carousel: React.FunctionComponent = () => {
   return (
     <div id="carouselID" className="carousel slide" data-bs-ride="carousel">
-      <div className="carousel-inner h-100">
+      <div className="carousel-inner h-100 carousel-image">
         <div className="carousel-item active h-100">
           <img
             src="/assets/images/home/carousel_1.jpg"
