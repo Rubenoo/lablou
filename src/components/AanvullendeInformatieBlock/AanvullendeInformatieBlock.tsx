@@ -9,7 +9,14 @@ type AanvullendeInformatieBlockProps = ZaalType & {
 
 const AanvullendeInformatieBlock: React.FunctionComponent<
   AanvullendeInformatieBlockProps
-> = ({ className, index, informatie, aanvullendeInformatie, contact }) => {
+> = ({
+  className,
+  index,
+  informatie,
+  aanvullendeInformatie,
+  contact,
+  link,
+}) => {
   const informatieElements = informatie?.map((info, index) => (
     <div key={index}>
       <h4>{info.titel}</h4>
@@ -25,7 +32,11 @@ const AanvullendeInformatieBlock: React.FunctionComponent<
       <div className={"info"}>
         <h1>Aanvullende informatie</h1>
         <p>{aanvullendeInformatie}</p>
-        <ContactOpnemenKnop className={"d-none d-lg-block"}>
+        <ContactOpnemenKnop
+          className={"d-none d-lg-block"}
+          href={link}
+          target="_blank"
+        >
           Ruimte reserveren
         </ContactOpnemenKnop>
       </div>

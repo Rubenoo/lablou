@@ -6,7 +6,7 @@
     "afbeelding": "flexplek",
     "aanvullendeInformatie": "Er zijn 10 flexwerkplekken beschikbaar. Wist je dat Lab Lou ook over 2 vergaderkamers, een workshopruimte en een symposiumzaal beschikt? \nDe ruimtes kunnen per dagdeel of hele dag gehuurd worden. Check de agenda voor beschikbaarheid. \n\nTip: reserveer van tevoren als je van een plek verzekerd wilt zijn!",
     "extraInfo": [],
-    "link": "ireserve.nl/xxxx",
+    "link": "https://lablou.i-reserve.net/front?mod=calendar&rc=0&product=30403",
     "informatie": [
       {
         "titel": "Tarieven (excl.btw)",
@@ -25,7 +25,7 @@
     "afbeelding": "green_room",
     "aanvullendeInformatie": "Wist je dat bus 74 voor de deur stopt en dat wij eigen parkeergelegenheid op ons terrein hebben. Dit betekent dat wij goed bereikbaar zijn vanuit Utrecht, Utrecht Science Park, Bunnik, station Driebergen-Zeist, De Bilt en Bilthoven met het OV, de auto en de fiets.",
     "extraInfo": ["13 m2", "6 pers."],
-    "link": "ireserve.nl/xxxx",
+    "link": "https://lablou.i-reserve.net/front?mod=calendar&rc=0&product=30401",
     "informatie": [
       {
         "titel": "Tarieven (excl.btw)",
@@ -53,7 +53,7 @@
     "aanvullendeInformatie": "Wist je dat duurzaamheid en toegankelijkheid hoog bij ons in het vaandel staan? Lab Lou is rolstoeltoegankelijk en beschikt over een mindervaliden toilet. \nDaarnaast serveren wij in de grote zaal koffie van onze eigen Brahim van de Koffiebak en in de vergaderruimtes gebruiken wij de koffiecups van de Koffiejongens want die zijn biologisch afbreekbaar.",
 
     "extraInfo": ["13 m2", "6 pers."],
-    "link": "ireserve.nl/xxxx",
+    "link": "https://lablou.i-reserve.net/front?mod=calendar&rc=0&product=30404",
     "informatie": [
       {
         "titel": "Tarieven (excl.btw)",
@@ -80,7 +80,7 @@
     "afbeelding": "workshopruimte",
     "aanvullendeInformatie": "Naast WiFi, een presentatiescherm en een whiteboard, krijg je ook in de workshopruimte van Lab Lou onbeperkt koffie en thee. Al onze ruimtes hebben een eigen nespresso-apparaat en waterkoker. Net als in een hotel :) En wist je dat je lekkers voor bij de koffie of een lekkere lunch gewoon kunt bijboeken vers gemaakt door onze eigen Laura’s Sabor?",
     "extraInfo": ["33 m2", "12 pers."],
-    "link": "ireserve.nl/xxxx",
+    "link": "https://lablou.i-reserve.net/front?mod=calendar&rc=0&product=30402",
     "informatie": [
       {
         "titel": "Tarieven (excl.btw)",
@@ -108,7 +108,6 @@
     "aanvullendeInformatie": "De grote zaal van Lab Lou is van alle gemakken voorzien: een beamer, scherm, geluid- en lichttechniek, een podium, WiFi en een bar. Daarnaast kunnen wij de catering van jouw event laten verzorgen door Laura’s Sabor. Heerlijk!",
     "contact": true,
     "extraInfo": ["180 m2", "tot 100 pers."],
-    "link": "ireserve.nl/xxxx",
     "informatie": [
       {
         "titel": "Tarieven (excl.btw)",
