@@ -6,6 +6,8 @@ type ImageBlockProps = {
   alt: string;
 };
 const ImageBlock: React.FunctionComponent<ImageBlockProps> = ({ src, alt }) => {
-  return <img src={src} className={"image-block"} alt={alt} />;
+  return (
+    <img src={`/assets/images/${src}`} className={"image-block"} alt={alt} />
+  );
 };
 export default ImageBlock;

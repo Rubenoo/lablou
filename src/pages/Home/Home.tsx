@@ -1,10 +1,10 @@
 import Block from "../../components/Block/Block.tsx";
 import StyledButton from "../../components/Button/Button.tsx";
-import ImageBlock from "../../components/ImageBlock/ImageBlock.tsx";
 import AanbodBlock from "../../components/AanbodBlock/AanbodBlock.tsx";
 import CTABlock from "../../components/CTABlock/CTABlock.tsx";
 import InstagramMarquee from "../../components/InstagramMarquee/InstagramMarquee.tsx";
 import { NavLink } from "react-router-dom";
+import Carousel from "../../components/Carousel/Carousel.tsx";
 
 const Home: React.FunctionComponent = () => {
   const button = (
@@ -26,10 +26,7 @@ const Home: React.FunctionComponent = () => {
           }
           button={button}
         />
-        <ImageBlock
-          src={"/assets/images/voorbeeldfoto.png"}
-          alt={"voorbeeld foto"}
-        />
+        <Carousel />
       </div>
       <InstagramMarquee variant={"right"} />
       <div className={"ons-aanbod-container"}>
@@ -42,7 +39,7 @@ const Home: React.FunctionComponent = () => {
           <AanbodBlock
             index={0}
             category={"Flex- & vergaderruimte"}
-            afbeelding={"stock"}
+            afbeelding={"ontdek_ons_aanbod"}
             titel={"Ontdek ons aanbod"}
             to={"flexruimtes"}
             key={"0"}
@@ -50,7 +47,7 @@ const Home: React.FunctionComponent = () => {
           <AanbodBlock
             index={1}
             category={"Vaste verhuur"}
-            afbeelding={"stock"}
+            afbeelding={"werk_en_atelierruimte"}
             titel={"Ontdek onze werk- en atelierruimte"}
             to={"vasteverhuur"}
           />

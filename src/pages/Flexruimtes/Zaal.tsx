@@ -25,8 +25,8 @@ const Zaal: React.FunctionComponent = () => {
             button={<Pijl href={"#aanvullende-informatie"} />}
           />
           <ImageBlock
-            src={"/assets/images/voorbeeldfoto.png"}
-            alt={"voorbeeld foto"}
+            src={`flexruimtes/${zaal.afbeelding}.jpg`}
+            alt={zaal.titel}
           />
         </div>
         <AanvullendeInformatieBlock {...zaal} />

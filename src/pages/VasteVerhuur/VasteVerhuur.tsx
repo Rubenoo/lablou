@@ -17,10 +17,7 @@ const VasteVerhuur: React.FunctionComponent = () => {
           }
           button={<ContactOpnemenKnop />}
         />
-        <ImageBlock
-          src={"/assets/images/voorbeeldfoto.png"}
-          alt={"voorbeeld foto"}
-        />
+        <ImageBlock src={"vasteverhuur/overzicht.jpg"} alt={"voorbeeld foto"} />
       </div>
       <CTABlock className={"margin-top"} />
     </main>

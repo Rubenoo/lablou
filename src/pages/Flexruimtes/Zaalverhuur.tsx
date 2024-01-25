@@ -22,8 +22,8 @@ const Zaalverhuur: React.FunctionComponent = () => {
           button={<Pijl href={"#ons-aanbod"} />}
         />
         <ImageBlock
-          src={"/assets/images/voorbeeldfoto.png"}
-          alt={"voorbeeld foto"}
+          src={"flexruimtes/overzicht.jpg"}
+          alt={"Overzicht flex- & vergaderruimtes"}
         />
       </div>
       <div id="ons-aanbod" className={"ons-aanbod-container"}>

@@ -48,8 +48,33 @@
     }
   }
 
-  &-image-stock {
-    background-image: url("/assets/images/voorbeeldfoto.png");
+  &-image-werk_en_atelierruimte {
+    background-image: url("/assets/images/home/werk_en_atelieruimte.jpg");
+    background-size: cover;
+  }
+
+  &-image-ontdek_ons_aanbod {
+    background-image: url("/assets/images/home/ontdek_ons_aanbod.jpg");
+    background-size: cover;
+  }
+  &-image-flexplek {
+    background-image: url("/assets/images/flexruimtes/flexplek.jpg");
+    background-size: cover;
+  }
+  &-image-green_room {
+    background-image: url("/assets/images/flexruimtes/green_room.jpg");
+    background-size: cover;
+  }
+  &-image-blue_room {
+    background-image: url("/assets/images/flexruimtes/blue_room.jpg");
+    background-size: cover;
+  }
+  &-image-workshopruimte {
+    background-image: url("/assets/images/flexruimtes/workshopruimte.jpg");
+    background-size: cover;
+  }
+  &-image-symposiumruimte {
+    background-image: url("/assets/images/flexruimtes/symposiumruimte.jpg");
     background-size: cover;
   }
 }

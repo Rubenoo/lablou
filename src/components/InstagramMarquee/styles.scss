@@ -16,15 +16,14 @@
   h2 {
     color: var(--zwart);
     text-align: center;
-    text-decoration: underline;
     white-space: nowrap;
     margin: auto;
-    animation: move-words-left 30s linear infinite;
+    animation: move-words-left 25s linear infinite;
     position: relative;
   }
   &-right {
     h2 {
-      animation: move-words-right 30s linear infinite;
+      animation: move-words-right 25s linear infinite;
     }
   }
 }
@@ -40,9 +39,9 @@
 
 @keyframes move-words-right {
   0% {
-    right: 5%;
+    right: 75%;
   }
   100% {
-    right: -75%;
+    right: -5%;
   }
 }

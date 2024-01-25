@@ -13,10 +13,7 @@ const OverOnsBlock: React.FunctionComponent = () => {
         starten?!......’ En nu is dat oude tuincentrum omgetoverd tot onze
         droomplek!
       </p>
-      <ImageBlock
-        src={"/assets/images/voorbeeldfoto.png"}
-        alt={"voorbeeld foto"}
-      />
+      <ImageBlock src={"overlablou/over_lablou.jpg"} alt={"Over Lab Lou"} />
       <h2>Ontmoeten in Lab Lou</h2>
       <p>
         Op 1 november 2023 kregen we de sleutel van de eerste creatieve èn
