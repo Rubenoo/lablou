@@ -12,11 +12,25 @@ const Carousel: React.FunctionComponent = () => {
             alt="Lab Lou foto 1"
           />
         </div>
-        <div className="carousel-item  h-100">
+        <div className="carousel-item h-100">
+          <img
+            src="/assets/images/home/carousel_2.jpg"
+            className="carousel-image"
+            alt="Lab Lou foto 2"
+          />
+        </div>
+        <div className="carousel-item h-100">
           <img
             src="/assets/images/home/carousel_3.jpg"
             className="carousel-image"
-            alt="Lab Lou foto 2"
+            alt="Lab Lou foto 3"
+          />
+        </div>
+        <div className="carousel-item h-100">
+          <img
+            src="/assets/images/home/carousel_4.jpg"
+            className="carousel-image"
+            alt="Lab Lou foto 4"
           />
         </div>
       </div>
