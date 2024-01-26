@@ -6,6 +6,7 @@ export type StyledButtonProps = {
   children: React.ReactNode;
   variant: "zwart" | "roze" | "groen";
   className?: string;
+  onClick?: React.EventHandler<React.MouseEvent | React.KeyboardEvent>;
 };
 const StyledButton: React.FunctionComponent<StyledButtonProps> = ({
   children,

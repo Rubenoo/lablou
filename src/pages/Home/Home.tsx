@@ -3,17 +3,10 @@ import StyledButton from "../../components/Button/Button.tsx";
 import AanbodBlock from "../../components/AanbodBlock/AanbodBlock.tsx";
 import CTABlock from "../../components/CTABlock/CTABlock.tsx";
 import InstagramMarquee from "../../components/InstagramMarquee/InstagramMarquee.tsx";
-import { NavLink } from "react-router-dom";
 import Carousel from "../../components/Carousel/Carousel.tsx";
+import { handleClick } from "../../components/Pijl/Pijl.tsx";
 
 const Home: React.FunctionComponent = () => {
-  const button = (
-    <NavLink to="zaalverhuur">
-      <StyledButton className={""} variant={"zwart"}>
-        Bekijk het aanbod
-      </StyledButton>
-    </NavLink>
-  );
   return (
     <main>
       <div className={"block-container"}>
@@ -29,7 +22,7 @@ const Home: React.FunctionComponent = () => {
         <Carousel />
       </div>
       <InstagramMarquee variant={"right"} />
-      <div className={"ons-aanbod-container"}>
+      <div className={"ons-aanbod-container"} id={"ons-aanbod"}>
         <h1>Ons aanbod</h1>
         <div
           className={
@@ -59,3 +52,13 @@ const Home: React.FunctionComponent = () => {
   );
 };
 export default Home;
+
+const button = (
+  <StyledButton
+    onClick={handleClick("#ons-aanbod")}
+    className={""}
+    variant={"zwart"}
+  >
+    Bekijk het aanbod
+  </StyledButton>
+);
