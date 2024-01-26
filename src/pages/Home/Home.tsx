@@ -15,7 +15,7 @@ const Home: React.FunctionComponent = () => {
           inleiding="Dit doen we bij Lab Lou"
           titel={"Creatieve en sociale hotspot"}
           toelichting={
-            "Wij zijn de eerste creatieve en sociale broedplaats van de regio in een omgetoverd tuincentrum aan de rand van Zeist West. Creatieve en sociale ondernemers kunnen hier werkruimtes huren, flexwerken en samenwerken. \n\nDaarnaast ontwikkelen wij allerlei (inwoners)inistiatieven en zetten we mensen in hun kracht door het aanbieden van gericht programma en het creëren van werkervaringsplekken. In Lab Lou bieden we ook tal van creatieve en culturele activiteiten aan. \n\nEr is altijd iets te doen!"
+            "Wij zijn de eerste creatieve en sociale broedplaats van de regio in een omgetoverd tuincentrum aan de rand van Zeist West. Creatieve en sociale ondernemers kunnen hier werkruimtes huren, flexwerken en samenwerken. \n\nDaarnaast ontwikkelen wij allerlei (inwoners)initiatieven en zetten we mensen in hun kracht door het aanbieden van gericht programma en het creëren van werkervaringsplekken. In Lab Lou bieden we ook tal van creatieve en culturele activiteiten aan. \n\nEr is altijd iets te doen!"
           }
           button={button}
         />
