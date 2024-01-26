@@ -9,6 +9,7 @@ footer {
   }
   .nav-link-footer {
     text-align: end;
+    margin-block: 0.5rem;
     @media (max-width: 991px) {
       text-align: center;
       margin-inline: auto;

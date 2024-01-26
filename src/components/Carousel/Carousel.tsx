@@ -5,28 +5,28 @@ const Carousel: React.FunctionComponent = () => {
   return (
     <div id="carouselID" className="carousel slide" data-bs-ride="carousel">
       <div className="carousel-inner h-100 carousel-image">
-        <div className="carousel-item active h-100">
+        <div className="carousel-item active h-100" data-bs-interval={"7500"}>
           <img
             src="/assets/images/home/carousel_1.jpg"
             className="carousel-image"
             alt="Lab Lou foto 1"
           />
         </div>
-        <div className="carousel-item h-100">
+        <div className="carousel-item h-100" data-bs-interval={"7500"}>
           <img
             src="/assets/images/home/carousel_2.jpg"
             className="carousel-image"
             alt="Lab Lou foto 2"
           />
         </div>
-        <div className="carousel-item h-100">
+        <div className="carousel-item h-100" data-bs-interval={"7500"}>
           <img
             src="/assets/images/home/carousel_3.jpg"
             className="carousel-image"
             alt="Lab Lou foto 3"
           />
         </div>
-        <div className="carousel-item h-100">
+        <div className="carousel-item h-100" data-bs-interval={"7500"}>
           <img
             src="/assets/images/home/carousel_4.jpg"
             className="carousel-image"

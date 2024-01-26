@@ -37,7 +37,7 @@ const AanvullendeInformatieBlock: React.FunctionComponent<
           href={link}
           target="_blank"
         >
-          Ruimte reserveren
+          Reserveer nu
         </ContactOpnemenKnop>
       </div>
       <div>
@@ -47,7 +47,11 @@ const AanvullendeInformatieBlock: React.FunctionComponent<
             Contact
           </ContactOpnemenKnop>
         ) : (
-          <ContactOpnemenKnop className={"d-lg-none d-block"}>
+          <ContactOpnemenKnop
+            className={"d-lg-none d-block"}
+            href={link}
+            target="_blank"
+          >
             Reserveer nu
           </ContactOpnemenKnop>
         )}
