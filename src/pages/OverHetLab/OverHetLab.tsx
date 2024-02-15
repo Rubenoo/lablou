@@ -2,6 +2,7 @@ import { TerugKnop } from "../../components/TerugKnop/TerugKnop.tsx";
 import OverOnsBlock from "../../components/OverOnsBlock/OverOnsBlock.tsx";
 import "./styles.scss";
 import OnzeLaborantenBlock from "../../components/OnzeLaborantenBlock/OnzeLaborantenBlock.tsx";
+import SamenwerkingBlock from "../../components/SamenwerkingBlock/SamenwerkingBlock.tsx";
 
 const OverHetLab: React.FunctionComponent = () => {
   return (
@@ -11,6 +12,10 @@ const OverHetLab: React.FunctionComponent = () => {
         <OverOnsBlock />
       </div>
       <OnzeLaborantenBlock />
+      <div className={"over-ons"}>
+        <div />
+        <SamenwerkingBlock />
+      </div>
     </main>
   );
 };

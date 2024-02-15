@@ -67,10 +67,9 @@ const OverOnsBlock: React.FunctionComponent = () => {
           }
           target={"_blank"}
         >
-          Weteringlaan 1 3732 <br />
-          HZ De Bilt
+          Weteringlaan 1 <br />
+          3732 HZ De Bilt
         </a>
-        <p />
         <a className={"d-block"} href="mailto:hallo@lablou.nl">
           hallo@lablou.nl
         </a>
