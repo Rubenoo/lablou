@@ -14,8 +14,8 @@ const CTABlock: React.FunctionComponent<CTABlockProps> = ({ className }) => {
         vergaderplek in regio Zeist / De Bilt?
       </h2>
       <p>
-        Dan moet je bij Lab Lou zijn! Lekkere koffie, heerlijke lunch, een fijne
-        werkplek èn leuke mensen ontmoeten!
+        Dan moet je bij Lab Lou zijn! Lekkere koffie, heerlijke lunch (op
+        aanvraag), een fijne werkplek èn leuke mensen ontmoeten!
       </p>
       <ContactOpnemenKnop>Reserveer nu</ContactOpnemenKnop>
     </section>

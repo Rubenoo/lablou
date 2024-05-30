@@ -2,7 +2,7 @@
   {
     "index": 0,
     "titel": "Flexplek",
-    "toelichting": "Zin om niet thuis te werken, maar op een plek die van alle gemakken voorzien is en waar veel reuring is? Reserveer dan een flexwerkplek in de grote zaal van Lab Lou. Je krijgt een fijn bureau, WiFi en elektriciteit en je kunt genieten van heerlijk koffie, thee en lunch!",
+    "toelichting": "Zin om niet thuis te werken, maar op een plek die van alle gemakken voorzien is en waar veel reuring is? Reserveer dan een flexwerkplek in de grote zaal van Lab Lou. Je krijgt een fijn bureau, WiFi en elektriciteit en je kunt genieten van heerlijk koffie, thee en lunch (op aanvraag)!",
     "afbeelding": "flexplek",
     "aanvullendeInformatie": "Er zijn 10 flexwerkplekken beschikbaar. Wist je dat Lab Lou ook over 2 vergaderkamers, een workshopruimte en een symposiumzaal beschikt? \nDe ruimtes kunnen per dagdeel of hele dag gehuurd worden. Check de agenda voor beschikbaarheid. \n\nTip: reserveer van tevoren als je van een plek verzekerd wilt zijn!",
     "extraInfo": [],
@@ -14,7 +14,7 @@
       },
       {
         "titel": "Voorzieningen",
-        "gegevens": "• wifi\n• elektriciteit\n• koffie/thee/lunch"
+        "gegevens": "• wifi\n• elektriciteit\n• koffie/thee\n• lunch (op aanvraag)"
       }
     ]
   },
@@ -41,7 +41,7 @@
       },
       {
         "titel": "Extra",
-        "gegevens": "• lekkers voor bij de koffie, lunch"
+        "gegevens": "• lekkers voor bij de koffie\n• lunch (op aanvraag)"
       }
     ]
   },
@@ -69,7 +69,7 @@
       },
       {
         "titel": "Extra",
-        "gegevens": "• lekkers voor bij de koffie, lunch"
+        "gegevens": "• lekkers voor bij de koffie\n• lunch (op aanvraag)"
       }
     ]
   },
@@ -78,7 +78,7 @@
     "titel": "Workshopruimte",
     "toelichting": "Deze multifunctionele ruimte is geschikt voor allerlei soorten workshops tot 12 personen. Doordat er een keuken aanwezig is, ook zeer geschikt voor kinderfeestjes en kookpartijtjes voor kleinere gezelschappen!",
     "afbeelding": "workshopruimte",
-    "aanvullendeInformatie": "Naast WiFi, een presentatiescherm en een whiteboard, krijg je ook in de workshopruimte van Lab Lou onbeperkt koffie en thee. Al onze ruimtes hebben een eigen nespresso-apparaat en waterkoker. Net als in een hotel :) En wist je dat je lekkers voor bij de koffie of een lekkere lunch gewoon kunt bijboeken vers gemaakt door onze eigen Laura’s Sabor?",
+    "aanvullendeInformatie": "Naast WiFi, een presentatiescherm en een whiteboard, krijg je ook in de workshopruimte van Lab Lou onbeperkt koffie en thee. Al onze ruimtes hebben een eigen nespresso-apparaat en waterkoker. Net als in een hotel :) En wist je dat je lekkers voor bij de koffie of een lekkere lunch (op aanvraag) gewoon kunt bijboeken vers gemaakt door onze eigen Laura’s Sabor?",
     "extraInfo": ["33 m2", "12 pers."],
     "link": "https://lablou.i-reserve.net/front?mod=calendar&rc=0&product=30402",
     "informatie": [
@@ -96,7 +96,7 @@
       },
       {
         "titel": "Extra",
-        "gegevens": "• lekkers voor bij de koffie, lunch"
+        "gegevens": "• lekkers voor bij de koffie, lunch (op aanvraag)"
       }
     ]
   },
