@@ -54,10 +54,7 @@ const OverOnsBlock: React.FunctionComponent = () => {
       <p>
         Kom zelf ervaren hoe het bij ons is. Wij zien je graag snel in Lab Lou!
       </p>
-      <p>
-        Merel de Jong, Marloes van Haaren, Emma Fijma, Marloes Klok, Marjolein
-        Brandenburg en Willy Douma
-      </p>
+      <p>Merel de Jong, Marloes van Haaren, Emma Fijma en Marloes Klok</p>
       <h2>Contact en bereikbaarheid</h2>
       <address>
         <b className={"m-0 d-block"}>Lab Lou</b>
@@ -83,6 +80,10 @@ const OverOnsBlock: React.FunctionComponent = () => {
         >
           @bijlablou
         </a>
+        <p>
+          Openingstijden: ma t/m vrij van 9.00 tot 17.00 uur, overige tijden op
+          aanvraag of tijdens activiteiten
+        </p>
         <p>
           Parkeerplaatsen op eigen terrein
           <br />
