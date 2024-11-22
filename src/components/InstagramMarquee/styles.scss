@@ -26,6 +26,15 @@
       animation: move-words-right 25s linear infinite;
     }
   }
+
+  &-zwart {
+    border-radius: 10px 10px 0 0;
+    margin-block-end: -5px;
+    background-color: var(--zwart);
+    h2 {
+      color: white;
+    }
+  }
 }
 
 @keyframes move-words-left {
