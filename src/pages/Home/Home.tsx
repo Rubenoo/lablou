@@ -5,6 +5,7 @@ import CTABlock from "../../components/CTABlock/CTABlock.tsx";
 import InstagramMarquee from "../../components/InstagramMarquee/InstagramMarquee.tsx";
 import Carousel from "../../components/Carousel/Carousel.tsx";
 import { handleClick } from "../../components/Pijl/Pijl.tsx";
+import Agenda from "../Agenda/Agenda.tsx";
 
 const Home: React.FunctionComponent = () => {
   return (
@@ -21,7 +22,7 @@ const Home: React.FunctionComponent = () => {
         />
         <Carousel />
       </div>
-      <InstagramMarquee variant={"right"} />
+      <InstagramMarquee variant={"left"} />
       <div className={"ons-aanbod-container"} id={"ons-aanbod"}>
         <h1>Ons aanbod</h1>
         <div
@@ -46,8 +47,8 @@ const Home: React.FunctionComponent = () => {
           />
         </div>
       </div>
-      <InstagramMarquee variant={"left"} />
-      <CTABlock />
+      <Agenda />
+      <CTABlock className={"mt-3"} />
     </main>
   );
 };

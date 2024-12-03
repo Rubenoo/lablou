@@ -9,6 +9,8 @@ import OverHetLab from "./pages/OverHetLab/OverHetLab.tsx";
 import Home from "./pages/Home/Home.tsx";
 import NietGevonden from "./components/NietGevonden/NietGevonden.tsx";
 import Zaal from "./pages/Flexruimtes/Zaal.tsx";
+import EventementenToevoegen from "./pages/EvenementToevoegen/EvenementToevoegen.tsx";
+import Agenda from "./pages/Agenda/Agenda.tsx";
 
 const router = createHashRouter([
   {
@@ -30,6 +32,14 @@ const router = createHashRouter([
       {
         path: "over",
         element: <OverHetLab />,
+      },
+      {
+        path: "evenementen-toevoegen",
+        element: <EventementenToevoegen />,
+      },
+      {
+        path: "agenda",
+        element: <Agenda />,
       },
       {
         path: "",

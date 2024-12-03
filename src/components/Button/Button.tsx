@@ -1,17 +1,19 @@
 import "./styles.scss";
 import { Button } from "react-bootstrap";
 import React from "react";
+import { ButtonProps } from "react-bootstrap/Button";
 
 export type StyledButtonProps = {
   children: React.ReactNode;
   variant: "zwart" | "roze" | "groen";
   className?: string;
   onClick?: React.EventHandler<React.MouseEvent | React.KeyboardEvent>;
-};
+} & ButtonProps;
+
 const StyledButton: React.FunctionComponent<StyledButtonProps> = ({
   children,
   variant,
-  className,
+  className = "",
   ...props
 }) => {
   return (
@@ -20,4 +22,5 @@ const StyledButton: React.FunctionComponent<StyledButtonProps> = ({
     </Button>
   );
 };
+
 export default StyledButton;
