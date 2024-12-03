@@ -8,7 +8,7 @@ export type StyledButtonProps = {
   variant: "zwart" | "roze" | "groen";
   className?: string;
   onClick?: React.EventHandler<React.MouseEvent | React.KeyboardEvent>;
-} & ButtonProps;
+} & Omit<ButtonProps, "onClick">;
 
 const StyledButton: React.FunctionComponent<StyledButtonProps> = ({
   children,
