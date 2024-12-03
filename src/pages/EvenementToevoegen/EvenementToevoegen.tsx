@@ -79,13 +79,8 @@ const EventementenToevoegen: React.FC = () => {
         </Form.Group>
 
         <Form.Group className="mb-3">
-          <Form.Label>Beschrijving kort</Form.Label>
-          <Form.Control
-            as="textarea"
-            rows={3}
-            name="beschrijvingKort"
-            required
-          />
+          <Form.Label>Ondertitel</Form.Label>
+          <Form.Control as="textarea" rows={3} name="ondertitel" required />
           <Form.Text className="text-muted">
             Geef een korte beschrijving van het evenement. In maximaal één zin,
             dit wordt gebruikt in de overzichtspagina.
@@ -93,13 +88,8 @@ const EventementenToevoegen: React.FC = () => {
         </Form.Group>
 
         <Form.Group className="mb-3">
-          <Form.Label>Beschrijving lang</Form.Label>
-          <Form.Control
-            as="textarea"
-            rows={3}
-            name="beschrijvingLang"
-            required
-          />
+          <Form.Label>Beschrijving</Form.Label>
+          <Form.Control as="textarea" rows={3} name="beschrijving" required />
           <Form.Text className="text-muted">
             Geef een uitgebreide beschrijving van het evenement. Denk aan: wat
             kunnen bezoekers verwachten, voor wie is het bedoeld, etc.
@@ -108,10 +98,19 @@ const EventementenToevoegen: React.FC = () => {
 
         <Form.Group className="mb-3">
           <Form.Label>Link</Form.Label>
-          <Form.Control type="url" name="link" required />
+          <Form.Control type="url" name="link" />
           <Form.Text className="text-muted">
             Voeg een link toe naar meer informatie of registratie (bijvoorbeeld
             ticketverkoop) Formaat: https://www.lablou.nl
+          </Form.Text>
+        </Form.Group>
+
+        <Form.Group className="mb-3">
+          <Form.Label>Email</Form.Label>
+          <Form.Control type="text" name="email" />
+          <Form.Text className="text-muted">
+            Voer hier het e-mail in waarnaar de aanmelding moet worden verstuurd
+            voor het evenement
           </Form.Text>
         </Form.Group>
 

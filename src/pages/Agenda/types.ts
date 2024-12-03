@@ -8,9 +8,10 @@ export interface Submission {
     titel: string;
     startdatum: string;
     einddatum: string;
-    beschrijvingKort: string;
-    beschrijvingLang: string;
-    link: string;
+    ondertitel: string;
+    beschrijving: string;
+    link?: string;
+    email?: string;
   };
 }
 

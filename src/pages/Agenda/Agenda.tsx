@@ -26,9 +26,9 @@ const LoadingState = () => (
   </>
 );
 
-const EmptyState = () => (
+const EmptyState = ({ showMarquee }: { showMarquee?: boolean }) => (
   <>
-    <InstagramMarquee variant="right" type={"zwart"} />
+    {showMarquee && <InstagramMarquee variant="right" type={"zwart"} />}
 
     <section className="block block-groen text-center pt-3 rounded-top-0">
       <h3 className={"mb-0 mt-2 mt-lg-4"}>
@@ -37,49 +37,66 @@ const EmptyState = () => (
     </section>
   </>
 );
+const getHref = (event: Submission) => {
+  if (event.payload_params.link) {
+    return event.payload_params.link;
+  }
+  if (event.payload_params.email) {
+    return `mailto:${event.payload_params.email}`;
+  }
+  return undefined;
+};
 
 const AgendaAccordion = ({ day, events, dayIndex }: AgendaAccordionProps) => {
   return (
     <Accordion key={day} id={"agenda"}>
-      {events.map((event, eventIndex) => (
-        <Accordion.Item key={event.id} eventKey={`${dayIndex}-${eventIndex}`}>
-          <Accordion.Header>
-            <div className={"d-block"}>
-              <p>
-                {dayjs(event.payload_params.startdatum)
-                  .format("dd DD MMM")
-                  .toUpperCase()}
-                {" | "}
-                {dayjs(event.payload_params.startdatum).format("HH:mm")} -{" "}
-                {dayjs(event.payload_params.einddatum).format("HH:mm")}
-              </p>
-              <h3>
-                <b>{event.payload_params.titel}</b>
-              </h3>
-              <p className={"mb-0"}>{event.payload_params.beschrijvingKort}</p>
-            </div>
-            <ContactOpnemenKnop
-              href={event.payload_params.link}
-              target="_blank"
-              variant="zwart"
-              className={"d-lg-block d-none"}
-            >
-              Tickets
-            </ContactOpnemenKnop>
-          </Accordion.Header>
-          <Accordion.Body>
-            <p>{event.payload_params.beschrijvingLang}</p>
-            <ContactOpnemenKnop
-              href={event.payload_params.link}
-              target="_blank"
-              variant="zwart"
-              className={"d-block d-lg-none"}
-            >
-              Tickets
-            </ContactOpnemenKnop>
-          </Accordion.Body>
-        </Accordion.Item>
-      ))}
+      {events.map((event, eventIndex) => {
+        const href = getHref(event);
+        return (
+          <Accordion.Item key={event.id} eventKey={`${dayIndex}-${eventIndex}`}>
+            <Accordion.Header>
+              <div className={"d-block"}>
+                <p>
+                  {dayjs(event.payload_params.startdatum)
+                    .format("dd DD MMM")
+                    .toUpperCase()}
+                  {" | "}
+                  {dayjs(event.payload_params.startdatum).format(
+                    "HH:mm",
+                  )} - {dayjs(event.payload_params.einddatum).format("HH:mm")}
+                </p>
+                <h3>
+                  <b>{event.payload_params.titel}</b>
+                </h3>
+                <p className={"mb-0"}>{event.payload_params.ondertitel}</p>
+              </div>
+              {href && (
+                <ContactOpnemenKnop
+                  href={href}
+                  target="_blank"
+                  variant="zwart"
+                  className={"d-lg-block d-none"}
+                >
+                  Tickets
+                </ContactOpnemenKnop>
+              )}
+            </Accordion.Header>
+            <Accordion.Body>
+              <p>{event.payload_params.beschrijving}</p>
+              {href && (
+                <ContactOpnemenKnop
+                  href={href}
+                  target="_blank"
+                  variant="zwart"
+                  className={"d-block d-lg-none pt-2"}
+                >
+                  Tickets
+                </ContactOpnemenKnop>
+              )}
+            </Accordion.Body>
+          </Accordion.Item>
+        );
+      })}
     </Accordion>
   );
 };
@@ -155,7 +172,7 @@ const Agenda: React.FC = () => {
   }
 
   if (submissions.length === 0) {
-    return <EmptyState />;
+    return <EmptyState showMarquee />;
   }
 
   return (
