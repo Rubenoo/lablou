@@ -15,19 +15,27 @@ import {
 import InstagramMarquee from "../../components/InstagramMarquee/InstagramMarquee.tsx";
 
 const LoadingState = () => (
-  <section className="block block-groen d-flex justify-content-center align-items-center mt-3">
-    <Spinner animation="border" role="status">
-      <span className="visually-hidden">Laden...</span>
-    </Spinner>
-  </section>
+  <>
+    <InstagramMarquee variant="right" type={"zwart"} />
+
+    <section className="block block-groen d-flex justify-content-center align-items-center pt-3 rounded-top-0">
+      <Spinner animation="border" role="status" className={"mt-2 mt-lg-4"}>
+        <span className="visually-hidden">Laden...</span>
+      </Spinner>
+    </section>
+  </>
 );
 
 const EmptyState = () => (
-  <section className="block block-groen text-center mt-3">
-    <h3 className={"mb-0"}>
-      Er zijn momenteel geen evenementen gepland voor deze maand
-    </h3>
-  </section>
+  <>
+    <InstagramMarquee variant="right" type={"zwart"} />
+
+    <section className="block block-groen text-center pt-3 rounded-top-0">
+      <h3 className={"mb-0 mt-2 mt-lg-4"}>
+        Er zijn momenteel geen evenementen gepland voor deze maand
+      </h3>
+    </section>
+  </>
 );
 
 const AgendaAccordion = ({ day, events, dayIndex }: AgendaAccordionProps) => {
