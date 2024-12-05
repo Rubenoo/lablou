@@ -1,18 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
-import { createHashRouter } from "react-router-dom";
-import { RouterProvider } from "react-router";
+import { createBrowserRouter, RouterProvider } from "react-router";
 import Zaalverhuur from "./pages/Flexruimtes/Zaalverhuur.tsx";
 import VasteVerhuur from "./pages/VasteVerhuur/VasteVerhuur.tsx";
 import OverHetLab from "./pages/OverHetLab/OverHetLab.tsx";
 import Home from "./pages/Home/Home.tsx";
-import NietGevonden from "./components/NietGevonden/NietGevonden.tsx";
 import Zaal from "./pages/Flexruimtes/Zaal.tsx";
 import EventementenToevoegen from "./pages/EvenementToevoegen/EvenementToevoegen.tsx";
 import Agenda from "./pages/Agenda/Agenda.tsx";
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
@@ -42,12 +40,12 @@ const router = createHashRouter([
         element: <Agenda />,
       },
       {
-        path: "",
+        index: true,
         element: <Home />,
       },
       {
         path: "*",
-        element: <NietGevonden />,
+        element: <Home />,
       },
     ],
   },
