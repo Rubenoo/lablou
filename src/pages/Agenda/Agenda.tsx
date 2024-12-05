@@ -30,7 +30,10 @@ const EmptyState = ({ showMarquee }: { showMarquee?: boolean }) => (
   <>
     {showMarquee && <InstagramMarquee variant="right" type={"zwart"} />}
 
-    <section className="block block-groen text-center pt-3 rounded-top-0">
+    <section
+      className="block block-groen text-center pt-3 rounded-top-0"
+      id={"agenda"}
+    >
       <h3 className={"mb-0 mt-2 mt-lg-4"}>
         Er zijn momenteel geen evenementen gepland voor deze maand
       </h3>
@@ -49,7 +52,7 @@ const getHref = (event: Submission) => {
 
 const AgendaAccordion = ({ day, events, dayIndex }: AgendaAccordionProps) => {
   return (
-    <Accordion key={day} id={"agenda"}>
+    <Accordion key={day}>
       {events.map((event, eventIndex) => {
         const href = getHref(event);
         return (
@@ -178,7 +181,7 @@ const Agenda: React.FC = () => {
   return (
     <>
       <InstagramMarquee variant="right" type={"zwart"} />
-      <main className="block block-groen rounded-top-0">
+      <main className="block block-groen rounded-top-0" id={"agenda"}>
         <div className="d-flex justify-content-around align-items-center mb-lg-5 mb-3">
           <Button
             variant="outline-light"
