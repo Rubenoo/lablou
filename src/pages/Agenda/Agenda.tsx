@@ -139,21 +139,26 @@ const Agenda: React.FC = () => {
   const groupEventsByMonth = () => {
     const grouped: GroupedEventsByMonth = {};
 
-    submissions.forEach((submission) => {
+    // Sort submissions first by date
+    const sortedSubmissions = [...submissions].sort(
+      (a, b) =>
+        dayjs(a.payload_params.startdatum).valueOf() -
+        dayjs(b.payload_params.startdatum).valueOf(),
+    );
+
+    sortedSubmissions.forEach((submission) => {
       const monthKey = dayjs(submission.payload_params.startdatum).format(
         "YYYY-MM",
       );
-      const dayOfWeek = dayjs(submission.payload_params.startdatum).format(
-        "dddd",
-      );
+      const dayKey = dayjs(submission.payload_params.startdatum).format("D"); // Using D instead of DD removes leading zeros
 
       if (!grouped[monthKey]) {
         grouped[monthKey] = {};
       }
-      if (!grouped[monthKey][dayOfWeek]) {
-        grouped[monthKey][dayOfWeek] = [];
+      if (!grouped[monthKey][dayKey]) {
+        grouped[monthKey][dayKey] = [];
       }
-      grouped[monthKey][dayOfWeek].push(submission);
+      grouped[monthKey][dayKey].push(submission);
     });
 
     return grouped;
@@ -177,7 +182,6 @@ const Agenda: React.FC = () => {
   if (submissions.length === 0) {
     return <EmptyState showMarquee />;
   }
-
   return (
     <>
       <InstagramMarquee variant="right" type={"zwart"} />
