@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Accordion, Spinner, Button } from "react-bootstrap";
 import dayjs from "dayjs";
 import "dayjs/locale/nl";
-import isSameOrAfter from "dayjs/plugin/isSameOrAfter";
-dayjs.extend(isSameOrAfter);
 import "./styles.scss";
 import ContactOpnemenKnop from "../../components/ContactOpnemenKnop/ContactOpnemenKnop.tsx";
 import {
@@ -26,7 +24,13 @@ const LoadingState = () => (
   </>
 );
 
-const EmptyState = ({ showMarquee }: { showMarquee?: boolean }) => (
+const EmptyState = ({
+  showMarquee,
+  children,
+}: {
+  showMarquee?: boolean;
+  children: string;
+}) => (
   <>
     {showMarquee && <InstagramMarquee variant="right" type={"zwart"} />}
 
@@ -34,9 +38,7 @@ const EmptyState = ({ showMarquee }: { showMarquee?: boolean }) => (
       className="block block-groen text-center pt-3 rounded-top-0"
       id={"agenda"}
     >
-      <h3 className={"mb-0 mt-2 mt-lg-4"}>
-        Er zijn momenteel geen evenementen gepland voor deze maand
-      </h3>
+      <h3 className={"mb-0 mt-2 mt-lg-4"}>{children}</h3>
     </section>
   </>
 );
@@ -55,9 +57,12 @@ const AgendaAccordion = ({ day, events, dayIndex }: AgendaAccordionProps) => {
     <Accordion key={day}>
       {events.map((event, eventIndex) => {
         const href = getHref(event);
+        const isInPast = dayjs(event.payload_params.startdatum).isBefore(
+          dayjs().startOf("day"),
+        );
         return (
           <Accordion.Item key={event.id} eventKey={`${dayIndex}-${eventIndex}`}>
-            <Accordion.Header>
+            <Accordion.Header className={isInPast ? "past-event" : ""}>
               <div className={"d-block"}>
                 <p>
                   {dayjs(event.payload_params.startdatum)
@@ -73,7 +78,7 @@ const AgendaAccordion = ({ day, events, dayIndex }: AgendaAccordionProps) => {
                 </h3>
                 <p className={"mb-0"}>{event.payload_params.ondertitel}</p>
               </div>
-              {href && (
+              {href && !isInPast && (
                 <ContactOpnemenKnop
                   href={href}
                   target="_blank"
@@ -86,7 +91,7 @@ const AgendaAccordion = ({ day, events, dayIndex }: AgendaAccordionProps) => {
             </Accordion.Header>
             <Accordion.Body>
               <p>{event.payload_params.beschrijving}</p>
-              {href && (
+              {href && !isInPast && (
                 <ContactOpnemenKnop
                   href={href}
                   target="_blank"
@@ -122,13 +127,7 @@ const Agenda: React.FC = () => {
       );
       const data = (await response.json()) as ApiResponse;
 
-      const futureEvents = data.submissions.filter((submission) =>
-        dayjs(submission.payload_params.startdatum).isSameOrAfter(
-          dayjs().startOf("day"),
-        ),
-      );
-
-      setSubmissions(futureEvents);
+      setSubmissions(data.submissions);
     } catch (error) {
       console.error("Error fetching events:", error);
     } finally {
@@ -170,9 +169,7 @@ const Agenda: React.FC = () => {
 
   const goToPreviousMonth = () => {
     const previousMonth = dayjs(currentMonth).subtract(1, "month");
-    if (previousMonth.isSameOrAfter(dayjs(), "month")) {
-      setCurrentMonth(previousMonth.format("YYYY-MM"));
-    }
+    setCurrentMonth(previousMonth.format("YYYY-MM"));
   };
 
   if (loading) {
@@ -180,7 +177,11 @@ const Agenda: React.FC = () => {
   }
 
   if (submissions.length === 0) {
-    return <EmptyState showMarquee />;
+    return (
+      <EmptyState showMarquee>
+        Er zijn momenteel geen evenementen gepland voor deze maand
+      </EmptyState>
+    );
   }
   return (
     <>
@@ -191,7 +192,6 @@ const Agenda: React.FC = () => {
             variant="outline-light"
             className={"border-0 m-0"}
             onClick={goToPreviousMonth}
-            disabled={dayjs(currentMonth).isSame(dayjs(), "month")}
           >
             <img
               src="/assets/svg/pijl-zwart.svg"
@@ -226,7 +226,11 @@ const Agenda: React.FC = () => {
             ),
           )
         ) : (
-          <EmptyState />
+          <EmptyState>
+            {dayjs(currentMonth).isBefore(dayjs().startOf("day"))
+              ? "Er waren evenementen gepland voor deze maand."
+              : "Er zijn momenteel geen evenementen gepland voor deze maand."}
+          </EmptyState>
         )}
       </main>
     </>
