@@ -1,13 +1,47 @@
 import React, { FormEvent, useRef, useState } from "react";
-import { Form, Container, Alert } from "react-bootstrap";
+import { Form, Container, Alert, Button as BSButton } from "react-bootstrap";
 import Button from "../../components/Button/Button.tsx";
 
+type DateSet = {
+  id: number;
+  startdatum: string;
+  einddatum: string;
+};
+
 const EventementenToevoegen: React.FC = () => {
+  const [dateSets, setDateSets] = useState<DateSet[]>([
+    { id: 1, startdatum: "", einddatum: "" },
+  ]);
+  const [nextId, setNextId] = useState(2);
   const [error, setError] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const formRef = useRef<HTMLFormElement>(null);
 
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const addDateSet = () => {
+    setNextId((prevId) => prevId + 1);
+    setDateSets((prev) => [
+      ...prev,
+      { id: nextId, startdatum: "", einddatum: "" },
+    ]);
+  };
+
+  const removeDateSet = (id: number) => {
+    if (dateSets.length > 1) {
+      setDateSets(dateSets.filter((set) => set.id !== id));
+    }
+  };
+
+  const handleDateChange = (
+    id: number,
+    field: "startdatum" | "einddatum",
+    value: string,
+  ) => {
+    setDateSets(
+      dateSets.map((set) => (set.id === id ? { ...set, [field]: value } : set)),
+    );
+  };
+
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setError(null);
     setIsSubmitting(true);
@@ -20,25 +54,40 @@ const EventementenToevoegen: React.FC = () => {
       setIsSubmitting(false);
       return;
     }
+    const baseData = {
+      titel: formData.get("titel"),
+      ondertitel: formData.get("ondertitel"),
+      beschrijving: formData.get("beschrijving"),
+      link: formData.get("link"),
+      email: formData.get("email"),
+    };
 
-    fetch("https://usebasin.com/f/ceef5c83026a", {
-      method: "POST",
-      body: formData,
-    })
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        setIsSubmitting(false);
-        alert("Evenement successvol toegevoegd!");
-        formRef.current?.reset(); // Clear the form
-      })
-      .catch(() => {
-        setError(
-          "Er is iets misgegaan bij het versturen van het formulier. Probeer het later opnieuw.",
-        );
-        setIsSubmitting(false);
+    const submissions = dateSets.map((dateSet) => {
+      const submissionData = new FormData();
+      Object.entries(baseData).forEach(([key, value]) => {
+        submissionData.append(key, value as string);
       });
+      submissionData.append("startdatum", dateSet.startdatum);
+      submissionData.append("einddatum", dateSet.einddatum);
+
+      return fetch("https://usebasin.com/f/ceef5c83026a", {
+        method: "POST",
+        body: submissionData,
+      });
+    });
+
+    try {
+      await Promise.all(submissions);
+      alert("Evenementen successvol toegevoegd!");
+      formRef.current?.reset();
+      setDateSets([{ id: 1, startdatum: "", einddatum: "" }]);
+    } catch {
+      setError(
+        "Er is iets misgegaan bij het versturen van het formulier. Probeer het later opnieuw.",
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -49,9 +98,10 @@ const EventementenToevoegen: React.FC = () => {
         </Alert>
       )}
       <Form
-        onSubmit={handleSubmit}
-        action="https://usebasin.com/f/ceef5c83026a"
-        method="POST"
+        onSubmit={(e: FormEvent<HTMLFormElement>) => {
+          e.preventDefault();
+          void handleSubmit(e);
+        }}
         ref={formRef}
       >
         <Form.Group className="mb-3">
@@ -62,21 +112,57 @@ const EventementenToevoegen: React.FC = () => {
           </Form.Text>
         </Form.Group>
 
-        <Form.Group className="mb-3">
-          <Form.Label>Startdatum en tijd</Form.Label>
-          <Form.Control type="datetime-local" name="startdatum" required />
-          <Form.Text className="text-muted">
-            Selecteer wanneer het evenement begint
-          </Form.Text>
-        </Form.Group>
+        <div className="mb-4">
+          <div className="d-flex justify-content-between align-items-center mb-3">
+            <h5>Datums</h5>
+            <BSButton variant="outline-primary" onClick={addDateSet}>
+              + Datum toevoegen
+            </BSButton>
+          </div>
 
-        <Form.Group className="mb-3">
-          <Form.Label>Einddatum en tijd</Form.Label>
-          <Form.Control type="datetime-local" name="einddatum" required />
-          <Form.Text className="text-muted">
-            Selecteer wanneer het evenement eindigt
-          </Form.Text>
-        </Form.Group>
+          {dateSets.map((dateSet) => (
+            <div key={dateSet.id} className="p-3 mb-3 border rounded">
+              <div className="d-flex justify-content-between align-items-start mb-2">
+                <h6>Datum {dateSet.id}</h6>
+                {dateSets.length > 1 && (
+                  <BSButton
+                    variant="outline-danger"
+                    size="sm"
+                    onClick={() => removeDateSet(dateSet.id)}
+                  >
+                    Verwijderen
+                  </BSButton>
+                )}
+              </div>
+
+              <Form.Group className="mb-3">
+                <Form.Label>Startdatum en tijd</Form.Label>
+                <Form.Control
+                  type="datetime-local"
+                  key={"startdatum-" + dateSet.id}
+                  value={dateSet.startdatum}
+                  onChange={(e) =>
+                    handleDateChange(dateSet.id, "startdatum", e.target.value)
+                  }
+                  required
+                />
+              </Form.Group>
+
+              <Form.Group className="mb-3">
+                <Form.Label>Einddatum en tijd</Form.Label>
+                <Form.Control
+                  type="datetime-local"
+                  key={"einddatum-" + dateSet.id}
+                  value={dateSet.einddatum}
+                  onChange={(e) =>
+                    handleDateChange(dateSet.id, "einddatum", e.target.value)
+                  }
+                  required
+                />
+              </Form.Group>
+            </div>
+          ))}
+        </div>
 
         <Form.Group className="mb-3">
           <Form.Label>Ondertitel</Form.Label>
@@ -121,6 +207,7 @@ const EventementenToevoegen: React.FC = () => {
             Voer het wachtwoord in om het evenement te kunnen toevoegen
           </Form.Text>
         </Form.Group>
+        <input type="hidden" name="_honny_ponny" />
 
         <Button variant="zwart" type="submit" disabled={isSubmitting}>
           {isSubmitting ? "Bezig met versturen..." : "Versturen"}
