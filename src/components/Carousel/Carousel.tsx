@@ -33,6 +33,13 @@ const Carousel: React.FunctionComponent = () => {
             alt="Lab Lou foto 4"
           />
         </div>
+        <div className="carousel-item h-100" data-bs-interval={"5000"}>
+          <img
+            src="/assets/images/home/carousel_5.jpeg"
+            className="carousel-image"
+            alt="Lab Lou foto 5"
+          />
+        </div>
       </div>
       <button
         className="carousel-control-prev"

@@ -14,7 +14,7 @@ const OverOnsBlock: React.FunctionComponent = () => {
         droomplek!
       </p>
       <ImageBlock
-        src={"overlablou/over_lablou.jpg"}
+        src={"overlablou/over_lablou.jpeg"}
         alt={"Over Lab Lou"}
         className={"over-ons-image"}
       />
