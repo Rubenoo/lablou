@@ -39,17 +39,19 @@ const OverOnsBlock: React.FunctionComponent = () => {
         werkervaringsplekken.
       </p>
       <p>
-        We gaan elkaar in Lab Lou ontmoeten! En daarvoor organiseren wij
-        allerlei activiteiten voor de buurt en inwoners van regio Zeist/De Bilt
-        om dat te laten gebeuren. Denk aan workshops, exposities, filmavonden,
-        koffieochtenden, voorstellingen voor jong en oud, en noem maar op! En
-        wat superleuk is, wat dat programma precies is, dat mag jij bepalen.
-        Want wij willen heel graag met inwoners en lokale organisaties samen
-        leuke dingen bedenken en ze ook echt gaan doen!
+        In Lab Lou ontmoeten wij elkaar! Daarvoor organiseren wij allerlei
+        activiteiten voor de buurt en inwoners van regio Zeist/De Bilt om dat te
+        laten gebeuren. Denk aan workshops, exposities, filmavonden,
+        koffieochtenden, spelletjesavonden, een Lente Festival, voorstellingen
+        voor jong en oud, en noem maar op! En wat superleuk is, wat dat
+        programma precies is, dat mag ook jij bepalen. Want wij willen heel
+        graag met inwoners en lokale organisaties samen leuke dingen bedenken en
+        ze ook echt gaan doen!
       </p>
       <p>
         En dit alles in een fijne, creatieve en professionele sfeer mèt goede
-        koffie en het lekkerste eten. Wat wil je nog meer?
+        koffie (van de Koffiebak) en het lekkerste eten (van Laura’s Sabor). Wat
+        wil je nog meer?
       </p>
       <p>
         Kom zelf ervaren hoe het bij ons is. Wij zien je graag snel in Lab Lou!
@@ -67,12 +69,10 @@ const OverOnsBlock: React.FunctionComponent = () => {
           Weteringlaan 1 <br />
           3732 HZ De Bilt
         </a>
-        <a className={"d-block"} href="mailto:hallo@lablou.nl">
-          hallo@lablou.nl
-        </a>
         <a className={"d-block"} href="tel:06 28277642">
           06 28277642
         </a>
+        <p>Socials:</p>
         <a
           className={"d-block mb-2"}
           href={"https://www.instagram.com/bijlablou/"}
@@ -80,15 +80,29 @@ const OverOnsBlock: React.FunctionComponent = () => {
         >
           @bijlablou
         </a>
+        <b>Dagverhuur en algemene informatie:</b>
+        <a className={"d-block"} href="mailto:hallo@lablou.nl">
+          hallo@lablou.nl
+        </a>
+        <b>Programma en communicatie:</b>
+        <a className={"d-block"} href="mailto:programma@lablou.nl">
+          programma@lablou.nl
+        </a>
         <p>
           Openingstijden: ma t/m vrij van 9.00 tot 17.00 uur, overige tijden op
           aanvraag of tijdens activiteiten
         </p>
+        <b>Algemene toegankelijkheid:</b>
         <p>
-          Parkeerplaatsen op eigen terrein
+          Rolstoeltoegankelijk toilet aanwezig
+          <br /> (Hulp)honden zijn welkom
+        </p>
+        <p>
+          Parkeerplaatsen op eigen terrein, maar we vinden nóg fijner als je
+          GROEN reist en met de fiets of het OV komt!
           <br />
-          Bus 74 stopt voor de deur - halte Weteringlaan zowel vanuit Utrecht
-          als vanaf Station Driebergen-Zeist
+          Bus 74 stopt voor de deur - halte Kwikstaartlaan zowel vanuit Utrecht
+          als vanaf Station Driebergen-Zeist.
         </p>
       </address>
     </section>
