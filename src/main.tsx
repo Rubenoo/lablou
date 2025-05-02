@@ -9,6 +9,7 @@ import Home from "./pages/Home/Home.tsx";
 import Zaal from "./pages/Flexruimtes/Zaal.tsx";
 import EventementenToevoegen from "./pages/EvenementToevoegen/EvenementToevoegen.tsx";
 import Agenda from "./pages/Agenda/Agenda.tsx";
+import ReactPixel from "react-facebook-pixel";
 
 const router = createHashRouter([
   {
@@ -50,6 +51,16 @@ const router = createHashRouter([
     ],
   },
 ]);
+
+const options = {
+  autoConfig: true, // set pixel's autoConfig. More info: https://developers.facebook.com/docs/facebook-pixel/advanced/
+  debug: false, // enable logs
+};
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
+ReactPixel.init("1374193747159921", {}, options);
+
+ReactPixel.pageView(); // For tracking page view
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
