@@ -13,7 +13,7 @@ const VasteVerhuur: React.FunctionComponent = () => {
           terugKnop={"home"}
           titel={"Werk- en atelierplek"}
           toelichting={
-            "Lab Lou beschikt over 12 verhuurbare units tussen de 19 en 100 m2. Daarnaast hebben wij 8 vaste bureauplekken en 6 atelierplekken. Op dit moment hebben wij nog een aantal bureau- en atelierplekken over. Heb je interesse? Leuk! Neem contact met ons op voor de mogelijkheden."
+            "Lab Lou beschikt over 12 verhuurbare units tussen de 19 en 100 m2. Daarnaast hebben wij 8 vaste bureauplekken. Op dit moment hebben wij geen units of bureaus meer over. Heb je wel interesse? Dat vinden wij natuurlijk heel leuk! Neem contact met ons op om te kijken of er op korte termijn iets vrijkomt of om andere flexibele opties te onderzoeken."
           }
           button={<ContactOpnemenKnop />}
         />
