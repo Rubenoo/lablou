@@ -56,7 +56,7 @@ const tagManagerArgs = {
   gtmId: "GTM-WTCLTHPH",
 };
 
-// eslint-disable-next-line @typescript-eslint/no-unsafe-call,@typescript-eslint/no-unsafe-member-access
+ 
 TagManager.initialize(tagManagerArgs);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(

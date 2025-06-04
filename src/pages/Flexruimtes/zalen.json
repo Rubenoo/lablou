@@ -9,8 +9,8 @@
     "link": "https://lablou.i-reserve.net/front?mod=calendar&rc=0&product=30403",
     "informatie": [
       {
-        "titel": "Tarieven (excl.btw)",
-        "gegevens": "6,25 voor halve dag\n€12,50 voor hele dag"
+        "titel": "Tarieven (incl. btw)",
+        "gegevens": "€10 voor halve dag\n€19 voor hele dag"
       },
       {
         "titel": "Voorzieningen",
@@ -28,7 +28,7 @@
     "link": "https://lablou.i-reserve.net/front?mod=calendar&rc=0&product=30401",
     "informatie": [
       {
-        "titel": "Tarieven (excl.btw)",
+        "titel": "Tarieven (excl. btw)",
         "gegevens": "€25 per 2 uur"
       },
       {
@@ -56,8 +56,8 @@
     "link": "https://lablou.i-reserve.net/front?mod=calendar&rc=0&product=30404",
     "informatie": [
       {
-        "titel": "Tarieven (excl.btw)",
-        "gegevens": "€25 per 2 uur"
+        "titel": "Tarieven (excl. btw)",
+        "gegevens": "€30 per 2 uur"
       },
       {
         "titel": "Ruimte",
@@ -83,8 +83,8 @@
     "link": "https://lablou.i-reserve.net/front?mod=calendar&rc=0&product=30402",
     "informatie": [
       {
-        "titel": "Tarieven (excl.btw)",
-        "gegevens": "€75 per dagdeel (3,5 uur)"
+        "titel": "Tarieven (excl. btw)",
+        "gegevens": "€100 voor halve dag (4 uur)\n€185 voor hele dag"
       },
       {
         "titel": "Ruimte",
@@ -110,8 +110,8 @@
     "extraInfo": ["180 m2", "tot 100 pers."],
     "informatie": [
       {
-        "titel": "Tarieven (excl.btw)",
-        "gegevens": "Tarieven vanaf € 400 per dagdeel en € 600 voor een hele dag. Neem contact op voor de mogelijkheden."
+        "titel": "Tarieven (excl. btw)",
+        "gegevens": "Tarieven vanaf € 600 per dagdeel en € 850 voor een hele dag. Neem contact op voor de mogelijkheden."
       },
       {
         "titel": "Ruimte",
