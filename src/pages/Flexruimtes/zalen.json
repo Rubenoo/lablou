@@ -14,7 +14,11 @@
       },
       {
         "titel": "Voorzieningen",
-        "gegevens": "• wifi\n• elektriciteit\n• koffie/thee\n• lunch (op aanvraag)"
+        "gegevens": "• WiFi\n• stroom"
+      },
+      {
+        "titel": "Extra",
+        "gegevens": "• koffie/thee beschikbaar\n• lekkers bij de koffie (op aanvraag)\n• lunch (op aanvraag)"
       }
     ]
   },
@@ -37,11 +41,11 @@
       },
       {
         "titel": "Voorzieningen",
-        "gegevens": "• presentatiescherm\n• whiteboard\n• wifi\n• inclusief koffie/thee/water"
+        "gegevens": "• presentatiescherm\n• whiteboard\n• WiFi"
       },
       {
         "titel": "Extra",
-        "gegevens": "• lekkers voor bij de koffie\n• lunch (op aanvraag)"
+        "gegevens": "• koffie/thee beschikbaar\n• lekkers bij de koffie (op aanvraag)\n• lunch (op aanvraag)"
       }
     ]
   },
@@ -65,11 +69,11 @@
       },
       {
         "titel": "Voorzieningen",
-        "gegevens": "• presentatiescherm\n• whiteboard\n• wifi\n• inclusief koffie/thee/water"
+        "gegevens": "• presentatiescherm\n• whiteboard\n• WiFi"
       },
       {
         "titel": "Extra",
-        "gegevens": "• lekkers voor bij de koffie\n• lunch (op aanvraag)"
+        "gegevens": "• koffie/thee beschikbaar\n• lekkers bij de koffie (op aanvraag)\n• lunch (op aanvraag)"
       }
     ]
   },
@@ -92,11 +96,11 @@
       },
       {
         "titel": "Voorzieningen",
-        "gegevens": "• presentatiescherm\n• whiteboard\n• werkende keuken(inductie, oven, ijskast, vriezer)\n• wifi\n• inclusief koffie/thee/water"
+        "gegevens": "• presentatiescherm\n• whiteboard\n• werkende keuken(inductie, oven, ijskast, vriezer)\n• WiFi"
       },
       {
         "titel": "Extra",
-        "gegevens": "• lekkers voor bij de koffie, lunch (op aanvraag)"
+        "gegevens": "• koffie/thee beschikbaar\n• lekkers bij de koffie (op aanvraag)\n• lunch (op aanvraag)"
       }
     ]
   },
@@ -119,7 +123,7 @@
       },
       {
         "titel": "Voorzieningen",
-        "gegevens": "• beamer\n• scherm\n• geluid\n• podium\n• wifi\n• bar"
+        "gegevens": "• beamer\n• scherm\n• geluid\n• podium\n• WiFi\n• bar"
       },
       {
         "titel": "Extra",
