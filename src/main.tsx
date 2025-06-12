@@ -56,7 +56,6 @@ const tagManagerArgs = {
   gtmId: "GTM-WTCLTHPH",
 };
 
- 
 TagManager.initialize(tagManagerArgs);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
