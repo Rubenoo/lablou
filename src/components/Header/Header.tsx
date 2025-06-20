@@ -51,10 +51,10 @@ const Header: React.FunctionComponent = () => {
               </NavLink>
               <NavLink
                 className="nav-link"
-                to="vasteverhuur"
+                to="kantoorenatelierruimte"
                 onClick={closeShow}
               >
-                Vaste verhuur
+                Kantoor- en atelierruimte
               </NavLink>
               <NavLink className="nav-link" to="agenda" onClick={closeShow}>
                 Agenda

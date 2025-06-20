@@ -14,17 +14,26 @@ const Home: React.FunctionComponent = () => {
         <Block
           variant={"roze"}
           inleiding="Dit doen we bij Lab Lou"
-          titel={"Creatieve en sociale hotspot"}
+          titel={"De sociale en circulaire broedplaats van regio Zeist"}
           toelichting={
-            "Wij zijn de eerste creatieve en sociale broedplaats van de regio in een omgetoverd tuincentrum aan de rand van Zeist West. Creatieve en sociale ondernemers kunnen hier werkruimtes huren, flexwerken en samenwerken. \n\nDaarnaast ontwikkelen wij allerlei (inwoners)initiatieven en zetten we mensen in hun kracht door het aanbieden van gericht programma en het creëren van werkervaringsplekken. In Lab Lou bieden we ook tal van creatieve en culturele activiteiten aan. \n\nEr is altijd iets te doen!"
+            <>
+              In een oud tuincentrum aan de rand van Zeist West vind je de
+              eerste creatieve broedplaats van de regio. Volledig circulair
+              ingericht, met flexwerkplekken, vergaderruimtes en kantoorruimtes.
+              <br />
+              <br />
+              Daarnaast organiseren wij dagelijks een{" "}
+              <u>divers sociaal-cultureel programma</u> en ben je altijd welkom
+              om te werken, ontmoeten of gewoon koffie te drinken.
+            </>
           }
           button={button}
         />
         <Carousel />
       </div>
-      <InstagramMarquee variant={"left"} />
+      <InstagramMarquee variant={"left"} text={"BEKIJK ONZE AGENDA"} />
       <div className={"ons-aanbod-container"} id={"ons-aanbod"}>
-        <h1>Ons aanbod</h1>
+        <h1>Onze ruimtes</h1>
         <div
           className={
             "ons-aanbod-items-container ons-aanbod-items-container-home"
@@ -32,15 +41,13 @@ const Home: React.FunctionComponent = () => {
         >
           <AanbodBlock
             index={0}
-            category={"Flex- & vergaderruimte"}
+            titel={"Flex- & vergaderruimte"}
             afbeelding={"ontdek_ons_aanbod"}
-            titel={"Ontdek ons aanbod"}
             to={"flexruimtes"}
             key={"0"}
           />
           <AanbodBlock
             index={1}
-            category={"Vaste verhuur"}
             afbeelding={"werk_en_atelierruimte"}
             titel={"Ontdek onze werk- en atelierruimte"}
             to={"vasteverhuur"}
@@ -60,6 +67,6 @@ const button = (
     className={""}
     variant={"zwart"}
   >
-    Bekijk het aanbod
+    Bekijk onze ruimtes
   </StyledButton>
 );

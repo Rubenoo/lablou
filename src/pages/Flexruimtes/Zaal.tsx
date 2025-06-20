@@ -34,8 +34,8 @@ const Zaal: React.FunctionComponent = () => {
           toelichting={zaal.toelichting}
           button={<Pijl href={"#aanvullende-informatie"} />}
         />
-        {zaal.titel === "Symposiumruimte" ? (
-          <Symposiumruimte />
+        {zaal.titel === "Grote Zaal" ? (
+          <GroteZaal />
         ) : (
           <ImageBlock
             src={`flexruimtes/${zaal.afbeelding}.jpg`}
@@ -50,10 +50,10 @@ const Zaal: React.FunctionComponent = () => {
 
 export default Zaal;
 
-const Symposiumruimte: React.FunctionComponent = () => {
+const GroteZaal: React.FunctionComponent = () => {
   return (
     <video disableRemotePlayback autoPlay muted loop className={"image-block"}>
-      <source src="/assets/videos/symposiumruimte.mp4" type="video/mp4" />
+      <source src="/assets/videos/grotezaal.mp4" type="video/mp4" />
     </video>
   );
 };

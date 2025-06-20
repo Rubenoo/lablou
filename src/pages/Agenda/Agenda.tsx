@@ -14,7 +14,11 @@ import InstagramMarquee from "../../components/InstagramMarquee/InstagramMarquee
 
 const LoadingState = () => (
   <>
-    <InstagramMarquee variant="right" type={"zwart"} />
+    <InstagramMarquee
+      variant="right"
+      type={"zwart"}
+      text={"BEKIJK ONZE AGENDA"}
+    />
 
     <section className="block block-groen d-flex justify-content-center align-items-center pt-3 rounded-top-0">
       <Spinner animation="border" role="status" className={"mt-2 mt-lg-4"}>
@@ -32,7 +36,13 @@ const EmptyState = ({
   children: string;
 }) => (
   <>
-    {showMarquee && <InstagramMarquee variant="right" type={"zwart"} />}
+    {showMarquee && (
+      <InstagramMarquee
+        variant="right"
+        type={"zwart"}
+        text={"BEKIJK ONZE AGENDA"}
+      />
+    )}
 
     <section
       className="block block-groen text-center pt-3 rounded-top-0"
@@ -185,7 +195,11 @@ const Agenda: React.FC = () => {
   }
   return (
     <>
-      <InstagramMarquee variant="right" type={"zwart"} />
+      <InstagramMarquee
+        variant="right"
+        type={"zwart"}
+        text={"BEKIJK ONZE AGENDA"}
+      />
       <main className="block block-groen rounded-top-0" id={"agenda"}>
         <div className="d-flex justify-content-around align-items-center mb-lg-5 mb-3">
           <Button

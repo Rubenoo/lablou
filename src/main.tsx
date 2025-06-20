@@ -2,8 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
 import { createHashRouter, RouterProvider } from "react-router";
-import Zaalverhuur from "./pages/Flexruimtes/Zaalverhuur.tsx";
-import VasteVerhuur from "./pages/VasteVerhuur/VasteVerhuur.tsx";
+import FlexEnVergaderRuimte from "./pages/Flexruimtes/FlexEnVergaderRuimte.tsx";
+import KantoorEnAtelierRuimte from "./pages/KantoorEnAtelierRuimte/KantoorEnAtelierRuimte.tsx";
 import OverHetLab from "./pages/OverHetLab/OverHetLab.tsx";
 import Home from "./pages/Home/Home.tsx";
 import Zaal from "./pages/Flexruimtes/Zaal.tsx";
@@ -18,15 +18,15 @@ const router = createHashRouter([
     children: [
       {
         path: "flexruimtes",
-        element: <Zaalverhuur />,
+        element: <FlexEnVergaderRuimte />,
       },
       {
         path: "flexruimtes/:id",
         element: <Zaal />,
       },
       {
-        path: "vasteverhuur",
-        element: <VasteVerhuur />,
+        path: "kantoorenatelierruimte",
+        element: <KantoorEnAtelierRuimte />,
       },
       {
         path: "over",

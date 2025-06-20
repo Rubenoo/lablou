@@ -4,7 +4,7 @@ import AanbodBlock from "../../components/AanbodBlock/AanbodBlock.tsx";
 import ZalenJSON from "./zalen.json";
 import { ZaalType } from "./types.ts";
 import Pijl from "../../components/Pijl/Pijl.tsx";
-const Zaalverhuur: React.FunctionComponent = () => {
+const FlexEnVergaderRuimte: React.FunctionComponent = () => {
   const Zalen = ZalenJSON.map((zaal: ZaalType) => (
     <AanbodBlock {...zaal} to={zaal.index.toString()} key={zaal.index} />
   ));
@@ -14,10 +14,10 @@ const Zaalverhuur: React.FunctionComponent = () => {
       <div className={"block-container"}>
         <Block
           variant={"groen"}
-          titel={"Dagverhuur"}
+          titel={"Flexwerkplekken en vergaderruimtes"}
           terugKnop={"home"}
           toelichting={
-            "Ben je op zoek naar een creatieve en toegankelijke locatie om af te spreken of te vergaderen? Heb je zin om op een fijne plek te flexwerken? Wil je een event organiseren op een inspirerende locatie? Het kan allemaal! \n\nOnze vergaderkamers, workshopruimte en symposiumzaal zijn van alle gemakken voorzien. Heerlijke catering, goed bereikbaar met OV (bus 74), fiets en auto èn Lab Lou is rolstoeltoegankelijk. Werken bij Lab Lou is niet alleen super leuk, je maakt ook deel uit van een bruisende community en leert een groot netwerk kennen!"
+            "Naast vaste werkplekken biedt Lab Lou flexwerkplekken, diverse ruimtes voor vergaderingen, workshops, trainingen, presentaties en andere bijeenkomsten.\n\nLab Lou is volledig circulair ingericht, rolstoeltoegankelijk, beschikt over een eigen cateraar en is goed bereikbaar met OV, fiets en auto..\n\nOns team denkt graag met je mee, van creatieve invulling tot catering op maat.\n"
           }
           button={<Pijl href={"#ons-aanbod"} />}
         />
@@ -34,4 +34,4 @@ const Zaalverhuur: React.FunctionComponent = () => {
   );
 };
 
-export default Zaalverhuur;
+export default FlexEnVergaderRuimte;

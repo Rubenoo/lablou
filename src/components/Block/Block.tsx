@@ -8,7 +8,7 @@ type BlockProps = {
   button?: React.ReactNode;
   titel: string;
   inleiding?: string;
-  toelichting?: string;
+  toelichting?: string | React.ReactNode;
   terugKnop?: "home" | "flexruimtes";
 };
 const Block: React.FunctionComponent<BlockProps> = ({

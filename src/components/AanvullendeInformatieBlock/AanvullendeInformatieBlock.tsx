@@ -37,7 +37,7 @@ const AanvullendeInformatieBlock: React.FunctionComponent<
           href={link}
           target="_blank"
         >
-          Reserveer nu
+          Contact
         </ContactOpnemenKnop>
       </div>
       <div>
@@ -52,7 +52,7 @@ const AanvullendeInformatieBlock: React.FunctionComponent<
             href={link}
             target="_blank"
           >
-            Reserveer nu
+            Contact
           </ContactOpnemenKnop>
         )}
       </div>

@@ -42,6 +42,8 @@ const Footer: React.FunctionComponent = () => {
           target={"_blank"}
         >
           Weteringlaan 1, De Bilt
+          <br /> Openingstijden: ma t/m vrij van 9.00 tot 17.00 uur, overige
+          tijden op aanvraag of tijdens activiteiten.
         </a>
       </address>
     </footer>

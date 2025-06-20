@@ -9,10 +9,14 @@ type CTABlockProps = {
 const CTABlock: React.FunctionComponent<CTABlockProps> = ({ className }) => {
   return (
     <section className={`cta-container ${className}`}>
-      <h2>Zoek jij een goed bereikbare flexwerkplek in Zeist?</h2>
+      <h2>
+        Op zoek naar een fijne en goed bereikbare plek om te flexwerken,
+        vergaderen of een training te geven?
+      </h2>
       <p>
-        Dan moet je bij Lab Lou zijn! Lekkere koffie, heerlijke lunch (op
-        aanvraag), een fijne werkplek én leuke mensen ontmoeten!
+        Dan zit je goed bij Lab Lou! Je vindt hier koffie van de Koffiebak,
+        heerlijke lunch van Laura’s Sabor (op aanvraag) én een inspirerende
+        werkomgeving.
       </p>
       <ContactOpnemenKnop href={"/#/flexruimtes"}>
         Reserveer nu
