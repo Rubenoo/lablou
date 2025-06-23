@@ -10,6 +10,7 @@ import Zaal from "./pages/Flexruimtes/Zaal.tsx";
 import EventementenToevoegen from "./pages/EvenementToevoegen/EvenementToevoegen.tsx";
 import Agenda from "./pages/Agenda/Agenda.tsx";
 import TagManager from "react-gtm-module";
+import Contact from "./pages/Contact/Contact.tsx";
 
 const router = createHashRouter([
   {
@@ -39,6 +40,10 @@ const router = createHashRouter([
       {
         path: "agenda",
         element: <Agenda />,
+      },
+      {
+        path: "contact",
+        element: <Contact />,
       },
       {
         index: true,
