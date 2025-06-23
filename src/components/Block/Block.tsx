@@ -10,6 +10,7 @@ type BlockProps = {
   inleiding?: string;
   toelichting?: string | React.ReactNode;
   terugKnop?: "home" | "flexruimtes";
+  style?: React.CSSProperties;
 };
 const Block: React.FunctionComponent<BlockProps> = ({
   variant,
@@ -19,9 +20,10 @@ const Block: React.FunctionComponent<BlockProps> = ({
   terugKnop,
   titel,
   toelichting,
+  ...props
 }) => {
   return (
-    <section className={`block block-${variant} ${className}`}>
+    <section className={`block block-${variant} ${className}`} {...props}>
       {terugKnop === "home" && <TerugKnop variant={"home"} />}
       {terugKnop === "flexruimtes" && <TerugKnop variant={"flexruimtes"} />}
       {inleiding && <p className={"medium"}>{inleiding}</p>}

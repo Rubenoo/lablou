@@ -7,6 +7,7 @@
   overflow: hidden;
   text-align: center;
   display: flex;
+  max-width: 100cqw;
   gap: 2rem;
   @media (max-width: 991px) {
     height: 60px;

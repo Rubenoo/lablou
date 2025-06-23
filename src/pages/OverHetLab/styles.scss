@@ -1,8 +1,8 @@
 .over-ons {
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-columns: 1fr 5fr 1fr;
   align-content: start;
-  margin-block-start: 4rem;
+  margin-block-start: 3rem;
   margin-block-end: 6rem;
 
   @media (max-width: 991px) {
