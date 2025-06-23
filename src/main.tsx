@@ -11,6 +11,7 @@ import EventementenToevoegen from "./pages/EvenementToevoegen/EvenementToevoegen
 import Agenda from "./pages/Agenda/Agenda.tsx";
 import TagManager from "react-gtm-module";
 import Contact from "./pages/Contact/Contact.tsx";
+import OnzeLaborantenPagina from "./pages/OnzeLaboranten/OverHetLab.tsx";
 
 const router = createHashRouter([
   {
@@ -40,6 +41,10 @@ const router = createHashRouter([
       {
         path: "agenda",
         element: <Agenda />,
+      },
+      {
+        path: "onzelaboranten",
+        element: <OnzeLaborantenPagina />,
       },
       {
         path: "contact",

@@ -1,6 +1,6 @@
 [
   {
-    "titel": "Stadslab Zeist",
+    "titel": "Stichting Stadslab Zeist",
     "websites": [
       {
         "name": "stadslabzeist.nl",
@@ -18,11 +18,11 @@
     ]
   },
   {
-    "titel": "Krachtvrouwen Zeist",
+    "titel": "Stichting Krachtvrouwen Zeist",
     "websites": [
       {
         "name": "Krachtvrouwen Zeist Facebook",
-        "link": "https://www.facebook.com/krachtvrouwenzeist/"
+        "link": "https://krachtvrouwenzeist.nl"
       }
     ]
   },
@@ -36,20 +36,11 @@
     ]
   },
   {
-    "titel": "Kunstwerk op Maat",
-    "websites": [
-      {
-        "name": "kunstwerkopmaat.com",
-        "link": "https://www.kunstwerkopmaat.com/"
-      }
-    ]
-  },
-  {
     "titel": "Koffiebak",
     "websites": [
       {
         "name": "koffiebak.nl",
-        "link": "https://koffiebak.nl/"
+        "link": "https://koffiebak.nl"
       }
     ]
   },
@@ -81,24 +72,6 @@
     ]
   },
   {
-    "titel": "Projectleider en adviseur Sport & Beweging Joke Davio",
-    "websites": [
-      {
-        "name": "jokedavio.nl",
-        "link": "https://jokedavio.nl/"
-      }
-    ]
-  },
-  {
-    "titel": "Samen Duurzaam Zeist",
-    "websites": [
-      {
-        "name": "omzeist.nl",
-        "link": "https://omzeist.nl/samen+duurzaam+zeist+home/default.aspx"
-      }
-    ]
-  },
-  {
     "titel": "Vastgoed fotograaf Thom Punte",
     "websites": [
       {
@@ -126,7 +99,7 @@
     ]
   },
   {
-    "titel": "Audiodocumentaires en podcastmaker Babette Rijkhoff",
+    "titel": "Audiodocumentaire- en podcastmaker Babette Rijkhoff",
     "websites": [
       {
         "name": "babetterijkhoff.nl",
@@ -135,6 +108,120 @@
       {
         "name": "studiobezemkast.nl",
         "link": "http://studiobezemkast.nl"
+      }
+    ]
+  },
+  {
+    "titel": "Kunstenaar Ralph Zabel",
+    "websites": [
+      {
+        "name": "ralphzabel.com",
+        "link": "https://ralphzabel.com"
+      }
+    ]
+  },
+  {
+    "titel": "Tuintypes - Thomas Heger",
+    "websites": [
+      {
+        "name": "thomasheger.nl",
+        "link": "https://thomasheger.nl"
+      }
+    ]
+  },
+  {
+    "titel": "Empact",
+    "websites": [
+      {
+        "name": "empct.nl/",
+        "link": "https://www.empct.nl/"
+      }
+    ]
+  },
+  {
+    "titel": "Monads Bureau - Elvira Veldman"
+  },
+  {
+    "titel": "Climavore Athlete - Peter Res",
+    "websites": [
+      {
+        "name": "climavore-athlete.org",
+        "link": "https://www.climavore-athlete.org"
+      }
+    ]
+  },
+  {
+    "titel": "De Naaikeet",
+    "websites": [
+      {
+        "name": "@de.naaikeet",
+        "link": "https://www.instagram.com/de.naaikeet/"
+      }
+    ]
+  },
+  {
+    "titel": "RH Sport Services - Roos Hoogeboom"
+  },
+  {
+    "titel": "House of Worlds - Esther Aarts",
+    "websites": [
+      {
+        "name": "houseofworlds@gmail.com",
+        "link": "mailto:houseofworlds@gmail.com"
+      }
+    ]
+  },
+  {
+    "titel": "Aldo Theater - Ina Geisler",
+    "websites": [
+      {
+        "name": "aldo.nl",
+        "link": "https://www.aldo.nl"
+      }
+    ]
+  },
+  {
+    "titel": "Kunstenaar Judy Spruyt",
+    "websites": [
+      {
+        "name": "judy@judyspruyt.nl",
+        "link": "mailto:judy@judyspruyt.nl"
+      }
+    ]
+  },
+  {
+    "titel": "Samen Duurzaam Zeist",
+    "websites": [
+      {
+        "name": "samenduurzaamzeist.nl",
+        "link": "https://www.samenduurzaamzeist.nl"
+      }
+    ]
+  },
+  {
+    "titel": "Groene Makelaar Zeist",
+    "websites": [
+      {
+        "name": "stadslandbouwzeist.nl",
+        "link": "https://stadslandbouwzeist.nl"
+      }
+    ]
+  },
+  {
+    "titel": "De Zwart Schilderwerken",
+    "websites": [
+      {
+        "name": "dezwartschilderwerken.nl",
+        "link": "https://dezwartschilderwerken.nl"
+      }
+    ]
+  },
+  {
+    "titel": "Stichting Leegstand Oplossers Utrecht (LOU)",
+    "websites": [
+      {
+        "name": "stichtinglou.nl",
+        "link": "https://stichtinglou.nl"
       }
     ]
   }

@@ -7,33 +7,35 @@ const SamenwerkingBlock: React.FunctionComponent = () => {
       <h2>Lab Lou is een samenwerking tussen:</h2>
       <div className={"samenwerking-grid"}>
         <address>
-          <b>Stadslab Zeist</b>
-          <p>(uitvoer en kwartiermaken)</p>
+          <b>Stichting Stadslab Zeist</b>
+          <p>(Dagelijks beheer en programmering)</p>
           <a
             href={
               "https://www.google.com/maps/search/?api=1&query=Weteringlaan+1,+3732HZ+De+Bilt"
             }
             target={"_blank"}
           >
+            <br className={"d-none d-lg-block"} />
             Weteringlaan 1 <br />
-            3732 HZ De Bilt
+            3732 HZ (De Bilt)
           </a>
           <br />
           <a href="mailto:wijzijn@stadslabzeist.nl">wijzijn@stadslabzeist.nl</a>
         </address>
         <address>
-          <b>Stichting Leegstand Oplossers Utrecht</b>
-          <p>(Administratie en financieren)</p>
+          <b>Stichting Leegstand Oplossers Utrecht (LOU)</b>
+          <p>(Administratie en financiën)</p>
           <a
             href={
-              "https://www.google.com/maps/search/?api=1&query=Gruttersdijk+12,+3514+BG+Utrecht"
+              "https://www.google.com/maps/search/?api=1&query=Barkasstraat+5,+3534+PH+Utrecht"
             }
             target={"_blank"}
           >
-            Gruttersdijk 12 <br />
-            3514 BG Utrecht
+            Barkasstraat 5 <br />
+            3534 PH Utrecht
           </a>
-          <p />
+          <br />
+
           <a href="mailto:info@stichtinglou.nl">info@stichtinglou.nl</a>
         </address>
       </div>
