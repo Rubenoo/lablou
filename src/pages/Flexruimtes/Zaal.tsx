@@ -51,7 +51,7 @@ const Zaal: React.FunctionComponent = () => {
 
 export default Zaal;
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
+// @ts-ignore
 const GroteZaalVideo: React.FunctionComponent = () => {
   return (
     <video disableRemotePlayback autoPlay muted loop className={"image-block"}>

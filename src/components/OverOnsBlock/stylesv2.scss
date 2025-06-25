@@ -30,3 +30,13 @@
     border-radius: 0 0 10px 10px;
   }
 }
+
+.responsive-order {
+  @media (min-width: 992px) {
+    order: 1;
+  }
+
+  @media (max-width: 991px) {
+    order: 0; // or simply remove this line as 0 is the default
+  }
+}

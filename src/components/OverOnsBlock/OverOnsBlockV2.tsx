@@ -45,7 +45,7 @@ const OverOnsBlockV2: React.FunctionComponent = () => {
       <div className={"block-container"}>
         <Block
           variant={"roze"}
-          style={{ order: 1 }}
+          className={"responsive-order"}
           titel={"Een bruisende plek in Zeist"}
           toelichting={
             <>
