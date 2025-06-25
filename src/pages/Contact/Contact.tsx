@@ -6,7 +6,7 @@ const Contact: React.FunctionComponent = () => {
   return (
     <main className="contact-container">
       <div className="contact-header">
-        <h1 className="py-2 py-lg-5">Contact & bereikbaarheid</h1>
+        <h1>Contact & bereikbaarheid</h1>
       </div>
 
       <div className="contact-grid">
