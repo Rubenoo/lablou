@@ -6,6 +6,7 @@ import { useNavigate, useParams } from "react-router";
 import Pijl from "../../components/Pijl/Pijl.tsx";
 import AanvullendeInformatieBlock from "../../components/AanvullendeInformatieBlock/AanvullendeInformatieBlock.tsx";
 import { useEffect } from "react";
+import GroteZaalCarousel from "../../components/Carousel/GroteZaalCarousel.tsx";
 
 const Zaal: React.FunctionComponent = () => {
   const { id } = useParams();
@@ -35,7 +36,7 @@ const Zaal: React.FunctionComponent = () => {
           button={<Pijl href={"#aanvullende-informatie"} />}
         />
         {zaal.titel === "Grote Zaal" ? (
-          <GroteZaal />
+          <GroteZaalCarousel />
         ) : (
           <ImageBlock
             src={`flexruimtes/${zaal.afbeelding}.jpg`}
@@ -50,7 +51,8 @@ const Zaal: React.FunctionComponent = () => {
 
 export default Zaal;
 
-const GroteZaal: React.FunctionComponent = () => {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const GroteZaalVideo: React.FunctionComponent = () => {
   return (
     <video disableRemotePlayback autoPlay muted loop className={"image-block"}>
       <source src="/assets/videos/grotezaal.mp4" type="video/mp4" />

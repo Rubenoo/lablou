@@ -1,7 +1,7 @@
 import "./stylesv2.scss";
 import React from "react";
 import Block from "../Block/Block.tsx";
-import Carousel from "../Carousel/Carousel.tsx";
+import HomeCarousel from "../Carousel/HomeCarousel.tsx";
 import InstagramMarquee from "../InstagramMarquee/InstagramMarquee.tsx";
 import ImageBlock from "../ImageBlock/ImageBlock.tsx";
 
@@ -38,7 +38,7 @@ const OverOnsBlockV2: React.FunctionComponent = () => {
             </>
           }
         />
-        <Carousel />
+        <HomeCarousel />
       </div>
       <div className={"block-container"}>
         <Block
@@ -57,7 +57,7 @@ const OverOnsBlockV2: React.FunctionComponent = () => {
             </>
           }
         />
-        <Carousel />
+        <HomeCarousel />
       </div>
       <InstagramMarquee variant={"left"} text={"PROGRAMMA"} />
       <div className={"block-container"}>
@@ -79,7 +79,7 @@ const OverOnsBlockV2: React.FunctionComponent = () => {
             </>
           }
         />
-        <Carousel />
+        <HomeCarousel />
       </div>
       <InstagramMarquee
         variant={"right"}

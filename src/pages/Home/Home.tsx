@@ -3,7 +3,7 @@ import StyledButton from "../../components/Button/Button.tsx";
 import AanbodBlock from "../../components/AanbodBlock/AanbodBlock.tsx";
 import CTABlock from "../../components/CTABlock/CTABlock.tsx";
 import InstagramMarquee from "../../components/InstagramMarquee/InstagramMarquee.tsx";
-import Carousel from "../../components/Carousel/Carousel.tsx";
+import HomeCarousel from "../../components/Carousel/HomeCarousel.tsx";
 import { handleClick } from "../../components/Pijl/Pijl.tsx";
 import Agenda from "../Agenda/Agenda.tsx";
 
@@ -29,7 +29,7 @@ const Home: React.FunctionComponent = () => {
           }
           button={button}
         />
-        <Carousel />
+        <HomeCarousel />
       </div>
       <InstagramMarquee variant={"left"} text={"BEKIJK ONZE AGENDA"} />
       <div className={"ons-aanbod-container"} id={"ons-aanbod"}>
@@ -41,16 +41,16 @@ const Home: React.FunctionComponent = () => {
         >
           <AanbodBlock
             index={0}
-            titel={"Flex- & vergaderruimte"}
-            afbeelding={"ontdek_ons_aanbod"}
+            titel={"Flex- en vergaderruimte"}
+            afbeelding={"flexruimtes"}
             to={"flexruimtes"}
             key={"0"}
           />
           <AanbodBlock
             index={1}
-            afbeelding={"werk_en_atelierruimte"}
-            titel={"Ontdek onze werk- en atelierruimte"}
-            to={"vasteverhuur"}
+            afbeelding={"kantoor_en_atelierruimte"}
+            titel={"Kantoor- en atelierruimte"}
+            to={"kantoorenatelierruimte"}
           />
         </div>
       </div>

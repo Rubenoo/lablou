@@ -39,12 +39,15 @@ const OnzeLaborantenBlock: React.FunctionComponent = () => {
           en netwerk beschikbaar aan hen die dat nodig hebben en creëren wij
           werkervaringsplekken voor mensen met een afstand tot de arbeidsmarkt.
         </p>
-        <ContactOpnemenKnop className={"d-none d-lg-block"} />
         <SamenwerkingBlock />
+
+        <ContactOpnemenKnop className={"d-none d-lg-block"} />
       </div>
       <div>
         <div className={"gegevens"}>{laborantenElements}</div>
-        <ContactOpnemenKnop className={"d-lg-none d-block"}>
+        <ContactOpnemenKnop
+          className={"d-lg-none d-flex justify-content-center"}
+        >
           Contact opnemen
         </ContactOpnemenKnop>
       </div>

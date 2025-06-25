@@ -1,20 +1,20 @@
 import "./styles.scss";
 import React from "react";
 
-const Carousel: React.FunctionComponent = () => {
+const HomeCarousel: React.FunctionComponent = () => {
   return (
     <div id="carouselID" className="carousel slide" data-bs-ride="carousel">
       <div className="carousel-inner h-100 carousel-image">
         <div className="carousel-item active h-100" data-bs-interval={"5000"}>
           <img
-            src="/assets/images/home/carousel_1.jpg"
+            src="/assets/images/home/carousel_1.png"
             className="carousel-image"
             alt="Lab Lou foto 1"
           />
         </div>
         <div className="carousel-item h-100" data-bs-interval={"5000"}>
           <img
-            src="/assets/images/home/carousel_2.jpg"
+            src="/assets/images/home/carousel_2.png"
             className="carousel-image"
             alt="Lab Lou foto 2"
           />
@@ -28,7 +28,7 @@ const Carousel: React.FunctionComponent = () => {
         </div>
         <div className="carousel-item h-100" data-bs-interval={"5000"}>
           <img
-            src="/assets/images/home/carousel_4.jpg"
+            src="/assets/images/home/carousel_4.png"
             className="carousel-image"
             alt="Lab Lou foto 4"
           />
@@ -62,4 +62,4 @@ const Carousel: React.FunctionComponent = () => {
     </div>
   );
 };
-export default Carousel;
+export default HomeCarousel;

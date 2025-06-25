@@ -22,8 +22,8 @@ const FlexEnVergaderRuimte: React.FunctionComponent = () => {
           button={<Pijl href={"#ons-aanbod"} />}
         />
         <ImageBlock
-          src={"flexruimtes/overzicht.jpg"}
-          alt={"Overzicht flex- & vergaderruimtes"}
+          src={"flexruimtes/overzicht.png"}
+          alt={"Overzicht Flex- en vergaderruimtes"}
         />
       </div>
       <div id="ons-aanbod" className={"ons-aanbod-container"}>

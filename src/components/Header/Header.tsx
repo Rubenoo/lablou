@@ -2,7 +2,6 @@ import { Nav, Navbar, Offcanvas } from "react-bootstrap";
 import "./styles.scss";
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import ContactOpnemenKnop from "../ContactOpnemenKnop/ContactOpnemenKnop.tsx";
 import Logo from "../Logo/Logo.tsx";
 
 const Header: React.FunctionComponent = () => {
@@ -47,7 +46,7 @@ const Header: React.FunctionComponent = () => {
                 to="flexruimtes"
                 onClick={closeShow}
               >
-                Flex- & vergaderruimte
+                Flex- en vergaderruimte
               </NavLink>
               <NavLink
                 className="nav-link"
@@ -62,13 +61,23 @@ const Header: React.FunctionComponent = () => {
               <NavLink className="nav-link" to="over" onClick={closeShow}>
                 Over
               </NavLink>
+              <NavLink
+                className="nav-link d-lg-none"
+                to="contact"
+                onClick={closeShow}
+              >
+                Contact
+              </NavLink>
             </Nav>
           </Offcanvas.Body>
         </Navbar.Offcanvas>
-        <ContactOpnemenKnop
-          className={"d-none d-lg-flex justify-content-end"}
-          variant={"roze"}
-        />
+        <NavLink
+          className="nav-link contact-desktop d-none d-lg-block"
+          to="contact"
+          onClick={closeShow}
+        >
+          Contact
+        </NavLink>
       </Navbar>
     </header>
   );
