@@ -1,3 +1,32 @@
 .overons-container {
-  container-type: inline-size; /* or 'size' if you need both dimensions */
+  container-type: inline-size;
+}
+
+.team-container {
+  margin: 0 auto;
+  max-width: 1000px;
+  position: relative;
+  padding-top: 1rem;
+  @media (max-width: 991px) {
+    padding-top: 0;
+    top: -3px;
+  }
+}
+
+.team-container .marquee {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  border-radius: 10px 10px 0 0; /* Rounded top corners */
+  overflow: hidden; /* Ensures content respects the border radius */
+}
+
+.team-container .over-ons-image {
+  display: block;
+  width: 100%;
+  @media (max-width: 991px) {
+    border-radius: 0 0 10px 10px;
+  }
 }

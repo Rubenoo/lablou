@@ -58,6 +58,13 @@ const Header: React.FunctionComponent = () => {
               <NavLink className="nav-link" to="agenda" onClick={closeShow}>
                 Agenda
               </NavLink>
+              <NavLink
+                className="nav-link"
+                to="onzelaboranten"
+                onClick={closeShow}
+              >
+                Laboranten
+              </NavLink>
               <NavLink className="nav-link" to="over" onClick={closeShow}>
                 Over
               </NavLink>

@@ -1,0 +1,93 @@
+.onze-teamleden-container {
+  padding: 1rem 1rem;
+
+  @media (max-width: 991px) {
+    padding: 1rem 0;
+  }
+}
+
+.teamleden-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  @media (max-width: 991px) {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+}
+
+.teamlid-block {
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  // Alternating colors pattern
+  &--0 {
+    background: var(--groen);
+
+    .teamlid-link,
+    h4,
+    p {
+      color: var(--zwart);
+    }
+  }
+
+  &--1 {
+    background: var(--roze);
+
+    .teamlid-link,
+    h4,
+    p {
+      color: var(--zwart);
+    }
+  }
+
+  &--2 {
+    background: var(--bruin);
+
+    .teamlid-link,
+    h4,
+    p {
+      color: white;
+    }
+  }
+
+  &--3 {
+    background: var(--grijs);
+
+    .teamlid-link,
+    h4,
+    p {
+      color: var(--zwart);
+    }
+  }
+}
+
+.teamlid-link {
+  display: block;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: 2px solid rgba(0, 0, 0, 0.3);
+    outline-offset: 2px;
+  }
+}
+
+.teamlid-block h4 {
+  font-weight: 600;
+}
+
+.teamlid-block p {
+  opacity: 0.8;
+}

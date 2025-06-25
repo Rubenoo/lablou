@@ -1,9 +1,10 @@
 import "./stylesv2.scss";
 import React from "react";
 import Block from "../Block/Block.tsx";
-import HomeCarousel from "../Carousel/HomeCarousel.tsx";
 import InstagramMarquee from "../InstagramMarquee/InstagramMarquee.tsx";
 import ImageBlock from "../ImageBlock/ImageBlock.tsx";
+import OveronsCarousel from "../Carousel/OveronsCarousel.tsx";
+import TeamledenBlock from "../TeamlidBlock/TeamledenBlock.tsx";
 
 const OverOnsBlockV2: React.FunctionComponent = () => {
   return (
@@ -12,6 +13,7 @@ const OverOnsBlockV2: React.FunctionComponent = () => {
         <Block
           variant={"groen"}
           titel={"De sociale en circulaire broedplaats van regio Zeist"}
+          terugKnop={"home"}
           toelichting={
             <>
               <b>Lab Lou</b> is een plek waar creatieve én sociale ondernemers
@@ -38,7 +40,7 @@ const OverOnsBlockV2: React.FunctionComponent = () => {
             </>
           }
         />
-        <HomeCarousel />
+        <OveronsCarousel />
       </div>
       <div className={"block-container"}>
         <Block
@@ -57,7 +59,10 @@ const OverOnsBlockV2: React.FunctionComponent = () => {
             </>
           }
         />
-        <HomeCarousel />
+        <ImageBlock
+          src={"overlablou/eenbruisendeplek.png"}
+          alt={"Een bruisende plek in Zeist"}
+        />
       </div>
       <InstagramMarquee variant={"left"} text={"PROGRAMMA"} />
       <div className={"block-container"}>
@@ -79,19 +84,33 @@ const OverOnsBlockV2: React.FunctionComponent = () => {
             </>
           }
         />
-        <HomeCarousel />
+        <ImageBlock
+          src={"home/carousel_3.jpg"}
+          alt={"Een bruisende plek in Zeist"}
+        />
       </div>
       <InstagramMarquee
         variant={"right"}
         type={"zwart"}
         text={"LAB LOU TEAM"}
+        className={"d-flex d-lg-none"}
         disable
       />
-      <ImageBlock
-        src={"overlablou/over_lablou.jpeg"}
-        alt={"Over Lab Lou"}
-        className={"over-ons-image"}
-      />
+      <div className={"team-container"}>
+        <InstagramMarquee
+          variant={"right"}
+          type={"zwart"}
+          text={"LAB LOU TEAM"}
+          className={"d-lg-flex d-none"}
+          disable
+        />
+        <ImageBlock
+          src={"overlablou/over_lablou.jpeg"}
+          alt={"Het Lab Lou team"}
+          className={"over-ons-image"}
+        />
+      </div>
+      <TeamledenBlock />
     </section>
   );
 };

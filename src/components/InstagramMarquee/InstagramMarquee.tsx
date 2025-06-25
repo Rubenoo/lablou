@@ -5,16 +5,18 @@ type InstagramMarqueeProps = {
   type?: "zwart";
   text: string;
   disable?: boolean;
+  className?: string;
 };
 const InstagramMarquee: React.FunctionComponent<InstagramMarqueeProps> = ({
   variant,
   type,
   text,
   disable = false,
+  className,
 }) => {
   return (
     <a
-      className={`marquee marquee-${variant} marquee-${type}`}
+      className={`marquee marquee-${variant} marquee-${type} ${className}`}
       {...(!disable && { href: "#agenda" })}
     >
       <h2>{text}</h2>
