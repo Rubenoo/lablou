@@ -6,6 +6,10 @@
   .contact-header {
     text-align: center;
     padding-block: 2rem;
+    @media (max-width: 991px) {
+      padding-block: 1.25rem 1rem;
+      font-size: 1.5rem;
+    }
   }
 
   .contact-grid {
