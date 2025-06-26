@@ -41,11 +41,11 @@ const Footer: React.FunctionComponent = () => {
         <a
           className={"nav-link nav-link-footer"}
           href={
-            "https://www.google.com/maps/search/?api=1&query=Weteringlaan+1,+3732HZ+De+Bilt"
+            "https://www.google.com/maps/search/?api=1&query=Weteringlaan+1,+3732HZ+Zeist"
           }
           target={"_blank"}
         >
-          Weteringlaan 1, De Bilt
+          Weteringlaan 1, Zeist
         </a>
       </address>
     </footer>

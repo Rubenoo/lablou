@@ -11,7 +11,7 @@ const CTABlockNieuwsbrief: React.FunctionComponent<CTABlockProps> = ({
 }) => {
   return (
     <section className={`cta-container nieuwsbrief ${className}`}>
-      <h2>Blijf op de hoogte van Lab Lou</h2>
+      <h2>Volg al het nieuws van Lab Lou!</h2>
       <p>
         Schrijf je in voor onze nieuwsbrief en mis geen enkel evenement of
         update van onze creatieve broedplaats.

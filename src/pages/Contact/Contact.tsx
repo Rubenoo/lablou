@@ -20,11 +20,11 @@ const Contact: React.FunctionComponent = () => {
                 <b>Adres</b>
 
                 <ContactOpnemenKnop
-                  href="https://www.google.com/maps/search/?api=1&query=Weteringlaan+1,+3732HZ+De+Bilt"
+                  href="https://www.google.com/maps/search/?api=1&query=Weteringlaan+1,+3732HZ+Zeist"
                   target="_blank"
                   variant="zwart"
                 >
-                  Weteringlaan 1, 3732 HZ De Bilt
+                  Weteringlaan 1, 3732 HZ Zeist
                 </ContactOpnemenKnop>
               </div>
               <div className="contact-item">

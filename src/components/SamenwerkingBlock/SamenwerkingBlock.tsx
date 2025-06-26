@@ -4,20 +4,20 @@ import React from "react";
 const SamenwerkingBlock: React.FunctionComponent = () => {
   return (
     <section className={"samenwerking-container"}>
-      <h2>Lab Lou is een samenwerking tussen:</h2>
+      <h2>Lab Lou is een samenwerking tussen</h2>
       <div className={"samenwerking-grid"}>
         <address>
           <b>Stichting Stadslab Zeist</b>
           <p>(Dagelijks beheer en programmering)</p>
           <a
             href={
-              "https://www.google.com/maps/search/?api=1&query=Weteringlaan+1,+3732HZ+De+Bilt"
+              "https://www.google.com/maps/search/?api=1&query=Weteringlaan+1,+3732HZ+Zeist"
             }
             target={"_blank"}
           >
             <br className={"d-none d-lg-block"} />
             Weteringlaan 1 <br />
-            3732 HZ (De Bilt)
+            3732 HZ (Zeist)
           </a>
           <br />
           <a href="mailto:wijzijn@stadslabzeist.nl">wijzijn@stadslabzeist.nl</a>
@@ -25,6 +25,7 @@ const SamenwerkingBlock: React.FunctionComponent = () => {
         <address>
           <b>Stichting Leegstand Oplossers Utrecht (LOU)</b>
           <p>(Administratie en financiën)</p>
+          <br />
           <a
             href={
               "https://www.google.com/maps/search/?api=1&query=Barkasstraat+5,+3534+PH+Utrecht"

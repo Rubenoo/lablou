@@ -21,7 +21,7 @@ const OverOnsBlock: React.FunctionComponent = () => {
       <h2>Ontmoeten in Lab Lou</h2>
       <p>
         Op 1 november 2023 kregen we de sleutel van de eerste creatieve èn
-        sociale broedplaats uit onze regio op Weteringlaan 1 in De Bilt (en toch
+        sociale broedplaats uit onze regio op Weteringlaan 1 in Zeist (en toch
         ook echt bebouwde kom Zeist): Lab Lou. Opgestart door Stads<b>LAB</b>{" "}
         Zeist en Stichting <b>LOU</b> - Leegstand Oplossers Utrecht. Een gouden
         combinatie :)
@@ -62,12 +62,12 @@ const OverOnsBlock: React.FunctionComponent = () => {
         <b className={"m-0 d-block"}>Lab Lou</b>
         <a
           href={
-            "https://www.google.com/maps/search/?api=1&query=Weteringlaan+1,+3732HZ+De+Bilt"
+            "https://www.google.com/maps/search/?api=1&query=Weteringlaan+1,+3732HZ+Zeist"
           }
           target={"_blank"}
         >
           Weteringlaan 1 <br />
-          3732 HZ De Bilt
+          3732 HZ Zeist
         </a>
         <a className={"d-block"} href="tel:06 28277642">
           06 28277642
