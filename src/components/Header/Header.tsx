@@ -21,7 +21,7 @@ const Header: React.FunctionComponent = () => {
       >
         <NavLink to={"/"}>
           <Navbar.Brand>
-            <Logo variant={"header"} />
+            <Logo />
           </Navbar.Brand>
         </NavLink>
         <Navbar.Toggle

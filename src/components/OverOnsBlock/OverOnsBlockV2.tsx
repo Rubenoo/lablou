@@ -20,23 +20,39 @@ const OverOnsBlockV2: React.FunctionComponent = () => {
               samenkomen. Sinds 2023 zijn we gevestigd in een voormalig
               tuincentrum in Zeist-West, de allereerste sociale en circulaire
               broedplaats van de regio. Opgestart door{" "}
-              <u>
-                <b>Stadslab Zeist</b>
-              </u>{" "}
+              <a
+                className={"underline"}
+                target={"_blank"}
+                href={"https://www.stadslabzeist.nl"}
+              >
+                Stadslab Zeist
+              </a>{" "}
               en{" "}
-              <u>
-                <b>Stichting LOU</b>
-              </u>
+              <a
+                className={"underline"}
+                target={"_blank"}
+                href={"https://stichtinglou.nl"}
+              >
+                Stichting LOU
+              </a>
               , biedt Lab Lou ruimte aan makers, dromers en doeners. En dat
               allemaal in een inspirerende, toegankelijke sfeer met goede koffie
               van{" "}
-              <u>
-                <b>de Koffiebak</b>
-              </u>{" "}
+              <a
+                className={"underline"}
+                href={"https://koffiebak.nl"}
+                target={"_blank"}
+              >
+                de Koffiebak
+              </a>{" "}
               en heerlijk eten van{" "}
-              <u>
-                <b>Laura’s Sabor.</b>
-              </u>
+              <a
+                className={"underline"}
+                target={"_blank"}
+                href={"https://www.laurasabor.nl"}
+              >
+                Laura’s Sabor.
+              </a>
             </>
           }
         />

@@ -6,7 +6,7 @@ import Logo from "../Logo/Logo.tsx";
 const Footer: React.FunctionComponent = () => {
   return (
     <footer className={"navbar"}>
-      <Logo className={"nav-link nav-link-footer"} variant={"footer"} />
+      <Logo className={"nav-link nav-link-footer"} />
       <address className={"d-flex flex-lg-row flex-column"}>
         <a
           className={"nav-link nav-link-footer"}
@@ -33,7 +33,11 @@ const Footer: React.FunctionComponent = () => {
           hallo@lablou.nl
         </a>
       </address>
-      <address>
+      <address
+        className={
+          "d-flex flex-lg-row flex-column justify-content-lg-end justify-content-center"
+        }
+      >
         <a
           className={"nav-link nav-link-footer"}
           href={
@@ -42,8 +46,6 @@ const Footer: React.FunctionComponent = () => {
           target={"_blank"}
         >
           Weteringlaan 1, De Bilt
-          <br /> Openingstijden: ma t/m vrij van 9.00 tot 17.00 uur, overige
-          tijden op aanvraag of tijdens activiteiten.
         </a>
       </address>
     </footer>

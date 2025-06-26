@@ -3,6 +3,7 @@ import Laboranten from "./Laboranten.json";
 import ContactOpnemenKnop from "../ContactOpnemenKnop/ContactOpnemenKnop.tsx";
 import React from "react";
 import SamenwerkingBlock from "../SamenwerkingBlock/SamenwerkingBlock.tsx";
+import Block from "../Block/Block.tsx";
 
 type Laborant = {
   titel: string;
@@ -29,21 +30,27 @@ const OnzeLaborantenBlock: React.FunctionComponent = () => {
   );
   return (
     <section className={"onze-laboranten-container"}>
-      <div className={"info"}>
-        <h1>Onze Laboranten</h1>
-        <p>
-          In LAB LOU huren creatieve, sociale en duurzame ondernemers een fijne
-          werkplek en er is atelierruimte voor kunstenaars en makers. Onze
-          huurders maken deel uit van de actieve Lab Lou community en doen mee
-          met het organiseren van activiteiten. Daarnaast stellen zij hun kennis
-          en netwerk beschikbaar aan hen die dat nodig hebben en creëren wij
-          werkervaringsplekken voor mensen met een afstand tot de arbeidsmarkt.
-        </p>
-        <SamenwerkingBlock />
-
-        <ContactOpnemenKnop className={"d-none d-lg-block"} />
-      </div>
-      <div>
+      <Block
+        variant={"roze"}
+        titel={"Onze Laboranten"}
+        terugKnop={"home"}
+        button={<ContactOpnemenKnop className={"d-none d-lg-block"} />}
+        toelichting={
+          <>
+            <p>
+              In LAB LOU huren creatieve, sociale en duurzame ondernemers een
+              fijne werkplek en er is atelierruimte voor kunstenaars en makers.
+              Onze huurders maken deel uit van de actieve Lab Lou community en
+              doen mee met het organiseren van activiteiten. Daarnaast stellen
+              zij hun kennis en netwerk beschikbaar aan hen die dat nodig hebben
+              en creëren wij werkervaringsplekken voor mensen met een afstand
+              tot de arbeidsmarkt.
+            </p>
+            <SamenwerkingBlock />
+          </>
+        }
+      />
+      <div className={"grey-block"}>
         <div className={"gegevens"}>{laborantenElements}</div>
         <ContactOpnemenKnop
           className={"d-lg-none d-flex justify-content-center"}

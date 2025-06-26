@@ -6,6 +6,7 @@ import InstagramMarquee from "../../components/InstagramMarquee/InstagramMarquee
 import HomeCarousel from "../../components/Carousel/HomeCarousel.tsx";
 import { handleClick } from "../../components/Pijl/Pijl.tsx";
 import Agenda from "../Agenda/Agenda.tsx";
+import CTABlockNieuwsbrief from "../../components/CTABlock/CTABlockNieuwsbrief.tsx";
 
 const Home: React.FunctionComponent = () => {
   return (
@@ -23,8 +24,11 @@ const Home: React.FunctionComponent = () => {
               <br />
               <br />
               Daarnaast organiseren wij dagelijks een{" "}
-              <u>divers sociaal-cultureel programma</u> en ben je altijd welkom
-              om te werken, ontmoeten of gewoon koffie te drinken.
+              <a className={"underline"} href={"#/agenda"}>
+                divers sociaal-cultureel programma
+              </a>{" "}
+              en ben je altijd welkom om te werken, ontmoeten of gewoon koffie
+              te drinken.
             </>
           }
           button={button}
@@ -55,7 +59,10 @@ const Home: React.FunctionComponent = () => {
         </div>
       </div>
       <Agenda />
-      <CTABlock className={"mt-3"} />
+      <div className={"block-container"}>
+        <CTABlock className={"mt-3"} />
+        <CTABlockNieuwsbrief className={"mt-3"} />
+      </div>
     </main>
   );
 };

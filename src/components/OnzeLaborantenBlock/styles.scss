@@ -1,15 +1,22 @@
 .onze-laboranten-container {
-  border-radius: 10px;
-  background-color: var(--grijs);
-  padding: 4rem;
-  margin-block-start: 1rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
+  margin-block-start: 1rem;
+
   @media (max-width: 991px) {
-    padding-block: 2rem;
-    padding-inline: 1.5rem;
     grid-template-columns: 1fr;
+  }
+
+  .grey-block {
+    border-radius: 10px;
+    background-color: var(--grijs);
+    padding: 4rem;
+
+    @media (max-width: 991px) {
+      padding-block: 2rem;
+      padding-inline: 1.5rem;
+    }
   }
 
   .info {
@@ -43,6 +50,7 @@
       text-align: center;
     }
   }
+
   .animatie {
     --f: 1.025; /* the scale factor */
     a {

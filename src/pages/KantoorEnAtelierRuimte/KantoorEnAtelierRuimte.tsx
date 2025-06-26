@@ -13,7 +13,7 @@ const KantoorEnAtelierRuimte: React.FunctionComponent = () => {
           terugKnop={"home"}
           titel={"Kantoor- en atelierruimte"}
           toelichting={
-            "Lab Lou beschikt over 12 verhuurbare ruimtes tussen de 19 en 100 m2 en 8 bureau’s in onze kantoortuin. Op dit moment zijn alle vaste werkruimtes en werkplekken bezet. Toch interesse? Leuk! Neem gerust contact met ons op, we denken graag met je mee over toekomstige beschikbaarheid of andere flexibele opties.\n\nDaarnaast ben je altijd welkom om bij ons te komen flexwerken. We zorgen voor goede WiFi, lekkere koffie en een inspirerende werkomgeving."
+            "Lab Lou beschikt over 12 verhuurbare ruimtes tussen de 19 en 100 m2 en 8 bureau’s in onze kantoortuin. Interesse? Leuk! Neem gerust contact met ons op, we denken graag met je mee over toekomstige beschikbaarheid of andere flexibele opties.\n\nDaarnaast ben je altijd welkom om bij ons te komen flexwerken. We zorgen voor goede WiFi, lekkere koffie en een inspirerende werkomgeving."
           }
           button={<ContactOpnemenKnop />}
         />

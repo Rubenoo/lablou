@@ -21,6 +21,10 @@
 
   a {
     font-family: "Slussen-Medium", sans-serif;
+    &.underline {
+      text-decoration: underline !important;
+      color: unset;
+    }
   }
 
   @font-face {
