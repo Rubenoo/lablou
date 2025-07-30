@@ -7,10 +7,12 @@ import HomeCarousel from "../../components/Carousel/HomeCarousel.tsx";
 import { handleClick } from "../../components/Pijl/Pijl.tsx";
 import Agenda from "../Agenda/Agenda.tsx";
 import CTABlockNieuwsbrief from "../../components/CTABlock/CTABlockNieuwsbrief.tsx";
+import VakantieBanner from "../../components/VakantieBanner/VakantieBanner.tsx";
 
 const Home: React.FunctionComponent = () => {
   return (
     <main>
+      <VakantieBanner />
       <div className={"block-container"}>
         <Block
           variant={"roze"}
