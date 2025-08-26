@@ -19,11 +19,6 @@ const FlexEnVergaderRuimte: React.FunctionComponent = () => {
           terugKnop={"home"}
           toelichting={
             <>
-              In verband met zomervakantie zijn wij t/m 25 augustus onregelmatig
-              geopend. Informeer naar de flex- en vergadermogelijkheden via{" "}
-              <a href="mailto:hallo@lablou.nl">hallo@lablou.nl</a>
-              <br />
-              <br />
               Naast vaste werkplekken biedt Lab Lou flexwerkplekken, diverse
               ruimtes voor vergaderingen, workshops, trainingen, presentaties en
               andere bijeenkomsten.

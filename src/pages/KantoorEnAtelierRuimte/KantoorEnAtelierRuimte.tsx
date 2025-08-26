@@ -14,11 +14,6 @@ const KantoorEnAtelierRuimte: React.FunctionComponent = () => {
           titel={"Kantoor- en atelierruimte"}
           toelichting={
             <>
-              In verband met zomervakantie zijn wij t/m 25 augustus onregelmatig
-              geopend. Informeer naar de flex- en vergadermogelijkheden via{" "}
-              <a href="mailto:hallo@lablou.nl">hallo@lablou.nl</a>
-              <br />
-              <br />
               Lab Lou beschikt over 12 verhuurbare ruimtes tussen de 19 en 100
               m2 en 8 bureau’s in onze kantoortuin. Interesse? Leuk! Neem gerust
               contact met ons op, we denken graag met je mee over toekomstige
