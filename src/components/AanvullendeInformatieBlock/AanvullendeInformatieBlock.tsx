@@ -23,6 +23,7 @@ const AanvullendeInformatieBlock: React.FunctionComponent<
       <p>{info.gegevens}</p>
     </div>
   ));
+  const contactTekst = link ? "Reserveren" : "Contact";
   return (
     <section
       key={index}
@@ -37,7 +38,7 @@ const AanvullendeInformatieBlock: React.FunctionComponent<
           href={link}
           target="_blank"
         >
-          Contact
+          {contactTekst}
         </ContactOpnemenKnop>
       </div>
       <div>
