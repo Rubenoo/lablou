@@ -45,7 +45,7 @@ const AanvullendeInformatieBlock: React.FunctionComponent<
         <div className={"gegevens"}>{informatieElements}</div>
         {contact ? (
           <ContactOpnemenKnop className={"d-lg-none d-block"}>
-            Contact
+            {contactTekst}
           </ContactOpnemenKnop>
         ) : (
           <ContactOpnemenKnop
@@ -53,7 +53,7 @@ const AanvullendeInformatieBlock: React.FunctionComponent<
             href={link}
             target="_blank"
           >
-            Contact
+            {contactTekst}
           </ContactOpnemenKnop>
         )}
       </div>
