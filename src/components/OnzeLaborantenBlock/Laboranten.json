@@ -1,68 +1,5 @@
 [
   {
-    "titel": "Stichting Stadslab Zeist",
-    "websites": [
-      {
-        "name": "stadslabzeist.nl",
-        "link": "https://www.stadslabzeist.nl"
-      }
-    ]
-  },
-  {
-    "titel": "Laura’s Sabor",
-    "websites": [
-      {
-        "name": "laurasabor.nl",
-        "link": "https://www.laurasabor.nl"
-      }
-    ]
-  },
-  {
-    "titel": "Stichting Krachtvrouwen Zeist",
-    "websites": [
-      {
-        "name": "Krachtvrouwen Zeist Facebook",
-        "link": "https://krachtvrouwenzeist.nl"
-      }
-    ]
-  },
-  {
-    "titel": "Een Zaak van Gedrag",
-    "websites": [
-      {
-        "name": "eenzaakvangedrag.nl",
-        "link": "https://eenzaakvangedrag.nl"
-      }
-    ]
-  },
-  {
-    "titel": "Koffiebak",
-    "websites": [
-      {
-        "name": "koffiebak.nl",
-        "link": "https://koffiebak.nl"
-      }
-    ]
-  },
-  {
-    "titel": "Muziekstudio Tommy the Sound",
-    "websites": [
-      {
-        "name": "tommythesound.com",
-        "link": "https://www.tommythesound.com"
-      }
-    ]
-  },
-  {
-    "titel": "De Tassenfabriek",
-    "websites": [
-      {
-        "name": "detassenfabriek.com",
-        "link": "https://detassenfabriek.com"
-      }
-    ]
-  },
-  {
     "titel": "Acteur en Theatermaker Astrid Onderwater",
     "websites": [
       {
@@ -72,29 +9,11 @@
     ]
   },
   {
-    "titel": "Vastgoed fotograaf Thom Punte",
+    "titel": "Aldo Theater - Ina Geisler",
     "websites": [
       {
-        "name": "thom-punte",
-        "link": "https://objectenco.nl/woningfotograaf/thom-punte"
-      }
-    ]
-  },
-  {
-    "titel": "Vonhof Video",
-    "websites": [
-      {
-        "name": "vonhofvideo.nl",
-        "link": "https://vonhofvideo.nl"
-      }
-    ]
-  },
-  {
-    "titel": "Illustrator David Passenier",
-    "websites": [
-      {
-        "name": "davidpassenier.com",
-        "link": "https://www.davidpassenier.com/nl"
+        "name": "aldo.nl",
+        "link": "https://www.aldo.nl"
       }
     ]
   },
@@ -110,36 +29,6 @@
         "link": "http://studiobezemkast.nl"
       }
     ]
-  },
-  {
-    "titel": "Kunstenaar Ralph Zabel",
-    "websites": [
-      {
-        "name": "ralphzabel.com",
-        "link": "https://ralphzabel.com"
-      }
-    ]
-  },
-  {
-    "titel": "Tuintypes - Thomas Heger",
-    "websites": [
-      {
-        "name": "thomasheger.nl",
-        "link": "https://thomasheger.nl"
-      }
-    ]
-  },
-  {
-    "titel": "Empact",
-    "websites": [
-      {
-        "name": "empct.nl",
-        "link": "https://www.empct.nl"
-      }
-    ]
-  },
-  {
-    "titel": "Monads Bureau - Elvira Veldman"
   },
   {
     "titel": "Climavore Athlete - Peter Res",
@@ -160,50 +49,11 @@
     ]
   },
   {
-    "titel": "RH Sport Services - Roos Hoogeboom"
-  },
-  {
-    "titel": "House of Worlds - Esther Aarts",
+    "titel": "De Tassenfabriek",
     "websites": [
       {
-        "name": "houseofworlds@gmail.com",
-        "link": "mailto:houseofworlds@gmail.com"
-      }
-    ]
-  },
-  {
-    "titel": "Aldo Theater - Ina Geisler",
-    "websites": [
-      {
-        "name": "aldo.nl",
-        "link": "https://www.aldo.nl"
-      }
-    ]
-  },
-  {
-    "titel": "Kunstenaar Judy Spruyt",
-    "websites": [
-      {
-        "name": "judy@judyspruyt.nl",
-        "link": "mailto:judy@judyspruyt.nl"
-      }
-    ]
-  },
-  {
-    "titel": "Samen Duurzaam Zeist",
-    "websites": [
-      {
-        "name": "samenduurzaamzeist.nl",
-        "link": "https://www.samenduurzaamzeist.nl"
-      }
-    ]
-  },
-  {
-    "titel": "Groene Makelaar Zeist",
-    "websites": [
-      {
-        "name": "stadslandbouwzeist.nl",
-        "link": "https://stadslandbouwzeist.nl"
+        "name": "detassenfabriek.com",
+        "link": "https://detassenfabriek.com"
       }
     ]
   },
@@ -217,11 +67,170 @@
     ]
   },
   {
+    "titel": "Een Zaak van Gedrag",
+    "websites": [
+      {
+        "name": "eenzaakvangedrag.nl",
+        "link": "https://eenzaakvangedrag.nl"
+      }
+    ]
+  },
+  {
+    "titel": "Empact",
+    "websites": [
+      {
+        "name": "empct.nl",
+        "link": "https://www.empct.nl"
+      }
+    ]
+  },
+  {
+    "titel": "Foto Film Victor",
+    "websites": [
+      {
+        "name": "fotofilmvictor.nl",
+        "link": "https://www.fotofilmvictor.nl"
+      }
+    ]
+  },
+  {
+    "titel": "Groene Makelaar Zeist",
+    "websites": [
+      {
+        "name": "stadslandbouwzeist.nl",
+        "link": "https://stadslandbouwzeist.nl"
+      }
+    ]
+  },
+  {
+    "titel": "House of Worlds - Esther Aarts",
+    "websites": [
+      {
+        "name": "houseofworlds@gmail.com",
+        "link": "mailto:houseofworlds@gmail.com"
+      }
+    ]
+  },
+  {
+    "titel": "Illustrator David Passenier",
+    "websites": [
+      {
+        "name": "davidpassenier.com",
+        "link": "https://www.davidpassenier.com/nl"
+      }
+    ]
+  },
+  {
+    "titel": "Koffiebak",
+    "websites": [
+      {
+        "name": "koffiebak.nl",
+        "link": "https://koffiebak.nl"
+      }
+    ]
+  },
+  {
+    "titel": "Kunstenaar Judy Spruyt",
+    "websites": [
+      {
+        "name": "judy@judyspruyt.nl",
+        "link": "mailto:judy@judyspruyt.nl"
+      }
+    ]
+  },
+  {
+    "titel": "Kunstenaar Ralph Zabel",
+    "websites": [
+      {
+        "name": "ralphzabel.com",
+        "link": "https://ralphzabel.com"
+      }
+    ]
+  },
+  {
+    "titel": "Laura's Sabor",
+    "websites": [
+      {
+        "name": "laurasabor.nl",
+        "link": "https://www.laurasabor.nl"
+      }
+    ]
+  },
+  {
+    "titel": "Monads Bureau - Elvira Veldman"
+  },
+  {
+    "titel": "Muziekstudio Tommy the Sound",
+    "websites": [
+      {
+        "name": "tommythesound.com",
+        "link": "https://www.tommythesound.com"
+      }
+    ]
+  },
+  {
+    "titel": "RH Sport Services - Roos Hoogeboom"
+  },
+  {
+    "titel": "Samen Duurzaam Zeist",
+    "websites": [
+      {
+        "name": "samenduurzaamzeist.nl",
+        "link": "https://www.samenduurzaamzeist.nl"
+      }
+    ]
+  },
+  {
+    "titel": "Stichting Krachtvrouwen Zeist",
+    "websites": [
+      {
+        "name": "Krachtvrouwen Zeist Facebook",
+        "link": "https://krachtvrouwenzeist.nl"
+      }
+    ]
+  },
+  {
     "titel": "Stichting Leegstand Oplossers Utrecht (LOU)",
     "websites": [
       {
         "name": "stichtinglou.nl",
         "link": "https://stichtinglou.nl"
+      }
+    ]
+  },
+  {
+    "titel": "Stichting Stadslab Zeist",
+    "websites": [
+      {
+        "name": "stadslabzeist.nl",
+        "link": "https://www.stadslabzeist.nl"
+      }
+    ]
+  },
+  {
+    "titel": "Tuintypes - Thomas Heger",
+    "websites": [
+      {
+        "name": "thomasheger.nl",
+        "link": "https://thomasheger.nl"
+      }
+    ]
+  },
+  {
+    "titel": "Vastgoed fotograaf Thom Punte",
+    "websites": [
+      {
+        "name": "thom-punte",
+        "link": "https://objectenco.nl/woningfotograaf/thom-punte"
+      }
+    ]
+  },
+  {
+    "titel": "Vonhof Video",
+    "websites": [
+      {
+        "name": "vonhofvideo.nl",
+        "link": "https://vonhofvideo.nl"
       }
     ]
   }
