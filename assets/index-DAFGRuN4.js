@@ -68,18 +68,6 @@ Tip: reserveer van tevoren als je van een plek verzekerd wilt zijn!`,extraInfo:[
 €19 voor hele dag`},{titel:"Voorzieningen",gegevens:`• WiFi
 • stroom`},{titel:"Extra",gegevens:`• koffie en thee te koop aan de bar (niet inbegrepen)
 • lekkers voor bij de koffie (op aanvraag)
-• lunch en overige catering (op aanvraag)`}]},{index:1,titel:"Gesprekskamer",toelichting:"Deze kamer is ideaal voor coachingsgesprekken of het ontvangen van cliënten. Je beschikt over WiFi, een whiteboard en een presentatiescherm – alles wat je nodig hebt voor een professioneel gesprek.",afbeelding:"gesprekskamer",aanvullendeInformatie:`Je kunt de gesprekskamer per 2 uur, per dagdeel of hele dag huren. Check de agenda voor beschikbaarheid.
-
-Tip: straks een kamer nodig? Reserveren kan bij ons vaak nog tot kort van tevoren!
-
-*Onze ruimtes zijn niet geluiddicht. Je kunt daarom soms geluiden horen van medehuurders, zoals uit de keuken of van onze muziekproducent. We doen altijd ons best om rekening met elkaar te houden.`,extraInfo:["13 m2","4/5 pers."],link:"https://lablou.i-reserve.net/front?mod=calendar&rc=0&product=30401",informatie:[{titel:"Tarieven (excl. btw)",gegevens:`€25 per 2 uur
-€50 per dagdeel
-€100 per dag`},{titel:"Ruimte",gegevens:`• 13 m2
-• 4/5 personen
-• opstelling: 1 banken met 3 fauteuils`},{titel:"Voorzieningen",gegevens:`• presentatiescherm
-• whiteboard
-• WiFi`},{titel:"Extra",gegevens:`• koffie en thee te koop aan de bar (niet inbegrepen)
-• lekkers voor bij de koffie (op aanvraag) 
 • lunch en overige catering (op aanvraag)`}]},{index:2,titel:"Vergaderkamer",toelichting:"Dit is dé kamer om te werken, overleggen en vergaderen. Het is een lichte kamer met een fijne tafel om aan te zitten, een presentatiescherm en een whiteboard. In de Blue Room beschik je over WiFi, een whiteboard, een presentatiescherm en onbeperkt koffie, thee en water.",afbeelding:"vergaderkamer",aanvullendeInformatie:`Wist je dat duurzaamheid en toegankelijkheid hoog bij ons in het vaandel staan? Lab Lou is rolstoeltoegankelijk en beschikt over een mindervaliden toilet. 
 Daarnaast serveren wij in de grote zaal koffie van onze eigen Brahim van de Koffiebak en in de vergaderruimtes gebruiken wij de koffiecups van de Koffiejongens want die zijn biologisch afbreekbaar.`,extraInfo:["13 m2","6 pers."],link:"https://lablou.i-reserve.net/front?mod=calendar&rc=0&product=30404",informatie:[{titel:"Tarieven (excl. btw)",gegevens:`€30 per 2 uur
 €60 per dagdeel
