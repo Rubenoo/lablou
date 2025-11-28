@@ -23,34 +23,6 @@
     ]
   },
   {
-    "index": 2,
-    "titel": "Vergaderkamer",
-    "toelichting": "Dit is dé kamer om te werken, overleggen en vergaderen. Het is een lichte kamer met een fijne tafel om aan te zitten, een presentatiescherm en een whiteboard. In de Blue Room beschik je over WiFi, een whiteboard, een presentatiescherm en onbeperkt koffie, thee en water.",
-    "afbeelding": "vergaderkamer",
-    "aanvullendeInformatie": "Wist je dat duurzaamheid en toegankelijkheid hoog bij ons in het vaandel staan? Lab Lou is rolstoeltoegankelijk en beschikt over een mindervaliden toilet. \nDaarnaast serveren wij in de grote zaal koffie van onze eigen Brahim van de Koffiebak en in de vergaderruimtes gebruiken wij de koffiecups van de Koffiejongens want die zijn biologisch afbreekbaar.",
-
-    "extraInfo": ["13 m2", "6 pers."],
-    "link": "https://lablou.i-reserve.net/front?mod=calendar&rc=0&product=30404",
-    "informatie": [
-      {
-        "titel": "Tarieven (excl. btw)",
-        "gegevens": "€30 per 2 uur\n€60 per dagdeel\n€120 per dag"
-      },
-      {
-        "titel": "Ruimte",
-        "gegevens": "• 13 m2\n• 6 personen\n• opstelling: vergadertafel met stoelen"
-      },
-      {
-        "titel": "Voorzieningen",
-        "gegevens": "• presentatiescherm\n• whiteboard\n• WiFi"
-      },
-      {
-        "titel": "Extra",
-        "gegevens": "• koffie en thee te koop aan de bar (niet inbegrepen)\n• lekkers voor bij de koffie (op aanvraag) \n• lunch en overige catering (op aanvraag)"
-      }
-    ]
-  },
-  {
     "index": 3,
     "titel": "Workshopruimte",
     "toelichting": "Deze multifunctionele ruimte is geschikt voor vergaderingen, werksessies en workshops tot 10 personen. Doordat er een keuken aanwezig is, is het ook zeer geschikt voor kinderfeestjes en kookpartijtjes voor kleinere gezelschappen!",
