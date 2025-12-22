@@ -1,7 +1,7 @@
 import "./styles.scss";
 import React from "react";
 
-const VakantieBanner: React.FunctionComponent = () => {
+const Vakantie: React.FunctionComponent = () => {
   return (
     <p className="vakantie-banner">
       In verband met de zomervakantie zijn wij onregelmatig geopend t/m 25
@@ -12,4 +12,4 @@ const VakantieBanner: React.FunctionComponent = () => {
     </p>
   );
 };
-export default VakantieBanner;
+export default Vakantie;
