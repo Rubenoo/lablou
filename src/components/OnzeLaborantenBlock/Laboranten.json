@@ -18,6 +18,14 @@
     ]
   },
   {
+    "titel": "Amanda Schrijft",
+    "websites": [
+      {
+        "name": "Amanda Verdonk"
+      }
+    ]
+  },
+  {
     "titel": "Audiodocumentaire- en podcastmaker Babette Rijkhoff",
     "websites": [
       {
@@ -27,6 +35,14 @@
       {
         "name": "studiobezemkast.nl",
         "link": "http://studiobezemkast.nl"
+      }
+    ]
+  },
+  {
+    "titel": "Campanula Art",
+    "websites": [
+      {
+        "name": "Emilly van Loon"
       }
     ]
   },
@@ -85,6 +101,15 @@
     ]
   },
   {
+    "titel": "Enik",
+    "websites": [
+      {
+        "name": "Enik Recovery College",
+        "link": "www.enikrecoverycollege.nl"
+      }
+    ]
+  },
+  {
     "titel": "Foto Film Victor",
     "websites": [
       {
@@ -99,15 +124,6 @@
       {
         "name": "stadslandbouwzeist.nl",
         "link": "https://stadslandbouwzeist.nl"
-      }
-    ]
-  },
-  {
-    "titel": "House of Worlds - Esther Aarts",
-    "websites": [
-      {
-        "name": "houseofworlds@gmail.com",
-        "link": "mailto:houseofworlds@gmail.com"
       }
     ]
   },
@@ -172,20 +188,10 @@
     "titel": "RH Sport Services - Roos Hoogeboom"
   },
   {
-    "titel": "Samen Duurzaam Zeist",
+    "titel": "Shifts Happen",
     "websites": [
       {
-        "name": "samenduurzaamzeist.nl",
-        "link": "https://www.samenduurzaamzeist.nl"
-      }
-    ]
-  },
-  {
-    "titel": "Stichting Krachtvrouwen Zeist",
-    "websites": [
-      {
-        "name": "Krachtvrouwen Zeist Facebook",
-        "link": "https://krachtvrouwenzeist.nl"
+        "name": "Marieke Markensteijn"
       }
     ]
   },
@@ -222,15 +228,6 @@
       {
         "name": "thom-punte",
         "link": "https://objectenco.nl/woningfotograaf/thom-punte"
-      }
-    ]
-  },
-  {
-    "titel": "Vonhof Video",
-    "websites": [
-      {
-        "name": "vonhofvideo.nl",
-        "link": "https://vonhofvideo.nl"
       }
     ]
   }

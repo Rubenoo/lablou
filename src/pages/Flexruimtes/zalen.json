@@ -4,13 +4,13 @@
     "titel": "Flexplek",
     "toelichting": "Geen zin om thuis te werken? Kom flexwerken in de grote zaal van Lab Lou – een inspirerende plek met alles wat je nodig hebt. Een fijn bureau, snelle WiFi, stroom, goede koffie en thee, en op verzoek iets lekkers voor bij de koffie of een lunch.",
     "afbeelding": "flexplek",
-    "aanvullendeInformatie": "Er zijn 7 flexwerkplekken beschikbaar. Je kunt per dagdeel of hele dag huren. Check de agenda voor beschikbaarheid.\n\nTip: reserveer van tevoren als je van een plek verzekerd wilt zijn!",
+    "aanvullendeInformatie": "Er zijn 7 flexwerkplekken beschikbaar. Je kunt per dagdeel of hele dag huren.\n\nTip: reserveer van tevoren als je van een plek verzekerd wilt zijn!",
     "extraInfo": [],
     "link": "https://lablou.i-reserve.net/front?mod=calendar&rc=0&product=30403",
     "informatie": [
       {
         "titel": "Tarieven (incl. btw)",
-        "gegevens": "€10 voor halve dag\n€19 voor hele dag"
+        "gegevens": "€12.95 voor halve dag\n€24.95 voor hele dag\nInclusief koffie en thee"
       },
       {
         "titel": "Voorzieningen",
@@ -18,7 +18,7 @@
       },
       {
         "titel": "Extra",
-        "gegevens": "• koffie en thee te koop aan de bar (niet inbegrepen)\n• lekkers voor bij de koffie (op aanvraag)\n• lunch en overige catering (op aanvraag)"
+        "gegevens": "• lekkers voor bij de koffie (op aanvraag)\n• lunch en overige catering (op aanvraag)"
       }
     ]
   },
@@ -33,7 +33,7 @@
     "informatie": [
       {
         "titel": "Tarieven (excl. btw)",
-        "gegevens": "€100 per dagdeel\n€185 per dag"
+        "gegevens": "€105 per dagdeel\n€190 per dag"
       },
       {
         "titel": "Ruimte",
@@ -55,12 +55,11 @@
     "toelichting": "Een open, flexibel in te richten ruimte met beamer, scherm, licht- en geluidstechniek en een bar – de Grote Zaal heeft alles voor jouw presentatie, bijeenkomst of event.",
     "afbeelding": "grotezaal",
     "aanvullendeInformatie": "Huur de ruimte zoals die is en bouw hem zelf helemaal om zoals jij wenst, of laat het aan ons over. We denken graag met je mee over opstelling, catering en organisatie!\n\nTip: wil je deze ruimte ‘s avonds of in het weekend huren? Vraag naar de mogelijkheden!",
-    "contact": true,
     "extraInfo": ["180 m2", "tot 125 pers."],
     "informatie": [
       {
         "titel": "Tarieven (excl. btw)",
-        "gegevens": "Tarieven vanaf € 600 per dagdeel\n\n*Voor maatschappelijke initiatieven hanteren wij andere tarieven. Alleen te reserveren op aanvraag. Neem contact op voor de mogelijkheden."
+        "gegevens": "Tarieven vanaf €620 per dagdeel, €880 per dag\n\n*Voor maatschappelijke initiatieven hanteren wij andere tarieven. Alleen te reserveren op aanvraag. Neem contact op voor de mogelijkheden."
       },
       {
         "titel": "Ruimte",
@@ -87,7 +86,7 @@
     "informatie": [
       {
         "titel": "Tarieven (excl. btw)",
-        "gegevens": "€250 per 2 uur\n€400 per dagdeel\n€600 per dag\n\n*Voor maatschappelijke initiatieven hanteren wij andere tarieven. Alleen te reserveren op aanvraag. Neem contact op voor de mogelijkheden."
+        "gegevens": "€260 per 2 uur\n€415 per dagdeel\n€620 per dag\n\n*Voor maatschappelijke initiatieven hanteren wij andere tarieven. Alleen te reserveren op aanvraag. Neem contact op voor de mogelijkheden."
       },
       {
         "titel": "Ruimte",

@@ -1,6 +1,7 @@
 import "./styles.scss";
 import React from "react";
 import ContactOpnemenKnop from "../../components/ContactOpnemenKnop/ContactOpnemenKnop.tsx";
+import WhatsappButton from "../../components/Whatsapp/Whatsapp.tsx";
 
 const Contact: React.FunctionComponent = () => {
   return (
@@ -29,9 +30,7 @@ const Contact: React.FunctionComponent = () => {
               </div>
               <div className="contact-item">
                 <b>Telefoon</b>
-                <ContactOpnemenKnop href="tel:0628277642" variant="zwart">
-                  06 28277642
-                </ContactOpnemenKnop>
+                <WhatsappButton />
               </div>
             </div>
           </div>

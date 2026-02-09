@@ -7,7 +7,6 @@ export type ZaalType = {
   informatie?: Info[];
   afbeelding: string;
   aanvullendeInformatie?: string;
-  contact?: boolean;
 };
 
 export type Info = {

@@ -1,11 +1,11 @@
 [
   {
     "titel": "Sofie van Essen",
-    "subtitel": "Dagverhuur en beheer",
+    "subtitel": "Kwartiermaker",
     "email": "hallo@lablou.nl"
   },
   {
-    "titel": "Pyke Maas",
+    "titel": "Renee Maessen",
     "subtitel": "Programma en communicatie",
     "email": "programma@lablou.nl"
   },
@@ -18,5 +18,10 @@
     "titel": "Emma Fijma",
     "subtitel": "Ontwerp en communicatie",
     "email": "emma@stadslabzeist.nl"
+  },
+  {
+    "titel": "Vivian Brouwer",
+    "subtitel": "Dagverhuur en beheer",
+    "email": "vivian@stadslabzeist.nl"
   }
 ]

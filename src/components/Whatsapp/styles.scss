@@ -1,0 +1,11 @@
+.whatsapp {
+  height: 44px;
+  width: 44px;
+  transition: transform 120ms ease;
+  &:hover {
+    transform: translateY(-1.5px);
+  }
+  &:active {
+    transform: translateY(0);
+  }
+}
