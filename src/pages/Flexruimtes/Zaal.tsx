@@ -51,11 +51,10 @@ const Zaal: React.FunctionComponent = () => {
 
 export default Zaal;
 
-// @ts-ignore
-const GroteZaalVideo: React.FunctionComponent = () => {
-  return (
-    <video disableRemotePlayback autoPlay muted loop className={"image-block"}>
-      <source src="/assets/videos/grotezaal.mp4" type="video/mp4" />
-    </video>
-  );
-};
+// const GroteZaalVideo: React.FunctionComponent = () => {
+//   return (
+//     <video disableRemotePlayback autoPlay muted loop className={"image-block"}>
+//       <source src="/assets/videos/grotezaal.mp4" type="video/mp4" />
+//     </video>
+//   );
+// };

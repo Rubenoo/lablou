@@ -4,9 +4,9 @@ import AanbodBlock from "../../components/AanbodBlock/AanbodBlock.tsx";
 import CTABlock from "../../components/CTABlock/CTABlock.tsx";
 import InstagramMarquee from "../../components/InstagramMarquee/InstagramMarquee.tsx";
 import HomeCarousel from "../../components/Carousel/HomeCarousel.tsx";
-import { handleClick } from "../../components/Pijl/Pijl.tsx";
 import Agenda from "../Agenda/Agenda.tsx";
 import CTABlockNieuwsbrief from "../../components/CTABlock/CTABlockNieuwsbrief.tsx";
+import { scrollTo } from "../../components/utils.ts";
 
 const Home: React.FunctionComponent = () => {
   return (
@@ -70,7 +70,7 @@ export default Home;
 
 const button = (
   <StyledButton
-    onClick={handleClick("#ons-aanbod")}
+    onClick={scrollTo("#ons-aanbod")}
     className={""}
     variant={"zwart"}
   >
