@@ -3,6 +3,7 @@ import "./styles.scss";
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "../Logo/Logo.tsx";
+import WhatsappButton from "../Whatsapp/Whatsapp.tsx";
 
 const Header: React.FunctionComponent = () => {
   const [show, setShow] = useState(false);
@@ -75,16 +76,20 @@ const Header: React.FunctionComponent = () => {
               >
                 Contact
               </NavLink>
+              <WhatsappButton
+                className="nav-link d-lg-none"
+                tooltipPlacement="right"
+                color="wit"
+              />
             </Nav>
           </Offcanvas.Body>
         </Navbar.Offcanvas>
-        <NavLink
-          className="nav-link contact-desktop d-none d-lg-block"
-          to="contact"
-          onClick={closeShow}
-        >
-          Contact
-        </NavLink>
+        <div className="d-none d-lg-flex contact-desktop">
+          <WhatsappButton tooltipPlacement="bottom" color="wit" />
+          <NavLink className="nav-link" to="contact" onClick={closeShow}>
+            Contact
+          </NavLink>
+        </div>
       </Navbar>
     </header>
   );

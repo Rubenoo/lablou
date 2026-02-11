@@ -6,7 +6,6 @@
     "afbeelding": "flexplek",
     "aanvullendeInformatie": "Er zijn 7 flexwerkplekken beschikbaar. Je kunt per dagdeel of hele dag huren.\n\nTip: reserveer van tevoren als je van een plek verzekerd wilt zijn!",
     "extraInfo": [],
-    "link": "https://lablou.i-reserve.net/front?mod=calendar&rc=0&product=30403",
     "informatie": [
       {
         "titel": "Tarieven (incl. btw)",
@@ -29,7 +28,6 @@
     "afbeelding": "workshopruimte",
     "aanvullendeInformatie": "Je kunt de workshopruimte per dagdeel of hele dag huren. Check de agenda voor beschikbaarheid.\n\nTip: wil je deze ruimte ‘s avonds of in het weekend huren? Vraag naar de mogelijkheden!",
     "extraInfo": ["33 m2", "10 pers."],
-    "link": "https://lablou.i-reserve.net/front?mod=calendar&rc=0&product=30402",
     "informatie": [
       {
         "titel": "Tarieven (excl. btw)",
@@ -82,7 +80,6 @@
     "afbeelding": "auditorium",
     "aanvullendeInformatie": "Het Auditorium kan per 2 uur, per dagdeel en een hele dag gehuurd worden. Catering nodig? Onze cateraar Laura’s Sabor verzorgt graag lekkers bij de koffie, lunch, borrel en/of diner. Vraag naar de mogelijkheden.\nTip: wil je deze ruimte ‘s avonds of in het weekend huren? Vraag naar de mogelijkheden!",
     "extraInfo": ["93 m2", "30-40 pers."],
-    "link": "https://lablou.i-reserve.net/front?mod=calendar&rc=0&product=30407",
     "informatie": [
       {
         "titel": "Tarieven (excl. btw)",
@@ -125,6 +122,22 @@
       {
         "titel": "Extra",
         "gegevens": "• koffie en thee te koop aan de bar (niet inbegrepen)\n• lekkers voor bij de koffie (op aanvraag) \n• lunch en overige catering (op aanvraag)\n• evenementenondersteuning"
+      }
+    ]
+  },
+  {
+    "index": 7,
+    "titel": "De Huiskamer",
+    "toelichting": "Opzoek naar een leuke laagdrempelige ruimte geschikt voor 1 op 1 gesprekken of\nmaximaal 4 personen dan is de huiskamer de perfecte plek!",
+    "afbeelding": "dehuiskamer",
+    "informatie": [
+      {
+        "titel": "Tarieven (excl. btw)",
+        "gegevens": "€30 per 2 uur\n\nInclusief koffie en thee"
+      },
+      {
+        "titel": "Voorzieningen",
+        "gegevens": "• WiFi\n• stroom"
       }
     ]
   }

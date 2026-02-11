@@ -1,11 +1,44 @@
 .whatsapp {
-  height: 44px;
-  width: 44px;
   transition: transform 120ms ease;
+  stroke-width: 0;
   &:hover {
     transform: translateY(-1.5px);
   }
   &:active {
     transform: translateY(0);
+  }
+  &-zwart {
+    color: var(--zwart);
+    height: 44px;
+    width: 44px;
+  }
+  &-wit {
+    color: white;
+    height: 40px;
+    width: 40px;
+  }
+}
+.whatsappLink {
+  display: inline-flex; // shrink-wrap to its contents
+  width: fit-content; // extra safety
+  height: fit-content;
+  line-height: 0; // removes inline gap around image
+  align-self: flex-start; // prevents stretching inside flex containers
+}
+
+.tooltip {
+  opacity: 1;
+  font-size: 1rem;
+
+  --bs-tooltip-bg: white;
+  --bs-tooltip-color: var(--zwart);
+
+  .tooltip-inner {
+    color: var(--zwart);
+    background-color: white;
+  }
+
+  .tooltip-arrow::before {
+    color: white;
   }
 }

@@ -3,7 +3,6 @@ export type ZaalType = {
   titel: string;
   toelichting?: string;
   extraInfo?: string[];
-  link?: string;
   informatie?: Info[];
   afbeelding: string;
   aanvullendeInformatie?: string;

@@ -9,6 +9,7 @@ export default defineConfig({
   resolve: {
     alias: {
       "~bootstrap": path.resolve(__dirname, "node_modules/bootstrap"),
+      "@assets": path.resolve(__dirname, "public/assets"),
     },
   },
   plugins: [react(), svgr()],
