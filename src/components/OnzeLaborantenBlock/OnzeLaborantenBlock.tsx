@@ -1,5 +1,5 @@
 import "./styles.scss";
-import Laboranten from "./Laboranten.json";
+import LaborantenJson from "./Laboranten.json";
 import ContactOpnemenKnop from "../ContactOpnemenKnop/ContactOpnemenKnop.tsx";
 import React from "react";
 import SamenwerkingBlock from "../SamenwerkingBlock/SamenwerkingBlock.tsx";
@@ -16,7 +16,9 @@ type Website = {
 };
 
 const OnzeLaborantenBlock: React.FunctionComponent = () => {
-  const laborantenElements = Laboranten?.map(
+  const laboranten: Laborant[] = LaborantenJson as Laborant[];
+
+  const laborantenElements = laboranten?.map(
     ({ titel, websites }: Laborant, index) => (
       <div className={"animatie border"} key={index}>
         <h4>{titel}</h4>
