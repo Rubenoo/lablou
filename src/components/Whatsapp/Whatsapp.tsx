@@ -31,7 +31,7 @@ export const WhatsappButton: React.FunctionComponent<WhatsappButtonProps> = ({
     }
   >
     <a
-      href="https://wa.me/31332072337"
+      href="https://wa.me/310302072337"
       aria-label="Neem contact op via Whatsapp"
       rel="noopener noreferrer"
       target="_blank"
