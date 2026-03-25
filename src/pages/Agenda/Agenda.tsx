@@ -2,14 +2,10 @@ import React, { useState, useEffect } from "react";
 import { Accordion, Spinner, Button } from "react-bootstrap";
 import dayjs from "dayjs";
 import "dayjs/locale/nl";
+import Papa from "papaparse";
 import "./styles.scss";
 import ContactOpnemenKnop from "../../components/ContactOpnemenKnop/ContactOpnemenKnop.tsx";
-import {
-  AgendaAccordionProps,
-  ApiResponse,
-  GroupedEventsByMonth,
-  Submission,
-} from "./types.ts";
+import { AgendaAccordionProps, GroupedEventsByMonth, Event } from "./types.ts";
 import InstagramMarquee from "../../components/InstagramMarquee/InstagramMarquee.tsx";
 
 const LoadingState = () => (
@@ -52,12 +48,12 @@ const EmptyState = ({
     </section>
   </>
 );
-const getHref = (event: Submission) => {
-  if (event.payload_params.link) {
-    return event.payload_params.link;
+const getHref = (event: Event) => {
+  if (event.link) {
+    return event.link;
   }
-  if (event.payload_params.email) {
-    return `mailto:${event.payload_params.email}`;
+  if (event.email) {
+    return `mailto:${event.email}`;
   }
   return undefined;
 };
@@ -67,7 +63,7 @@ const AgendaAccordion = ({ day, events, dayIndex }: AgendaAccordionProps) => {
     <Accordion key={day}>
       {events.map((event, eventIndex) => {
         const href = getHref(event);
-        const isInPast = dayjs(event.payload_params.startdatum).isBefore(
+        const isInPast = dayjs(event.startdatum).isBefore(
           dayjs().startOf("day"),
         );
         return (
@@ -75,18 +71,15 @@ const AgendaAccordion = ({ day, events, dayIndex }: AgendaAccordionProps) => {
             <Accordion.Header className={isInPast ? "past-event" : ""}>
               <div className={"d-block"}>
                 <p>
-                  {dayjs(event.payload_params.startdatum)
-                    .format("dd DD MMM")
-                    .toUpperCase()}
+                  {dayjs(event.startdatum).format("dd DD MMM").toUpperCase()}
                   {" | "}
-                  {dayjs(event.payload_params.startdatum).format(
-                    "HH:mm",
-                  )} - {dayjs(event.payload_params.einddatum).format("HH:mm")}
+                  {dayjs(event.startdatum).format("HH:mm")} -{" "}
+                  {dayjs(event.einddatum).format("HH:mm")}
                 </p>
                 <h3>
-                  <b>{event.payload_params.titel}</b>
+                  <b>{event.titel}</b>
                 </h3>
-                <p className={"mb-0"}>{event.payload_params.ondertitel}</p>
+                <p className={"mb-0"}>{event.ondertitel}</p>
               </div>
               {href && !isInPast && (
                 <ContactOpnemenKnop
@@ -100,7 +93,7 @@ const AgendaAccordion = ({ day, events, dayIndex }: AgendaAccordionProps) => {
               )}
             </Accordion.Header>
             <Accordion.Body>
-              <p>{event.payload_params.beschrijving}</p>
+              <p>{event.beschrijving}</p>
               {href && !isInPast && (
                 <ContactOpnemenKnop
                   href={href}
@@ -121,7 +114,7 @@ const AgendaAccordion = ({ day, events, dayIndex }: AgendaAccordionProps) => {
 
 const Agenda: React.FC = () => {
   const [currentMonth, setCurrentMonth] = useState(dayjs().format("YYYY-MM"));
-  const [submissions, setSubmissions] = useState<Submission[]>([]);
+  const [submissions, setSubmissions] = useState<Event[]>([]);
   const [loading, setLoading] = useState(true);
   dayjs.locale("nl");
 
@@ -131,13 +124,38 @@ const Agenda: React.FC = () => {
 
   const fetchEvents = async () => {
     try {
-      const response = await fetch(
-        "https://usebasin.com/api/v1/submissions/?api_token=" +
-          import.meta.env.VITE_BASIN_API_KEY,
-      );
-      const data = (await response.json()) as ApiResponse;
+      const sheetId = "1NaggbYbYfJhBhYHShtdIl-VOseZ8832XhdCBcxmjIu8";
+      const gid = "2083042934";
+      const url = `https://docs.google.com/spreadsheets/d/${sheetId}/export?format=csv&gid=${gid}`;
 
-      setSubmissions(data.submissions);
+      const response = await fetch(url);
+      const csvData = await response.text();
+
+      // Use PapaParse to parse the CSV
+      const results = Papa.parse<string[]>(csvData, {
+        header: false,
+        skipEmptyLines: true,
+      });
+
+      const rows = results.data;
+
+      // CSV order: id, created_at, remote_ip, location, titel, ondertitel, beschrijving, link, email, startdatum, einddatum, wachtwoord
+      const dataRows = rows.slice(1);
+
+      const mappedSubmissions: Event[] = dataRows
+        .filter((row) => row.length >= 11) // Basic validation
+        .map((row) => ({
+          id: Number.parseInt(row[0]) || Math.random(),
+          titel: row[4] || "",
+          ondertitel: row[5] || "",
+          beschrijving: row[6] || "",
+          link: row[7] || undefined,
+          email: row[8] || undefined,
+          startdatum: row[9] || "",
+          einddatum: row[10] || "",
+        }));
+
+      setSubmissions(mappedSubmissions);
     } catch (error) {
       console.error("Error fetching events:", error);
     } finally {
@@ -150,16 +168,12 @@ const Agenda: React.FC = () => {
 
     // Sort submissions first by date
     const sortedSubmissions = [...submissions].sort(
-      (a, b) =>
-        dayjs(a.payload_params.startdatum).valueOf() -
-        dayjs(b.payload_params.startdatum).valueOf(),
+      (a, b) => dayjs(a.startdatum).valueOf() - dayjs(b.startdatum).valueOf(),
     );
 
     sortedSubmissions.forEach((submission) => {
-      const monthKey = dayjs(submission.payload_params.startdatum).format(
-        "YYYY-MM",
-      );
-      const dayKey = dayjs(submission.payload_params.startdatum).format("D"); // Using D instead of DD removes leading zeros
+      const monthKey = dayjs(submission.startdatum).format("YYYY-MM");
+      const dayKey = dayjs(submission.startdatum).format("D"); // Using D instead of DD removes leading zeros
 
       if (!grouped[monthKey]) {
         grouped[monthKey] = {};

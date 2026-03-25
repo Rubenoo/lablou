@@ -2,38 +2,23 @@ export interface GroupedEventsByMonth {
   [key: string]: GroupedEvents;
 }
 
-export interface Submission {
+export interface Event {
   id: number;
-  payload_params: {
-    titel: string;
-    startdatum: string;
-    einddatum: string;
-    ondertitel: string;
-    beschrijving: string;
-    link?: string;
-    email?: string;
-  };
-}
-
-export interface ApiResponse {
-  submissions: Submission[];
-  meta: {
-    count: number;
-    inbox_count: number;
-    spam_count: number;
-    trash_count: number;
-    page: number;
-    per_page: number;
-    form_name: string;
-  };
+  titel: string;
+  startdatum: string;
+  einddatum: string;
+  ondertitel: string;
+  beschrijving: string;
+  link?: string;
+  email?: string;
 }
 
 export interface GroupedEvents {
-  [key: string]: Submission[];
+  [key: string]: Event[];
 }
 
 export interface AgendaAccordionProps {
   day: string;
-  events: Submission[];
+  events: Event[];
   dayIndex: number;
 }
