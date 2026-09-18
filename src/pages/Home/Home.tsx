@@ -7,12 +7,10 @@ import HomeCarousel from "../../components/Carousel/HomeCarousel.tsx";
 import Agenda from "../Agenda/Agenda.tsx";
 import CTABlockNieuwsbrief from "../../components/CTABlock/CTABlockNieuwsbrief.tsx";
 import { scrollTo } from "../../components/utils.ts";
-import Vakantie from "../../components/Banners/Vakantie.tsx";
 
 const Home: React.FunctionComponent = () => {
   return (
     <main>
-      <Vakantie />
       <div className={"block-container"}>
         <Block
           variant={"roze"}

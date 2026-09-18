@@ -5,7 +5,6 @@ import ZalenJSON from "./zalen.json";
 import { ZaalType } from "./types.ts";
 import Pijl from "../../components/Pijl/Pijl.tsx";
 import React from "react";
-import Vakantie from "../../components/Banners/Vakantie.tsx";
 const FlexEnVergaderRuimte: React.FunctionComponent = () => {
   const Zalen = ZalenJSON.map((zaal: ZaalType) => (
     <AanbodBlock {...zaal} to={zaal.index.toString()} key={zaal.index} />
@@ -13,7 +12,6 @@ const FlexEnVergaderRuimte: React.FunctionComponent = () => {
 
   return (
     <main>
-      <Vakantie />
       <div className={"block-container"}>
         <Block
           variant={"groen"}
